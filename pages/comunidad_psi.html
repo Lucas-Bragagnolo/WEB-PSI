@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Asociación PSI, psi, cursos online, psicología, cursos psicología, especializaciones psicología">
+    <meta name="description" content="Your description here">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <!-- Incluir Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.default.min.css" />
+
+    <!-- Incluir jQuery (es necesario para Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Incluir Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css?=1">
+
+    <title>Comunidad PSI</title>
+</head>
+<body>
+    <header>
+        
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="promoToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">¡Promoción Especial!</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    ¡20% de descuento en todos nuestros cursos online! Oferta por tiempo limitado.
+                </div>
+            </div>
+        </div>
+        <div id="topBar" class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+            <div class="container">
+                <strong>¡Oferta Especial!</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nulla aut sed accusamus ullam maxime!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>        
+        <div id="languageBar" class="bg-dark py-2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 mb-2 mb-md-0 text-center text-md-start">
+                        <a href="#" class="text-white text-decoration-none">
+                            <i class="bi bi-question-circle"></i> Preguntas frecuentes | <i class="bi bi-telephone"></i> +54 9 112233445566
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end">
+                        <a href="#" class="me-2"><img src="../img/banderas/estados-unidos.png" alt="English" width="24" height="16"></a>
+                        <a href="#" class="me-2"><img src="../img/banderas/mexico.png" alt="Español" width="24" height="16"></a>
+                        <a class="btn btn-outline-light mt-2 mt-md-0" href="javascript:void(0)">Ingresar</a>
+                    </div>
+                </div>
+            </div>
+        </div>           
+        <nav class="navbar navbar-expand-lg navbar-ligth bg-light py-2">
+            <div class="container">
+    
+                <a class="navbar-brand" href="javascript:void(0)"><img src="../img/logo_chico.png" alt="Logo" class="img-fluid px-3 py-2"></a>
+                <button class="btn btn-navbar d-lg-none d-flex align-items-center justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#searchCollapse" aria-expanded="false" aria-controls="searchCollapse">
+                    <i class="bi bi-search"></i>
+                </button>
+                <button class="btn btn-navbar d-flex align-items-center justify-content-center d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftOffcanvas" aria-controls="leftOffcanvas">
+                    <i class="bi bi-cart"></i>
+                </button>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+                        </li>     
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link d-flex align-items-center" href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#areasOffcanvas" aria-controls="areasOffcanvas">
+                                Areas <i class="bi bi-chevron-right ms-1"></i>
+                            </a>
+                        </li>
+                        <!-- Navbar de Áreas para pantallas grandes -->                     
+                        <li class="nav-item dropdown position-static d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Áreas
+                            </a>
+                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Psicología</h5>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
+                                            <a class="dropdown-item" href="#">Hipnosis terapéutica</a>
+                                            <a class="dropdown-item" href="#">Trastornos Infantiles</a>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Autismo</h5>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Educación</h5>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Otras Áreas</h5>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>                                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="newDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Capacitaciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="newDropdown">
+                                <li><a class="dropdown-item" href="#">Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Especializaciones</a></li>
+                                <li><a class="dropdown-item" href="#">Video Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Seminarios</a></li>
+                            </ul>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="btn btn-primary me-2" href="javascript:void(0)">Comunidad PSI</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex me-2 d-none d-lg-block">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="¿Qué buscas?" aria-label="Buscar" aria-describedby="button-search">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-search">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <button class="btn btn-navbar d-none d-lg-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftOffcanvas" aria-controls="leftOffcanvas">
+                    <i class="bi bi-cart"></i>
+                </button>
+    
+            </div>
+            
+        </nav>
+        
+        <!-- Carrito -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="leftOffcanvas" aria-labelledby="leftOffcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="leftOffcanvasLabel">Menú lateral</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Este es el contenido del offcanvas que sale desde la izquierda.</p>
+                <!-- Aquí puedes agregar más contenido según tus necesidades -->
+            </div>
+        </div>
+    
+        <!-- Collapse de busqueda -->        
+        <div class="collapse" id="searchCollapse">
+            <div class="container mt-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="button-search">
+                    <button class="btn btn-outline-secondary" type="button" id="button-search">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Offcanvas para áreas -->
+        <div class="offcanvas offcanvas-end h-100" tabindex="-1" id="areasOffcanvas" aria-labelledby="areasOffcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="areasOffcanvasLabel">Áreas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h5 class="dropdown-header">Psicología</h5>
+                        <ul>
+                            <li><a href="#" class="text-decoration-none">Introducción a la Psicología</a></li>
+                            <li><a href="#" class="text-decoration-none">Psicología Clínica</a></li>
+                            <li><a href="#" class="text-decoration-none">Psicología Infantil</a></li>
+                        </ul>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+        </header> 
+
+    <main>
+        <div class="row mb-5 bg-gradient-primary">
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <div class=" text-white p-5">
+                    <h2 class="display-4">Bienvenido a la Comunidad PSI</h2>
+                    <p class="lead">Un espacio dedicado al intercambio de conocimientos y experiencias en el campo de la psicología. Únete a nosotros y sé parte de esta comunidad en crecimiento.</p>
+                    <form class="mb-3">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="emailSuscripcion" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <div class="mb-3">
+                            <p class="text-white">Selecciona las áreas de tu interés:</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="psicologia-clinica" id="checkClinica">
+                                <label class="form-check-label text-white" for="checkClinica">Psicología Clínica</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="psicologia-infantil" id="checkInfantil">
+                                <label class="form-check-label text-white" for="checkInfantil">Psicología Infantil</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="salud-mental" id="checkSalud">
+                                <label class="form-check-label text-white" for="checkSalud">Salud Mental</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="terapia" id="checkTerapia">
+                                <label class="form-check-label text-white" for="checkTerapia">Terapia</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-light btn-lg">Suscríbete ahora</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <aside class="col-md-3 mb-4">
+                    <div class="card sticky-top mt-2">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Filtrar artículos</h3>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="filter-input" placeholder="Buscar artículos...">
+                            </div>
+                            <ul class="list-group list-group-flush" id="filter-list" role="tablist">
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark" data-filter="todos" role="tab" aria-selected="true">Todos</a></li>
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark" data-filter="psicologia" role="tab">Psicología</a></li>
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark" data-filter="salud-mental" role="tab">Salud Mental</a></li>
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark" data-filter="bienestar" role="tab">Bienestar</a></li>
+                                <li class="list-group-item"><a href="#" class="text-decoration-none text-dark" data-filter="terapia" role="tab">Terapia</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+    
+                <section class="col-md-9">
+                    <h1 class="mb-4">Blog de Comunidad PSI</h1>
+                    <div class="row" id="article-grid">
+                        <article class="col-md-6 col-lg-4 mb-4" data-category="psicologia">
+                            <div class="card h-100">
+                                <div class="position-relative">
+                                    <span class="badge bg-primary position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Psicología</span>
+                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">15 May 2023</span>
+                                    <img src="../img/blog/articulo1.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h5">Título del artículo 1</h2>
+                                    <p class="card-text flex-grow-1">Breve descripción del artículo 1...</p>
+                                    <a href="#" class="btn btn-primary mt-auto">Leer más</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 mb-4" data-category="psicologia">
+                            <div class="card h-100">
+                                <div class="position-relative">
+                                    <span class="badge bg-danger position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Autismo</span>
+                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">20 May 2023</span>
+                                    <img src="../img/blog/articulo2.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h5">Título del artículo 1</h2>
+                                    <p class="card-text flex-grow-1">Breve descripción del artículo 1...</p>
+                                    <a href="#" class="btn btn-primary mt-auto">Leer más</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 mb-4" data-category="psicologia">
+                            <div class="card h-100">
+                                <div class="position-relative">
+                                    <span class="badge bg-warning position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Gerontología</span>
+                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">25 May 2023</span>
+                                    <img src="../img/blog/articulo3.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h5">Título del artículo 1</h2>
+                                    <p class="card-text flex-grow-1">Breve descripción del artículo 1...</p>
+                                    <a href="#" class="btn btn-primary mt-auto">Leer más</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 mb-4" data-category="psicologia">
+                            <div class="card h-100">
+                                <div class="position-relative">
+                                    <span class="badge bg-primary position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Psicología</span>
+                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">30 May 2023</span>
+                                    <img src="../img/blog/articulo1.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h5">Título del artículo 1</h2>
+                                    <p class="card-text flex-grow-1">Breve descripción del artículo 1...</p>
+                                    <a href="#" class="btn btn-primary mt-auto">Leer más</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 mb-4" data-category="psicologia">
+                            <div class="card h-100">
+                                <div class="position-relative">
+                                    <span class="badge bg-danger position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Autismo</span>
+                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">5 Jun 2023</span>
+                                    <img src="../img/blog/articulo2.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h5">Título del artículo 1</h2>
+                                    <p class="card-text flex-grow-1">Breve descripción del artículo 1...</p>
+                                    <a href="#" class="btn btn-primary mt-auto">Leer más</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 mb-4" data-category="psicologia">
+                            <div class="card h-100">
+                                <div class="position-relative">
+                                    <span class="badge bg-warning position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Gerontología</span>
+                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">10 Jun 2023</span>
+                                    <img src="../img/blog/articulo3.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h5">Título del artículo 1</h2>
+                                    <p class="card-text flex-grow-1">Breve descripción del artículo 1...</p>
+                                    <a href="#" class="btn btn-primary mt-auto">Leer más</a>
+                                </div>
+                            </div>
+                        </article>
+
+    
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-light text-dark py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-3">Asociación PSI</h4>
+                    <p>Promoviendo el bienestar mental y emocional a través de la psicología.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3"><a href="#" class="text-dark" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
+                        <li class="me-3"><a href="#" class="text-dark" aria-label="Twitter"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#" class="text-dark" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-3">Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-dark text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Sobre Nosotros</a></li>
+                        <li><a href="#contacto" class="text-dark text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h5 mb-3">Contáctanos</h4>
+                    <address>
+                        <p class="mb-2"><i class="bi bi-geo-alt me-2"></i>Calle Principal 123, Ciudad</p>
+                        <p class="mb-2"><i class="bi bi-telephone me-2"></i><a href="tel:+123456789" class="text-dark text-decoration-none">+12 345 6789</a></p>
+                        <p><i class="bi bi-envelope me-2"></i><a href="mailto:info@asociacionpsi.com" class="text-dark text-decoration-none">info@asociacionpsi.com</a></p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2024 Asociación PSI. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Política de Privacidad</a></li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Términos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var topBar = document.getElementById('topBar');
+            var closeButton = topBar.querySelector('.btn-close');
+            
+            closeButton.addEventListener('click', function() {
+                topBar.remove();
+            });
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var toastEl = document.getElementById('promoToast');
+            var toast = new bootstrap.Toast(toastEl, {
+                autohide: false
+            });
+            toast.show();
+        });
+    </script>
+        <script>
+            // Código JavaScript para el filtrado de artículos
+            document.addEventListener('DOMContentLoaded', function() {
+                const filterLinks = document.querySelectorAll('.filter-list a');
+                const articles = document.querySelectorAll('.blog-article');
+    
+                filterLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const filter = this.getAttribute('data-filter');
+    
+                        articles.forEach(article => {
+                            if (filter === 'todos' || article.getAttribute('data-category') === filter) {
+                                article.style.display = 'block';
+                            } else {
+                                article.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+        <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

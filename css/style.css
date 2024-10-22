@@ -86,11 +86,15 @@ img {
 }
 
 .bg-gradient-primary {
-    background: linear-gradient(to right, #0447e0, #3354a3);
+    background-color: #a8c9fa;
+    background-color: #74EBD5;
+    background-image: linear-gradient(234deg, #74EBD5 0%, #9FACE6 14%, #b4b4dc 63%, #c9dc9e 100%);
+    
+
 }
 
 .metricas {
-    color: white;
+    color: rgb(31, 39, 151);
     text-align: center;
 }
 
@@ -110,3 +114,4 @@ img {
     color: white;
     
 }
+

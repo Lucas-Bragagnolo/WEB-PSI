@@ -46,22 +46,24 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     </div>        
-    <div id="languageBar" class="bg-light py-2">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div>
-                <a href="#" class="text-dark text-decoration-none">
-                    <i class="bi bi-question-circle"></i> Preguntas frecuentes
-                </a>
-            </div>
-            <div>
-                <a href="#" class="me-2"><img src="./img/banderas/estados-unidos.png" alt="English" width="24" height="16"></a>
-                <a href="#" class="me-2"><img src="./img/banderas/mexico.png" alt="Español" width="24" height="16"></a>
-                <a class="btn btn-outline-primary" href="javascript:void(0)">Ingresar</a>
+    <div id="languageBar" class="bg-dark py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 mb-2 mb-md-0 text-center text-md-start">
+                    <a href="#" class="text-white text-decoration-none">
+                        <i class="bi bi-question-circle"></i> Preguntas frecuentes | <i class="bi bi-telephone"></i> +54 9 112233445566
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <a href="#" class="me-2"><img src="./img/banderas/estados-unidos.png" alt="English" width="24" height="16"></a>
+                    <a href="#" class="me-2"><img src="./img/banderas/mexico.png" alt="Español" width="24" height="16"></a>
+                    <a class="btn btn-outline-light mt-2 mt-md-0" href="javascript:void(0)">Ingresar</a>
+                </div>
             </div>
         </div>
     </div>           
-    <nav class="navbar navbar-expand-lg navbar-ligth bg-light">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-ligth bg-light py-2">
+        <div class="container">
 
             <a class="navbar-brand" href="javascript:void(0)"><img src="./img/logo_chico.png" alt="Logo" class="img-fluid px-3 py-2"></a>
             <button class="btn btn-navbar d-lg-none d-flex align-items-center justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#searchCollapse" aria-expanded="false" aria-controls="searchCollapse">
@@ -212,7 +214,7 @@
     <main class="container p-5 ">
         <section class="row align-items-center">
             <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                <video src="./img/video/mujer_principal.mp4" class="img-fluid rounded shadow-sm" width="500" height="400" autoplay>
+                <video src="./img/video/mujer_principal.mp4" class="img-fluid rounded shadow-sm" width="500" height="400" loop>
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -328,7 +330,7 @@
         </div>
     </section>    
     
-    <!-- Sección de Reseñas -->
+    <!-- Sección de Reseñas y métricas -->
     <section id="reseñas" class="py-5 bg-gradient-primary">
         <div class="container">
             <h2 class="text-center mb-3 display-4 fw-bold text-white">Reseñas de Estudiantes</h2>
@@ -408,18 +410,14 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Sección de Métricas -->
-    <section id="metricas" class="py-5 bg-gradient-primary">
-        <div class="container">
+        <div class="container border p-2 rounded border-2">
             <h2 class="text-center mb-5 titulo">¿Por qué elegir PSI para tu crecimiento personal?</h2>
             <div class="row metricas">
                 <div class="col-md-3 mb-4">
                     <div class="h-100 border-0">
                         <div class="card-body">
                             <i class="fas fa-users fa-4x mb-3 text-primary"></i>
-                            <h3 class="mb-3">10,000+</h3>
+                            <h3 class="mb-3 bold"><span class="counter" data-target="3500">0</span>+</h3>
                             <p class="card-text">Usuarios Activos</p>
                         </div>
                     </div>
@@ -428,7 +426,7 @@
                     <div class="h-100 border-0">
                         <div class="card-body">
                             <i class="fas fa-book fa-4x mb-3 text-success"></i>
-                            <h3 class="mb-3">500+</h3>
+                            <h3 class="mb-3"><span class="counter" data-target="85">0</span>+</h3>
                             <p class="card-text">Cursos Disponibles</p>
                         </div>
                     </div>
@@ -437,7 +435,7 @@
                     <div class="h-100 border-0">
                         <div class="card-body">
                             <i class="fas fa-user-graduate fa-4x mb-3 text-info"></i>
-                            <h3 class="mb-3">5,000+</h3>
+                            <h3 class="mb-3"><span class="counter" data-target="2546">0</span>+</h3>
                             <p class="card-text">Alumnos Graduados</p>
                         </div>
                     </div>
@@ -446,92 +444,104 @@
                     <div class=" h-100 border-0">
                         <div class="card-body">
                             <i class="fas fa-chalkboard-teacher fa-4x mb-3 text-warning"></i>
-                            <h3 class="mb-3">200+</h3>
+                            <h3 class="mb-3"><span class="counter" data-target="150">0</span>+</h3>
                             <p class="card-text">Profesores Expertos</p>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </section>
 
-    
-        <!-- Sección Comunidad PSI -->
-        <section id="comunidad-psi" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5">Comunidad PSI</h2>
-                
-                <!-- Filtros de tabs -->
-                <ul class="nav nav-pills mb-4 justify-content-center" id="comunidad-tabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="todos-tab" data-bs-toggle="pill" data-bs-target="#todos" type="button" role="tab" aria-controls="todos" aria-selected="true">Todos</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="clinica-tab" data-bs-toggle="pill" data-bs-target="#clinica" type="button" role="tab" aria-controls="clinica" aria-selected="false">Psicología Clínica</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="educativa-tab" data-bs-toggle="pill" data-bs-target="#educativa" type="button" role="tab" aria-controls="educativa" aria-selected="false">Psicología Educativa</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="organizacional-tab" data-bs-toggle="pill" data-bs-target="#organizacional" type="button" role="tab" aria-controls="organizacional" aria-selected="false">Psicología Organizacional</button>
-                    </li>
-                </ul>
-                
-                <!-- Contenido de las cards -->
-                <div class="tab-content" id="comunidad-tabContent">
-                    <div class="tab-pane fade show active" id="todos" role="tabpanel" aria-labelledby="todos-tab">
-                        <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <div class="card h-100 shadow-sm">
-                                    <img src="./img/blog/articulo1.jpg" class="card-img-top" alt="Imagen del artículo">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Técnicas de relajación para el estrés</h5>
-                                        <p class="card-text">Descubre cómo manejar el estrés diario con estas técnicas efectivas.</p>
-                                        <p class="text-muted"><small>Fecha: 15 de mayo, 2024</small></p>
-                                    </div>
+    <!-- Sección Comunidad PSI -->
+    <section id="comunidad-psi" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-2">Comunidad PSI</h2>
+            <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem asperiores perspiciatis aliquid? Doloribus, voluptatum quia!</p>
+            
+            <!-- Filtros de tabs -->
+            <ul class="nav nav-pills mb-4 justify-content-center" id="comunidad-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="todos-tab" data-bs-toggle="pill" data-bs-target="#todos" type="button" role="tab" aria-controls="todos" aria-selected="true">Todos</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="clinica-tab" data-bs-toggle="pill" data-bs-target="#clinica" type="button" role="tab" aria-controls="clinica" aria-selected="false">Psicología Clínica</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="educativa-tab" data-bs-toggle="pill" data-bs-target="#educativa" type="button" role="tab" aria-controls="educativa" aria-selected="false">Psicología Educativa</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="organizacional-tab" data-bs-toggle="pill" data-bs-target="#organizacional" type="button" role="tab" aria-controls="organizacional" aria-selected="false">Psicología Organizacional</button>
+                </li>
+            </ul>
+            
+            <!-- Contenido de las cards -->
+            <div class="tab-content" id="comunidad-tabContent">
+                <div class="tab-pane fade show active" id="todos" role="tabpanel" aria-labelledby="todos-tab">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="position-relative">
+                                    <span class="badge bg-warning position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Gerontología</span>
+                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">10 Jun 2023</span>
+                                    <img src="./img/blog/articulo3.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
                                 </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="card h-100 shadow-sm">
-                                    <img src="./img/blog/articulo2.jpg" class="card-img-top" alt="Imagen del artículo">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Aprendizaje y desarrollo infantil</h5>
-                                        <p class="card-text">Exploramos las etapas clave del desarrollo cognitivo en niños.</p>
-                                        <p class="text-muted"><small>Fecha: 22 de mayo, 2024</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="card h-100 shadow-sm">
-                                    <img src="./img/blog/articulo3.jpg" class="card-img-top" alt="Imagen del artículo">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Liderazgo y psicología organizacional</h5>
-                                        <p class="card-text">Cómo la psicología puede mejorar el liderazgo en las empresas.</p>
-                                        <p class="text-muted"><small>Fecha: 29 de mayo, 2024</small></p>
-                                    </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h5">Título del artículo 1</h2>
+                                    <p class="card-text flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, repudiandae amet reiciendis similique iure quod.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="clinica" role="tabpanel" aria-labelledby="clinica-tab">
-                        <!-- Contenido para Psicología Clínica -->
-                    </div>
-                    <div class="tab-pane fade" id="educativa" role="tabpanel" aria-labelledby="educativa-tab">
-                        <!-- Contenido para Psicología Educativa -->
-                    </div>
-                    <div class="tab-pane fade" id="organizacional" role="tabpanel" aria-labelledby="organizacional-tab">
-                        <!-- Contenido para Psicología Organizacional -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="position-relative">
+                                    <span class="badge bg-info position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Gerontología</span>
+                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">10 Jun 2023</span>
+                                    <img src="./img/blog/articulo2.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h5">Título del artículo 1</h2>
+                                    <p class="card-text flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, repudiandae amet reiciendis similique iure quod.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="position-relative">
+                                    <span class="badge bg-danger position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Gerontología</span>
+                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">10 Jun 2023</span>
+                                    <img src="./img/blog/articulo1.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h2 class="card-title h5">Título del artículo 1</h2>
+                                    <p class="card-text flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, repudiandae amet reiciendis similique iure quod.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-                <div class="text-center mt-4">
-                    <button class="btn btn-primary" type="button" aria-label="Ver más artículos">
-                        Ver más
-                    </button>
+                <div class="tab-pane fade" id="clinica" role="tabpanel" aria-labelledby="clinica-tab">
+                    <!-- Contenido para Psicología Clínica -->
                 </div>
-
+                <div class="tab-pane fade" id="educativa" role="tabpanel" aria-labelledby="educativa-tab">
+                    <!-- Contenido para Psicología Educativa -->
+                </div>
+                <div class="tab-pane fade" id="organizacional" role="tabpanel" aria-labelledby="organizacional-tab">
+                    <!-- Contenido para Psicología Organizacional -->
+                </div>
             </div>
-        </section>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-primary" type="button" aria-label="Ver más artículos">
+                    Ver más
+                </button>
+            </div>
+
+        </div>
+    </section>
     
     
     <!-- Foother -->
@@ -628,7 +638,29 @@
             });
         });
         </script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
     
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const inc = target / speed;
+    
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+    
+            updateCount();
+        });
+    });
+    </script>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
