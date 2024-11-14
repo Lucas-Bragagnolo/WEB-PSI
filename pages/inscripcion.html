@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Asociación PSI, psi, cursos online, psicología, cursos psicología, especializaciones psicología">
+    <meta name="description" content="Your description here">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <!-- Incluir Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- Incluir jQuery (es necesario para Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Incluir Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Comunidad PSI</title>
+</head>
+<body>
+    <header>  
+            <!-- Botón WhatsApp -->
+    <a href="https://wa.me/1234567890" class="btn-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Botón Volver Arriba -->
+    <a href="#" class="btn-scroll-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>                        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+        <div class="container">
+            <button onclick="window.history.back()" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left"></i> Volver
+            </button>
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo_nuevo_chico2.png" alt="Logo" class="img-fluid" width="150" height="50">
+            </a>
+        </div>            
+    </nav>    
+    </header> 
+
+    <main class="container my-5">
+            <div class="row">
+                <!-- Formulario de pago -->
+                <div class="col-md-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Información de Pago</h3>
+                            <form id="payment-form" novalidate>
+                                <!-- Progress bar -->
+                                <div class="progress mb-4" role="progressbar" aria-label="Progreso del formulario">
+                                    <div class="progress-bar" id="progress-bar" style="width: 50%;">50%</div>
+                                </div>
+
+                                <!-- Información Personal -->
+                                <div class="mb-4 form-section active" id="personal-info">
+                                    <h5 class="d-flex align-items-center">
+                                        <span class="badge bg-primary me-2">1</span>
+                                        Información Personal
+                                    </h5>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                            <input type="text" 
+                                                class="form-control form-control-lg" 
+                                                id="nombre" 
+                                                placeholder="Ej: Juan"
+                                                aria-label="Nombre"
+                                                autocomplete="given-name"
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingrese su nombre
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="apellido" class="form-label">Apellido</label>
+                                            <input type="text" 
+                                                class="form-control form-control-lg" 
+                                                id="apellido" 
+                                                placeholder="Ej: Pérez"
+                                                aria-label="Apellido"
+                                                autocomplete="family-name"
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingrese su apellido
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="documento" class="form-label">Documento de Identidad</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-person-vcard"></i></span>
+                                                <input type="text" 
+                                                    class="form-control form-control-lg" 
+                                                    id="documento" 
+                                                    placeholder="Ej: 12345678"
+                                                    aria-label="Documento de Identidad"
+                                                    pattern="[0-9]*"
+                                                    minlength="6"
+                                                    maxlength="12"
+                                                    required>
+                                            </div>
+                                            <div class="form-text">Solo números, sin puntos ni guiones</div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="pais" class="form-label">País</label>
+                                            <select class="form-select form-select-lg" 
+                                                id="pais" 
+                                                aria-label="Seleccione su país"
+                                                required>
+                                                <option value="">Seleccione un país</option>
+                                                <option value="AR">🇦🇷 Argentina</option>
+                                                <option value="BO">🇧🇴 Bolivia</option>
+                                                <option value="CL">🇨🇱 Chile</option>
+                                                <option value="CO">🇨🇴 Colombia</option>
+                                                <option value="EC">🇪🇨 Ecuador</option>
+                                                <option value="PY">🇵🇾 Paraguay</option>
+                                                <option value="PE">🇵🇪 Perú</option>
+                                                <option value="UY">🇺🇾 Uruguay</option>
+                                                <option value="VE">🇻🇪 Venezuela</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Por favor, seleccione un país
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="telefono" class="form-label">Teléfono</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-phone"></i></span>
+                                                <input type="tel" 
+                                                    class="form-control form-control-lg" 
+                                                    id="telefono" 
+                                                    placeholder="+54 11 1234-5678"
+                                                    aria-label="Teléfono"
+                                                    pattern="[0-9\s\-\+\(\)]*"
+                                                    autocomplete="tel"
+                                                    required>
+                                            </div>
+                                            <div class="form-text">Incluya el código de país</div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                                <input type="email" 
+                                                    class="form-control form-control-lg" 
+                                                    id="email" 
+                                                    placeholder="nombre@ejemplo.com"
+                                                    aria-label="Dirección de correo electrónico"
+                                                    autocomplete="email"
+                                                    required>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingrese un email válido
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-4">
+                                        <button type="button" class="btn btn-primary btn-lg next-step" onclick="showPaymentProgress()">
+                                            Pagar! <i class="bi bi-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                    <script>
+                                        function showPaymentProgress() {
+                                            let timerInterval;
+                                            Swal.fire({
+                                                title: 'Procesando pago',
+                                                html: 'Por favor espere...',
+                                                timer: 3000,
+                                                timerProgressBar: true,
+                                                didOpen: () => {
+                                                    Swal.showLoading();
+                                                },
+                                                willClose: () => {
+                                                    clearInterval(timerInterval);
+                                                }
+                                            }).then((result) => {
+                                                if (result.dismiss === Swal.DismissReason.timer) {
+                                                    window.location.href = 'confirmacion.html';
+                                                }
+                                            });
+                                        }
+                                    </script>                                </div>
+    
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Resumen de compra -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm sticky-top" style="top: 20px;">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Tu Resumen de Compra</h4>
+                            <div class="mb-3">
+                                <h6 class="text-secondary">Curso Seleccionado</h6>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-book-fill me-2 text-primary"></i>
+                                    <div>
+                                        <p class="mb-1 fw-bold">Psicología de las Personalidades</p>
+                                        <span class="badge bg-light text-dark"><i class="bi bi-clock me-1"></i>Duración: 4 Meses</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-secondary">Precio del curso</span>
+                                    <span class="fw-bold">$99.99</span>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="couponCode" class="form-label d-flex align-items-center">
+                                        <i class="bi bi-tag-fill me-2 text-primary"></i>
+                                        Código de descuento
+                                    </label>
+                                    <div class="input-group">
+                                        <input type="text" 
+                                            class="form-control form-control-lg" 
+                                            id="couponCode" 
+                                            placeholder="Ingresa tu código aquí"
+                                            aria-label="Código de descuento"
+                                            aria-describedby="applyCoupon">
+                                        <button class="btn btn-primary" 
+                                            type="button" 
+                                            id="applyCoupon">
+                                            <i class="bi bi-check2 me-1"></i>Aplicar
+                                        </button>
+                                    </div>
+                                    <div id="couponFeedback" class="invalid-feedback d-flex align-items-center">
+                                        <i class="bi bi-x-circle me-1"></i>Código no válido
+                                    </div>
+                                    <div id="couponSuccess" class="valid-feedback d-flex align-items-center">
+                                        <i class="bi bi-check-circle me-1"></i>¡Cupón aplicado con éxito!
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2 bg-success bg-opacity-10 p-2 rounded" id="discountRow">
+                                    <span class="text-success"><i class="bi bi-percent me-1"></i>Descuento aplicado</span>
+                                    <span class="text-success fw-bold">-$10.00</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mb-3 bg-light p-3 rounded">
+                                <strong class="fs-5">Total a pagar</strong>
+                                <strong class="fs-5 text-primary">$89.99</strong>
+                            </div>
+                            <div class="alert alert-info d-flex align-items-center border-start border-info border-4" role="alert">
+                                <i class="bi bi-lightning-fill me-2 text-info" aria-hidden="true"></i>
+                                <div>
+                                    Acceso inmediato al curso después del pago
+                                </div>
+                            </div>
+                            <div class="alert alert-success d-none" id="couponAlert" role="alert">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill me-2" aria-hidden="true"></i>
+                                    <span class="coupon-message">Cupón aplicado correctamente</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+
+
+
+
+    <footer class="bg-light text-dark py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-3">Asociación PSI</h4>
+                    <p>Promoviendo el bienestar mental y emocional a través de la psicología.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3"><a href="#" class="text-dark" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
+                        <li class="me-3"><a href="#" class="text-dark" aria-label="Twitter"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#" class="text-dark" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-3">Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-dark text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Sobre Nosotros</a></li>
+                        <li><a href="#contacto" class="text-dark text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h5 mb-3">Contáctanos</h4>
+                    <address>
+                        <p class="mb-2"><i class="bi bi-geo-alt me-2"></i>Calle Principal 123, Ciudad</p>
+                        <p class="mb-2"><i class="bi bi-telephone me-2"></i><a href="tel:+123456789" class="text-dark text-decoration-none">+12 345 6789</a></p>
+                        <p><i class="bi bi-envelope me-2"></i><a href="mailto:info@asociacionpsi.com" class="text-dark text-decoration-none">info@asociacionpsi.com</a></p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2024 Asociación PSI. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Política de Privacidad</a></li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Términos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: true,                
+                responsive: {
+                    0: {
+                        items: 1.3
+                    },
+                    600: {
+                        items: 2.3
+                    },
+                    1000: {
+                        items: 3.8
+                    }
+                }
+            });
+        });
+    </script>
+        
+        <!-- bootstrap -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/inscripcion.js"></script>
+    <script src="../js/botones.js"></script>
+
+</body>
+</html>

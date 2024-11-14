@@ -7,539 +7,1163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Iconos Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
     <!-- Incluir Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.default.min.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Incluir jQuery (es necesario para Owl Carousel) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- AOS ANIMATE -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Incluir Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css?=1">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Asociación PSI</title>
 </head>
 <body>
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/1234567890" class="btn-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Botón Volver Arriba -->
+    <a href="#" class="btn-scroll-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    
     
     <!-- HEADER (MENU, TOOLTIP (promocion), Carrito, BarraLenguaje) -->
     <header>
         
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="promoToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <strong class="me-auto">¡Promoción Especial!</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-                ¡20% de descuento en todos nuestros cursos online! Oferta por tiempo limitado.
-            </div>
-        </div>
-    </div>
-    <div id="topBar" class="alert alert-info alert-dismissible fade show mb-0" role="alert">
-        <div class="container">
-            <strong>¡Oferta Especial!</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nulla aut sed accusamus ullam maxime!
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    </div>        
-    <div id="languageBar" class="bg-dark py-2">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6 mb-2 mb-md-0 text-center text-md-start">
-                    <a href="#" class="text-white text-decoration-none">
-                        <i class="bi bi-question-circle"></i> Preguntas frecuentes | <i class="bi bi-telephone"></i> +54 9 112233445566
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 text-center text-md-end">
-                    <a href="#" class="me-2"><img src="./img/banderas/estados-unidos.png" alt="English" width="24" height="16"></a>
-                    <a href="#" class="me-2"><img src="./img/banderas/mexico.png" alt="Español" width="24" height="16"></a>
-                    <a class="btn btn-outline-light mt-2 mt-md-0" href="javascript:void(0)">Ingresar</a>
-                </div>
-            </div>
-        </div>
-    </div>           
-    <nav class="navbar navbar-expand-lg navbar-ligth bg-light py-2">
-        <div class="container">
 
-            <a class="navbar-brand" href="javascript:void(0)"><img src="./img/logo_chico.png" alt="Logo" class="img-fluid px-3 py-2"></a>
-            <button class="btn btn-navbar d-lg-none d-flex align-items-center justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#searchCollapse" aria-expanded="false" aria-controls="searchCollapse">
-                <i class="bi bi-search"></i>
-            </button>
-            <button class="btn btn-navbar d-flex align-items-center justify-content-center d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftOffcanvas" aria-controls="leftOffcanvas">
-                <i class="bi bi-cart"></i>
-            </button>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Nosotros</a>
-                    </li>     
-                    <li class="nav-item d-lg-none">
-                        <a class="nav-link d-flex align-items-center" href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#areasOffcanvas" aria-controls="areasOffcanvas">
-                            Areas <i class="bi bi-chevron-right ms-1"></i>
+        <div id="topBar" class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+            <div class="container">
+                <strong>¡Oferta Especial!</strong> Esto puede ser una promocion válida. Por sólo <strong>10 USD</strong> podes llevarte un curos adicional!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>        
+        <div id="languageBar" class="bg-dark py-2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-2 mb-md-0 text-center text-md-start d-none d-lg-block">
+                        <a href="#" class="text-white text-decoration-none">
+                            <i class="bi bi-question-circle"></i> FAQs
                         </a>
-                    </li>
-                    <!-- Navbar de Áreas para pantallas grandes -->                     
-                    <li class="nav-item dropdown position-static d-none d-lg-block">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Áreas
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end">
+                        <a href="./pages/login.html" class=" btn btn-warning text-white text-decoration-none me-2">
+                           
+                            <i class="bi bi-people-fill"></i>
+                            Comunidad
                         </a>
-                        <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                        <h5 class="dropdown-header">Psicología</h5>
-                                        <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
-                                        <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
-                                        <a class="dropdown-item" href="#">Hipnosis terapéutica</a>
-                                        <a class="dropdown-item" href="#">Trastornos Infantiles</a>
-                                        <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                        <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                        <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                        <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <h5 class="dropdown-header">Autismo</h5>
-                                        <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                        <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                        <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                        <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <h5 class="dropdown-header">Educación</h5>
-                                        <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
-                                        <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
-                                        <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                        <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                        <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                        <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <h5 class="dropdown-header">Otras Áreas</h5>
-                                        <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
-                                        <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
-                                        <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                        <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                        <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                        <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                        <a href="./pages/login_plataforma.html" class=" btn btn-primary text-white text-decoration-none me-2">
+                           
+                            <i class="bi bi-person-circle"></i>
+                            Ingresar
+                        </a>
+                        <a href="#" class="text-white text-decoration-none me-2">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none me-2">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>           
+        <nav class="navbar navbar-expand-lg navbar-ligth bg-light py-2">
+            <div class="container">
+    
+                <a class="navbar-brand" href="javascript:void(0)"><img src="./img/logo_nuevo_chico2.png" alt="Logo" class="img-fluid"></a>
+                <button class="btn btn-navbar d-lg-none d-flex align-items-center justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#searchCollapse" aria-expanded="false" aria-controls="searchCollapse">
+                    <i class="bi bi-search"></i>
+                </button>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+                        </li>     
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link d-flex align-items-center" href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#areasOffcanvas" aria-controls="areasOffcanvas">
+                                Areas <i class="bi bi-chevron-right ms-1"></i>
+                            </a>
+                        </li>
+                        <!-- Navbar de Áreas para pantallas grandes -->                     
+                        <li class="nav-item dropdown position-static d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Áreas
+                            </a>
+                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Psicología</h5>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
+                                            <a class="dropdown-item" href="#">Hipnosis terapéutica</a>
+                                            <a class="dropdown-item" href="#">Trastornos Infantiles</a>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Autismo</h5>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Educación</h5>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Otras Áreas</h5>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>                                      
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="newDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Capacitaciones
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="newDropdown">
-                            <li><a class="dropdown-item" href="#">Cursos</a></li>
-                            <li><a class="dropdown-item" href="#">Especializaciones</a></li>
-                            <li><a class="dropdown-item" href="#">Video Cursos</a></li>
-                            <li><a class="dropdown-item" href="#">Seminarios</a></li>
-                        </ul>
-                    </li>  
-                    <li class="nav-item">
-                        <a class="btn btn-primary me-2" href="javascript:void(0)">Comunidad PSI</a>
-                    </li>
-                </ul>
+                        </li>                                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="newDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Capacitaciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="newDropdown">
+                                <li><a class="dropdown-item" href="#">Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Especializaciones</a></li>
+                                <li><a class="dropdown-item" href="#">Video Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Seminarios</a></li>
+                            </ul>
+                        </li>  
+                    </ul>
+                </div>            
+                <form class="d-flex me-2 d-none d-lg-block">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="¿Qué buscas?" aria-label="Buscar" aria-describedby="button-search">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-search">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+    
             </div>
-            <form class="d-flex me-2 d-none d-lg-block">
+            
+        </nav>
+        
+        <!-- Carrito -->
+    
+        <!-- Collapse de busqueda -->        
+        <div class="collapse" id="searchCollapse">
+            <div class="container mt-3">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="¿Qué buscas?" aria-label="Buscar" aria-describedby="button-search">
-                    <button class="btn btn-outline-secondary" type="submit" id="button-search">
+                    <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="button-search">
+                    <button class="btn btn-outline-secondary" type="button" id="button-search">
                         <i class="bi bi-search"></i>
                     </button>
                 </div>
-            </form>
-            <button class="btn btn-navbar d-none d-lg-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftOffcanvas" aria-controls="leftOffcanvas">
-                <i class="bi bi-cart"></i>
-            </button>
-
-        </div>
-        
-    </nav>
-    
-    <!-- Carrito -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="leftOffcanvas" aria-labelledby="leftOffcanvasLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="leftOffcanvasLabel">Menú lateral</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <p>Este es el contenido del offcanvas que sale desde la izquierda.</p>
-            <!-- Aquí puedes agregar más contenido según tus necesidades -->
-        </div>
-    </div>
-
-    <!-- Collapse de busqueda -->        
-    <div class="collapse" id="searchCollapse">
-        <div class="container mt-3">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="button-search">
-                <button class="btn btn-outline-secondary" type="button" id="button-search">
-                    <i class="bi bi-search"></i>
-                </button>
             </div>
         </div>
-    </div>
-
-    <!-- Offcanvas para áreas -->
-    <div class="offcanvas offcanvas-end h-100" tabindex="-1" id="areasOffcanvas" aria-labelledby="areasOffcanvasLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="areasOffcanvasLabel">Áreas</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+        <!-- Offcanvas para áreas -->
+        <div class="offcanvas offcanvas-end h-100" tabindex="-1" id="areasOffcanvas" aria-labelledby="areasOffcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="areasOffcanvasLabel">Áreas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h5 class="dropdown-header">Psicología</h5>
+                        <ul>
+                            <li><a href="#" class="text-decoration-none">Introducción a la Psicología</a></li>
+                            <li><a href="#" class="text-decoration-none">Psicología Clínica</a></li>
+                            <li><a href="#" class="text-decoration-none">Psicología Infantil</a></li>
+                        </ul>
+                    </li>
+    
+                </ul>
+            </div>
         </div>
-        <div class="offcanvas-body">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="dropdown-header">Psicología</h5>
-                    <ul>
-                        <li><a href="#" class="text-decoration-none">Introducción a la Psicología</a></li>
-                        <li><a href="#" class="text-decoration-none">Psicología Clínica</a></li>
-                        <li><a href="#" class="text-decoration-none">Psicología Infantil</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
-    </div>
     </header> 
     <!-- Banner Principal  y Empresas que nos avalan-->
-    <main class="container p-5 ">
+    <main class="container-fluid ">
         <section class="row align-items-center">
-            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                <video src="./img/video/mujer_principal.mp4" class="img-fluid rounded shadow-sm" width="500" height="400" loop>
-                    Your browser does not support the video tag.
-                </video>
+<!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+    
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/1440x500.jpg" alt="Chicago" class="d-lg-block d-none w-100">
+            <img src="./img/390x450.jpg" alt="Chicago" class="d-lg-none w-100">  
+            <div class="carousel-caption">
+                <a href="#" class="btn btn-primary">Explorar Cursos</a>
             </div>
-            <div class="col-lg-6 order-lg-1">
-                <h1 class="display-4 fw-bold mb-3">Tu <span style="color: blue">Crecimiento Profesional</span>  Online</h1>
-                <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit cum eius a neque nisi pariatur, perspiciatis eaque cupiditate alias aspernatur inventore qui totam atque.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="#servicios" class="btn btn-primary btn-lg px-4 me-md-2">Conocé nuestros Cursos</a>
-                    <a href="#contacto" class="btn btn-outline-secondary btn-lg px-4">Contáctanos</a>
-                </div>
-            </div>            
+        </div>
+        <div class="carousel-item">
+            <img src="./img/1440x500.jpg" alt="Chicago" class="d-lg-block d-none w-100">
+            <img src="./img/390x450.jpg" alt="Chicago" class="d-lg-none w-100">            
+            <div class="carousel-caption">
+                <a href="#" class="btn btn-primary">Comenzar Ahora</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./img/1440x500.jpg" alt="Chicago" class="d-lg-block d-none w-100">
+            <img src="./img/390x450.jpg" alt="Chicago" class="d-lg-none w-100">             
+            <div class="carousel-caption">
+                <a href="#" class="btn btn-primary">Inscríbete</a>
+            </div>
+        </div>
+        </div>    
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>           
         </section>
-        <section>            
-            <h2 class="text-center mb-4 p-4">Empresas que nos avalan</h2>
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img src="./img/logo_chico.png" alt="Logo 1"  class="img-fluid">
+        <section data-aos="fade-up">            
+            <h2 id="cursosRelacionados" class="text-center mb-4 mt-4 display-5" data-aos="fade-up">Avales y certificaciones</h2>       
+            <p class="text-center mb-5 lead text-muted" data-aos="fade-up" data-aos-delay="100">Estas son las instituciones que avalan nuestros cursos y especializaciones/p>
+                <div class="logos-slider" data-aos="fade-up">
+                <div class="logos-slide">
+                    <img src="./img//logos_aval/desarrollo_humano_ba.png" alt="Logo 1" class="logo-img">
+                    <img src="./img/logos_aval/ministerio_justicia.png" alt="Logo 2" class="logo-img">
+                    <img src="./img/logos_aval/ministerio_salud.png" alt="Logo 3" class="logo-img">
+                    <img src="./img/logos_aval/1600703107687.jfif" alt="Logo 4" class="logo-img">
+                    <img src="./img/logos_aval/ecounes.png" alt="Logo 5" class="logo-img">
+                    <img src="./img/logo_rebrand.png" alt="Logo 6" class="logo-img">
+
+                    <img src="./img//logos_aval/desarrollo_humano_ba.png" alt="Logo 1" class="logo-img">
+                    <img src="./img/logos_aval/ministerio_justicia.png" alt="Logo 2" class="logo-img">
+                    <img src="./img/logos_aval/ministerio_salud.png" alt="Logo 3" class="logo-img">
+                    <img src="./img/logos_aval/1600703107687.jfif" alt="Logo 4" class="logo-img">
+                    <img src="./img/logos_aval/ecounes.png" alt="Logo 5" class="logo-img">
+                    <img src="./img/logo_rebrand.png" alt="Logo 6" class="logo-img">
+
                 </div>
-                <div class="item">
-                    <img src="./img/logo_chico.png" alt="Logo 2" class="img-fluid">
-                </div>
-                <div class="item">
-                    <img src="./img/logo_chico.png" alt="Logo 3" class="img-fluid">
-                </div>
-                <div class="item">
-                    <img src="./img/logo_chico.png" alt="Logo 4" class="img-fluid">
-                </div>
-                <div class="item">
-                    <img src="./img/logo_chico.png" alt="Logo 5" class="img-fluid">
-                </div>
-                <div class="item">
-                    <img src="./img/logo_chico.png" alt="Logo 6" class="img-fluid">
-                </div>
-                <!-- Agrega más logos aquí -->
             </div>
-            
-            
+
         </section>
     </main>
+
+
     <!-- Ventajas del Estudio online o ¿¿POR QUÉ ELEGIRNOS?? -->
-    <article class="container my-5">
-        <div class="row align-items-center">
-            <div class="col-lg-7 order-lg-2 mb-2">
-                <h2 class="display-5 fw-bold mb-3">Descubre las Ventajas del <span class="text-primary">Aprendizaje Online</span></h2>
-                <h3 class="h4 mb-3">Flexibilidad y Comodidad a tu Alcance</h3>
-                <p class="lead mb-4">Nuestros cursos en línea te permiten aprender a tu propio ritmo, desde cualquier lugar y en cualquier momento. Disfruta de una educación de calidad sin sacrificar tus compromisos diarios.</p>
-                <ul class="list-unstyled mb-4">
-                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Acceso 24/7 a contenido actualizado</li>
-                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Interacción con expertos y compañeros</li>
-                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Ahorro en tiempo y costos de desplazamiento</li>
-                </ul>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="#cursos-online" class="btn btn-primary btn-lg px-4 me-md-2">Explora Nuestros Cursos Online</a>
+    <article class="container my-5" aria-labelledby="main-heading" data-aos="fade-up">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+                <h2 id="main-heading" class="display-5 fw-bold mb-3">Impulsa tu carrera con <span class="text-primary">Formación Especializada</span></h2>
+                <h3 class="h4 mb-3 text-secondary">Aprende, crece y destaca en tu campo profesional</h3>
+                <p class="lead mb-4">Descubre programas formativos diseñados por expertos, con contenido actualizado y enfoque práctico. Desarrolla las competencias más demandadas en el mercado laboral actual.</p>
+                <div class="benefits-list mb-4" role="list" data-aos="fade-up" data-aos-delay="300">
+                    <div class="d-flex align-items-center mb-3" role="listitem">
+                        <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                        <span>Formación práctica y actualizada en Psicología, Salud Mental y Educación</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" role="listitem">
+                        <i class="bi bi-book-fill text-success fs-4 me-3"></i>
+                        <span>Biblioteca Virtual con +220 recursos especializados disponible 24/7</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" role="listitem">
+                        <i class="bi bi-people-fill text-success fs-4 me-3"></i>
+                        <span>Comunidad PSI activa para networking y desarrollo profesional</span>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-sm-flex" data-aos="fade-up" data-aos-delay="400">
+                    <a href="./pages/cursos.html" class="btn btn-primary btn-lg px-4 me-sm-3 shadow-sm" aria-label="Ver catálogo de cursos">
+                        Explorar Cursos
+                        <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-secondary btn-lg px-4" aria-label="Solicitar información adicional">
+                        Más Información
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-5 order-lg-1 mb-4 mb-lg-0">
-                <img src="./img/mujer_trabajando.jpg" alt="Aprendizaje en línea" class="img-fluid rounded shadow-sm">
+            <div class="col-lg-5 order-lg-1" data-aos="fade-right" data-aos-delay="200">
+                <div class="position-relative">
+                    <img 
+                        src="./img/mujer_trabajando.jpg" 
+                        alt="Profesional realizando formación online en su espacio de trabajo" 
+                        class="img-fluid rounded-3 shadow-lg"
+                        width="600"
+                        height="400"
+                        loading="lazy">
+
+                </div>
             </div>
         </div>
     </article>
-    <!-- Botonera de AREAS -->
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Principales Áreas</h2>
-        <div class="row g-1">
-            <div class="col-md-6 col-lg-3 col-4">
-                <button class="btn btn-outline-primary w-100 h-100 py-4 d-flex flex-column align-items-center justify-content-center" aria-label="Psicología Clínica">
-                    <i class="bi bi-heart-pulse fs-1 mb-2"></i>
-                    <span>Psicología Clínica</span>
-                </button>
+    <!-- Cursos Destacados o relevantes -->
+    <section class="container my-5" id="cursos-destacados" data-aos="fade-up">
+        <h2 id="cursosRelacionados" class="text-center mb-4 display-5" data-aos="fade-up">Cursos destacados</h2>       
+        <p class="text-center mb-5 lead text-muted" data-aos="fade-up" data-aos-delay="100">Descubre nuestra selección de cursos especializados en las áreas más demandadas</p>
+
+             
+             <!-- Nav tabs -->
+             <ul class="nav nav-tabs justify-content-center mb-4" id="areaTabs" role="tablist" data-aos="fade-up" data-aos-delay="200">
+                 <li class="nav-item" role="presentation">
+                     <button class="nav-link active" id="clinica-tab" data-bs-toggle="tab" data-bs-target="#clinica" type="button" role="tab">Psicología</button>
+                 </li>
+                 <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="educativa-tab" data-bs-toggle="tab" data-bs-target="#educativa" type="button" role="tab">Autismo</button>
+                 </li>
+                 <li class="nav-item" role="presentation">
+                     <button class="nav-link" id="organizacional-tab" data-bs-toggle="tab" data-bs-target="#organizacional" type="button" role="tab">Educación</button>
+                 </li>
+             </ul>
+             
+             <!-- Tab panes -->
+             <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+                 <!-- Psicología Clínica -->
+                 <div class="tab-pane active" id="clinica" role="tabpanel">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" data-aos="fade-up" data-aos-delay="400">                           
+                            <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                                <div class="position-relative">
+                                    <img src="./img/curso4.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                    <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                        <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="d-flex flex-wrap gap-2 mb-3">
+                                        <span class="badge bg-light text-dark d-flex align-items-center">
+                                            <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Especializacion
+                                        </span>
+                                        <span class="badge bg-light text-dark d-flex align-items-center">
+                                            <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                        </span>
+                                    </div>
+                                    <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                    <div class="course-info bg-light p-3 rounded mb-3">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="d-flex align-items-center mb-2">
+                                                <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                                <span>Duración: 4 meses</span>
+                                            </li>
+                                            <li class="d-flex align-items-center mb-2">
+                                                <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                                <span>Inicio: 15 Marzo 2024</span>
+                                            </li>
+            
+                                        </ul>
+                                    </div>
+                                    <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                        Más información
+                                        <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </article>
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-delay="500">                           
+                        <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                            <div class="position-relative">
+                                <img src="./img/curso5.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                    <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Curso
+                                    </span>
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                    </span>
+                                </div>
+                                <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                <div class="course-info bg-light p-3 rounded mb-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Duración: 4 meses</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Inicio: 15 Marzo 2024</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                                <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                    Más información
+                                    <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-delay="600">                           
+                        <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                            <div class="position-relative">
+                                <img src="./img/curso6.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                    <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Curso
+                                    </span>
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                    </span>
+                                </div>
+                                <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                <div class="course-info bg-light p-3 rounded mb-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Duración: 4 meses</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Inicio: 15 Marzo 2024</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                                <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                    Más información
+                                    <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-delay="700">                           
+                        <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                            <div class="position-relative">
+                                <img src="./img/curso7.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                    <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Curso
+                                    </span>
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                    </span>
+                                </div>
+                                <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                <div class="course-info bg-light p-3 rounded mb-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Duración: 4 meses</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Inicio: 15 Marzo 2024</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                                <a href="./pages/nosotros.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                    Conocé más
+                                    <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    </div>
+                 </div>
+             
+                 <!-- Autismo -->
+                 <div class="tab-pane" id="educativa" role="tabpanel">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" data-aos="fade-up" data-aos-delay="400">                           
+                            <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                                <div class="position-relative">
+                                    <img src="./img/curso4.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                    <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                        <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="d-flex flex-wrap gap-2 mb-3">
+                                        <span class="badge bg-light text-dark d-flex align-items-center">
+                                            <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Especializacion
+                                        </span>
+                                        <span class="badge bg-light text-dark d-flex align-items-center">
+                                            <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                        </span>
+                                    </div>
+                                    <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                    <div class="course-info bg-light p-3 rounded mb-3">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="d-flex align-items-center mb-2">
+                                                <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                                <span>Duración: 4 meses</span>
+                                            </li>
+                                            <li class="d-flex align-items-center mb-2">
+                                                <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                                <span>Inicio: 15 Marzo 2024</span>
+                                            </li>
+            
+                                        </ul>
+                                    </div>
+                                    <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                        Más información
+                                        <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </article>
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-delay="500">                           
+                        <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                            <div class="position-relative">
+                                <img src="./img/curso5.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                    <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Curso
+                                    </span>
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                    </span>
+                                </div>
+                                <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                <div class="course-info bg-light p-3 rounded mb-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Duración: 4 meses</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Inicio: 15 Marzo 2024</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                                <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                    Más información
+                                    <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-delay="600">                           
+                        <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                            <div class="position-relative">
+                                <img src="./img/curso6.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                    <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Curso
+                                    </span>
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                    </span>
+                                </div>
+                                <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                <div class="course-info bg-light p-3 rounded mb-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Duración: 4 meses</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Inicio: 15 Marzo 2024</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                                <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                    Más información
+                                    <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-delay="700">                           
+                        <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                            <div class="position-relative">
+                                <img src="./img/curso7.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                    <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Curso
+                                    </span>
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                    </span>
+                                </div>
+                                <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                <div class="course-info bg-light p-3 rounded mb-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Duración: 4 meses</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Inicio: 15 Marzo 2024</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                                <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                    Más información
+                                    <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    </div>
+                 </div>
+             
+                 <!-- Educacion -->
+                 <div class="tab-pane" id="organizacional" role="tabpanel">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" data-aos="fade-up" data-aos-delay="400">                           
+                            <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                                <div class="position-relative">
+                                    <img src="./img/curso4.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                    <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                        <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="d-flex flex-wrap gap-2 mb-3">
+                                        <span class="badge bg-light text-dark d-flex align-items-center">
+                                            <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Especializacion
+                                        </span>
+                                        <span class="badge bg-light text-dark d-flex align-items-center">
+                                            <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                        </span>
+                                    </div>
+                                    <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                    <div class="course-info bg-light p-3 rounded mb-3">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="d-flex align-items-center mb-2">
+                                                <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                                <span>Duración: 4 meses</span>
+                                            </li>
+                                            <li class="d-flex align-items-center mb-2">
+                                                <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                                <span>Inicio: 15 Marzo 2024</span>
+                                            </li>
+            
+                                        </ul>
+                                    </div>
+                                    <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                        Más información
+                                        <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </article>
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-delay="500">                           
+                        <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                            <div class="position-relative">
+                                <img src="./img/curso5.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                    <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Curso
+                                    </span>
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                    </span>
+                                </div>
+                                <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                <div class="course-info bg-light p-3 rounded mb-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Duración: 4 meses</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Inicio: 15 Marzo 2024</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                                <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                    Más información
+                                    <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-delay="600">                           
+                        <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                            <div class="position-relative">
+                                <img src="./img/curso6.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                    <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Curso
+                                    </span>
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                    </span>
+                                </div>
+                                <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                <div class="course-info bg-light p-3 rounded mb-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Duración: 4 meses</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Inicio: 15 Marzo 2024</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                                <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                    Más información
+                                    <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-delay="700">                           
+                        <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
+                            <div class="position-relative">
+                                <img src="./img/curso7.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
+                                <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                    <span class="badge bg-primary rounded-pill">Nuevo</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Curso
+                                    </span>
+                                    <span class="badge bg-light text-dark d-flex align-items-center">
+                                        <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
+                                    </span>
+                                </div>
+                                <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
+                                <div class="course-info bg-light p-3 rounded mb-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Duración: 4 meses</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
+                                            <span>Inicio: 15 Marzo 2024</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                                <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
+                                    Más información
+                                    <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    </div>
+                 </div>
+             </div>
+             
+             <style>
+                .transition-transform {
+                    transition: transform 0.3s ease-in-out;
+                }
+                .hover-scale:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+                }
+             </style>
+    </section>    <!-- Botonera de AREAS -->
+    <section class="container my-5" aria-labelledby="areas-principales" data-aos="fade-up">
+        <h2 id="areas-principales" class="text-center mb-4 display-5" data-aos="fade-up">Explora Nuestras Áreas de Especialización</h2>
+        <p class="text-center text-muted mb-4" data-aos="fade-up" data-aos-delay="100">Selecciona el área que más te interese para ver nuestros cursos especializados</p>
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <a href="./pages/cursos.html#cursos" class="btn btn-outline-primary w-100 h-100 p-3 d-flex flex-column align-items-center justify-content-center hover-card" aria-label="Ver cursos de Psicología Clínica">
+                    <i class="fa-solid fa-brain mb-3 fs-2"></i>
+                    <span class="fw-medium">Psicología</span>
+                    <small class="text-muted mt-2 d-none d-md-block">Terapia y tratamientos</small>
+                </a>
             </div>
-            <div class="col-md-6 col-lg-3 col-4">
-                <button class="btn btn-outline-primary w-100 h-100 py-4 d-flex flex-column align-items-center justify-content-center" aria-label="Psicología Educativa">
-                    <i class="bi bi-book fs-1 mb-2"></i>
-                    <span>Psicología Educativa</span>
-                </button>
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <a href="./pages/cursos.html#cursos" class="btn btn-outline-primary w-100 h-100 p-3 d-flex flex-column align-items-center justify-content-center hover-card" aria-label="Ver cursos de Autismo">
+                    <i class="bi bi-puzzle fs-2 mb-3"></i>
+                    <span class="fw-medium">Autismo</span>
+                    <small class="text-muted mt-2 d-none d-md-block">Intervención temprana</small>
+                </a>
             </div>
-            <div class="col-md-6 col-lg-3 col-4">
-                <button class="btn btn-outline-primary w-100 h-100 py-4 d-flex flex-column align-items-center justify-content-center" aria-label="Psicología Organizacional">
-                    <i class="bi bi-briefcase fs-1 mb-2"></i>
-                    <span>Psicología Organizacional</span>
-                </button>
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <a href="./pages/cursos.html#cursos" class="btn btn-outline-primary w-100 h-100 p-3 d-flex flex-column align-items-center justify-content-center hover-card" aria-label="Ver cursos de Educación">
+                    <i class="bi bi-mortarboard fs-2 mb-3"></i>
+                    <span class="fw-medium">Educación</span>
+                    <small class="text-muted mt-2 d-none d-md-block">Psicopedagogía</small>
+                </a>
             </div> 
-            <div class="col-md-6 col-lg-3 col-4">
-                <button class="btn btn-outline-primary w-100 h-100 py-4 d-flex flex-column align-items-center justify-content-center" aria-label="Neuropsicología">
-                    <i class="bi bi-person fs-1 mb-2"></i>
-                    <span>Neuropsicología</span>
-                </button>
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                <a href="./pages/cursos.html#cursos" class="btn btn-outline-primary w-100 h-100 p-3 d-flex flex-column align-items-center justify-content-center hover-card" aria-label="Ver cursos de Crecimiento Personal">
+                    <i class="bi bi-graph-up-arrow fs-2 mb-3"></i>
+                    <span class="fw-medium">Crecimiento Personal</span>
+                    <small class="text-muted mt-2 d-none d-md-block">Autoconocimiento</small>
+                </a>
             </div>
-            <div class="col-md-6 col-lg-3 col-4">
-                <button class="btn btn-outline-primary w-100 h-100 py-4 d-flex flex-column align-items-center justify-content-center" aria-label="Psicología Social">
-                    <i class="bi bi-people fs-1 mb-2"></i>
-                    <span>Psicología Social</span>
-                </button>
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                <a href="./pages/cursos.html#cursos" class="btn btn-outline-primary w-100 h-100 p-3 d-flex flex-column align-items-center justify-content-center hover-card" aria-label="Ver cursos de Gerontología">
+                    <i class="fa-solid fa-person-cane fs-2 mb-3"></i>
+                    <span class="fw-medium">Gerontología</span>
+                    <small class="text-muted mt-2 d-none d-md-block">Adultos mayores</small>
+                </a>
             </div>
-            <div class="col-md-6 col-lg-3 col-4" >
-                <button class="btn btn-outline-primary w-100 h-100 py-4 d-flex flex-column align-items-center justify-content-center" aria-label="Psicología del Deporte">
-                    <i class="bi bi-trophy fs-1 mb-2"></i>
-                    <span>Psicología del Deporte</span>
-                </button>
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                <a href="./pages/cursos.html#cursos" class="btn btn-outline-primary w-100 h-100 p-3 d-flex flex-column align-items-center justify-content-center hover-card" aria-label="Ver cursos de Crianza">
+                    <i class="bi bi-people-fill fs-2 mb-3"></i>
+                    <span class="fw-medium">Crianza</span>
+                    <small class="text-muted mt-2 d-none d-md-block">Parentalidad positiva</small>
+                </a>
             </div>
-            <div class="col-md-6 col-lg-3 col-4">
-                <button class="btn btn-outline-primary w-100 h-100 py-4 d-flex flex-column align-items-center justify-content-center" aria-label="Psicología Forense">
-                    <i class="bi bi-shield fs-1 mb-2"></i>
-                    <span>Psicología Forense</span>
-                </button>
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="800">
+                <a href="./pages/cursos.html#cursos" class="btn btn-outline-primary w-100 h-100 p-3 d-flex flex-column align-items-center justify-content-center hover-card" aria-label="Ver cursos de Coaching">
+                    <i class="bi bi-bullseye fs-2 mb-3"></i>
+                    <span class="fw-medium">Coaching</span>
+                    <small class="text-muted mt-2 d-none d-md-block">Desarrollo profesional</small>
+                </a>
             </div>
-            <div class="col-md-6 col-lg-3 col-4">
-                <button class="btn btn-outline-primary w-100 h-100 py-4 d-flex flex-column align-items-center justify-content-center" aria-label="Psicología de la Salud">
-                    <i class="bi bi-hospital fs-1 mb-2"></i>
-                    <span>Psicología de la Salud</span>
-                </button>
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="900">
+                <a href="./pages/cursos.html#cursos" class="btn btn-outline-primary w-100 h-100 p-3 d-flex flex-column align-items-center justify-content-center hover-card" aria-label="Ver cursos de Terapias Alternativas">
+                    <i class="bi bi-flower1 fs-2 mb-3"></i>
+                    <span class="fw-medium">Terapias Alternativas</span>
+                    <small class="text-muted mt-2 d-none d-md-block">Bienestar integral</small>
+                </a>
             </div>
         </div>
+        <style>
+            .hover-card {
+                transition: all 0.3s ease;
+                border-radius: 12px;
+            }
+            .hover-card:hover, .hover-card:focus {
+                transform: translateY(-3px);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                background-color: var(--bs-primary);
+                color: white;
+            }
+            .hover-card:hover small, .hover-card:focus small {
+                color: rgba(255,255,255,0.8) !important;
+            }
+            .hover-card:active {
+                transform: translateY(0);
+            }
+            @media (max-width: 768px) {
+                .hover-card {
+                    padding: 0.75rem !important;
+                }
+                .hover-card i {
+                    font-size: 1.5rem !important;
+                }
+            }
+        </style>
     </section>    
     
     <!-- Sección de Reseñas y métricas -->
-    <section id="reseñas" class="py-5 bg-gradient-primary">
+    <section id="reseñas" class="py-5 bg-gradient-primary" aria-labelledby="testimonios-titulo">
         <div class="container">
-            <h2 class="text-center mb-3 display-4 fw-bold text-white">Reseñas de Estudiantes</h2>
-            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt, temporibus et quo aut cumque!</p>
-            <div id="testimoniosCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <h2 id="testimonios-titulo" class="text-center mb-4 display-4 fw-bold text-white" data-aos="fade-up">Lo que dicen nuestros estudiantes</h2>
+            <p class="text-center text-white mb-5" data-aos="fade-up" data-aos-delay="100">Descubre las experiencias de quienes ya son parte de nuestra comunidad</p>
+            
+            <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-aos="fade-up" data-aos-delay="200">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="card  border-0 mx-auto" style="max-width: 600px;">
-                            <div class="card-body bg-white text-dark rounded-lg p-4">
-                                <p class="card-text lead">"La Asociación PSI ha sido fundamental en mi desarrollo profesional. Los cursos son excelentes y los profesores muy dedicados."</p>
-                                <div class="d-flex align-items-center mt-4">
-                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Foto de Ana García" class="rounded-circle me-3" width="60" height="60">
-                                    <div>
-                                        <h5 class="card-title mb-0 fw-bold">Analía García</h5>
-                                        <small class="text-muted fst-italic">Estudiante de Psicología Clínica</small>
+                        <div class="testimonial-card mx-auto" style="max-width: 700px;">
+                            <div class="card shadow-lg border-0">
+                                <div class="card-body bg-white rounded-4 p-5">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="https://randomuser.me/api/portraits/women/65.jpg" 
+                                             alt="" 
+                                             class="rounded-circle me-4" 
+                                             width="80" 
+                                             height="80"
+                                             loading="lazy">
+                                        <div>
+                                            <h3 class="h5 mb-1 fw-bold">Analía García</h3>
+                                            <p class="text-primary mb-0">Estudiante de Psicología Clínica</p>
+                                        </div>
+                                    </div>
+                                    <blockquote class="mb-0">
+                                        <p class="lead mb-0">"La Asociación PSI transformó mi carrera profesional. Los cursos son prácticos y los profesores son verdaderos mentores."</p>
+                                    </blockquote>
+                                    <div class="rating mt-3">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="card border-0 mx-auto" style="max-width: 600px;">
-                            <div class="card-body bg-white text-dark rounded-lg p-4">
-                                <p class="card-text lead">"Gracias a los programas de la Asociación PSI, he podido especializarme en Neuropsicología. Una experiencia increíble."</p>
-                                <div class="d-flex align-items-center mt-4">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de Carlos Martínez" class="rounded-circle me-3" width="60" height="60">
-                                    <div>
-                                        <h5 class="card-title mb-0 fw-bold">Carlos Martínez</h5>
-                                        <small class="text-muted fst-italic">Graduado en Neuropsicología</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card border-0 mx-auto" style="max-width: 600px;">
-                            <div class="card-body bg-white text-dark rounded-lg p-4">
-                                <p class="card-text lead">"Los recursos y el apoyo que ofrece la Asociación PSI son invaluables. Me han ayudado mucho en mi carrera de Psicología Educativa."</p>
-                                <div class="d-flex align-items-center mt-4">
-                                    <img src="https://randomuser.me/api/portraits/women/95.jpg" alt="Foto de Laura Sánchez" class="rounded-circle me-3" width="60" height="60">
-                                    <div>
-                                        <h5 class="card-title mb-0 fw-bold">Laura Sánchez</h5>
-                                        <small class="text-muted fst-italic">Estudiante de Psicología</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card border-0 mx-auto" style="max-width: 600px;">
-                            <div class="card-body bg-white text-dark rounded-lg p-4">
-                                <p class="card-text lead">"La formación en Psicología Organizacional que recibí en la Asociación PSI ha sido clave para mi éxito profesional actual."</p>
-                                <div class="d-flex align-items-center mt-4">
-                                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Foto de Miguel Rodríguez" class="rounded-circle me-3" width="60" height="60">
-                                    <div>
-                                        <h5 class="card-title mb-0 fw-bold">Miguel Rodríguez</h5>
-                                        <small class="text-muted fst-italic">Psicólogo Organizacional</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Estructura similar para otros testimonios -->
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-                <div class="carousel-indicators position-relative top-0  ">
-                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonio 1"></button>
-                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="1" aria-label="Testimonio 2"></button>
-                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="2" aria-label="Testimonio 3"></button>
-                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="3" aria-label="Testimonio 4"></button>
+
+                <div class="carousel-controls mt-4">
+                    <button class="btn btn-light rounded-circle me-2" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="btn btn-light rounded-circle" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="container border p-2 rounded border-2">
-            <h2 class="text-center mb-5 titulo">¿Por qué elegir PSI para tu crecimiento personal?</h2>
-            <div class="row metricas">
-                <div class="col-md-3 mb-4">
-                    <div class="h-100 border-0">
-                        <div class="card-body">
-                            <i class="fas fa-users fa-4x mb-3 text-primary"></i>
-                            <h3 class="mb-3 bold"><span class="counter" data-target="3500">0</span>+</h3>
-                            <p class="card-text">Usuarios Activos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="h-100 border-0">
-                        <div class="card-body">
-                            <i class="fas fa-book fa-4x mb-3 text-success"></i>
-                            <h3 class="mb-3"><span class="counter" data-target="85">0</span>+</h3>
-                            <p class="card-text">Cursos Disponibles</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="h-100 border-0">
-                        <div class="card-body">
-                            <i class="fas fa-user-graduate fa-4x mb-3 text-info"></i>
-                            <h3 class="mb-3"><span class="counter" data-target="2546">0</span>+</h3>
-                            <p class="card-text">Alumnos Graduados</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class=" h-100 border-0">
-                        <div class="card-body">
-                            <i class="fas fa-chalkboard-teacher fa-4x mb-3 text-warning"></i>
-                            <h3 class="mb-3"><span class="counter" data-target="150">0</span>+</h3>
-                            <p class="card-text">Profesores Expertos</p>
-                        </div>
-                    </div>
-                </div>
 
-
+        <div class="container mt-5" data-aos="fade-up" data-aos-delay="300">
+            <div class="stats-container bg-white rounded-4 shadow-lg p-5">
+                <h2 class="text-center h3 mb-5">Nuestro Impacto en Números</h2>
+                <div class="row g-4 text-center">
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="stat-icon bg-primary bg-opacity-10 rounded-circle p-3 mb-3 mx-auto" style="width: fit-content">
+                                <i class="fas fa-users fa-2x text-primary"></i>
+                            </div>
+                            <h3 class="h2 mb-2"><span class="counter" data-target="3500">0</span>+</h3>
+                            <p class="text-muted mb-0">Estudiantes Activos</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="stat-icon bg-success bg-opacity-10 rounded-circle p-3 mb-3 mx-auto" style="width: fit-content">
+                                <i class="fas fa-book fa-2x text-success"></i>
+                            </div>
+                            <h3 class="h2 mb-2"><span class="counter" data-target="85">0</span>+</h3>
+                            <p class="text-muted mb-0">Cursos Especializados</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="stat-icon bg-info bg-opacity-10 rounded-circle p-3 mb-3 mx-auto" style="width: fit-content">
+                                <i class="fas fa-user-graduate fa-2x text-info"></i>
+                            </div>
+                            <h3 class="h2 mb-2"><span class="counter" data-target="2546">0</span>+</h3>
+                            <p class="text-muted mb-0">Graduados Exitosos</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="700">
+                            <div class="stat-icon bg-warning bg-opacity-10 rounded-circle p-3 mb-3 mx-auto" style="width: fit-content">
+                                <i class="fas fa-chalkboard-teacher fa-2x text-warning"></i>
+                            </div>
+                            <h3 class="h2 mb-2"><span class="counter" data-target="150">0</span>+</h3>
+                            <p class="text-muted mb-0">Expertos Docentes</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
     <!-- Sección Comunidad PSI -->
     <section id="comunidad-psi" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-2">Comunidad PSI</h2>
-            <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem asperiores perspiciatis aliquid? Doloribus, voluptatum quia!</p>
-            
-            <!-- Filtros de tabs -->
-            <ul class="nav nav-pills mb-4 justify-content-center" id="comunidad-tabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="todos-tab" data-bs-toggle="pill" data-bs-target="#todos" type="button" role="tab" aria-controls="todos" aria-selected="true">Todos</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="clinica-tab" data-bs-toggle="pill" data-bs-target="#clinica" type="button" role="tab" aria-controls="clinica" aria-selected="false">Psicología Clínica</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="educativa-tab" data-bs-toggle="pill" data-bs-target="#educativa" type="button" role="tab" aria-controls="educativa" aria-selected="false">Psicología Educativa</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="organizacional-tab" data-bs-toggle="pill" data-bs-target="#organizacional" type="button" role="tab" aria-controls="organizacional" aria-selected="false">Psicología Organizacional</button>
-                </li>
-            </ul>
-            
-            <!-- Contenido de las cards -->
-            <div class="tab-content" id="comunidad-tabContent">
-                <div class="tab-pane fade show active" id="todos" role="tabpanel" aria-labelledby="todos-tab">
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="position-relative">
-                                    <span class="badge bg-warning position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Gerontología</span>
-                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">10 Jun 2023</span>
-                                    <img src="./img/blog/articulo3.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
-                                </div>
-                                <div class="card-body d-flex flex-column">
-                                    <h2 class="card-title h5">Título del artículo 1</h2>
-                                    <p class="card-text flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, repudiandae amet reiciendis similique iure quod.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="position-relative">
-                                    <span class="badge bg-info position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Gerontología</span>
-                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">10 Jun 2023</span>
-                                    <img src="./img/blog/articulo2.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
-                                </div>
-                                <div class="card-body d-flex flex-column">
-                                    <h2 class="card-title h5">Título del artículo 1</h2>
-                                    <p class="card-text flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, repudiandae amet reiciendis similique iure quod.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="position-relative">
-                                    <span class="badge bg-danger position-absolute top-0 start-0 m-2" style="width: auto;" aria-label="Área del artículo">Gerontología</span>
-                                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2" style="width: auto;" aria-label="Fecha del artículo">10 Jun 2023</span>
-                                    <img src="./img/blog/articulo1.jpg" class="card-img-top" alt="Imagen representativa del artículo 1">
-                                </div>
-                                <div class="card-body d-flex flex-column">
-                                    <h2 class="card-title h5">Título del artículo 1</h2>
-                                    <p class="card-text flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, repudiandae amet reiciendis similique iure quod.</p>
-                                </div>
-                            </div>
-                        </div>
-
+            <!-- Hero Section -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right">
+                    <span class="badge bg-primary mb-2">Comunidad</span>
+                    <h2 class="display-4 fw-bold mb-3">Comunidad PSI</h2>
+                    <h3 class="h5 text-muted mb-4">Conecta, Aprende y Crece Profesionalmente</h3>
+                    <p class="lead mb-4">Forma parte de una red activa de profesionales y estudiantes de psicología. Accede a contenido premium, herramientas especializadas y networking con expertos del sector.</p>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="#comunidad" class="btn btn-primary btn-lg" aria-label="Unirse a la comunidad">
+                            <i class="fas fa-users me-2"></i>Unirme ahora
+                        </a>
+                        <a href="" class="btn btn-outline-primary btn-lg" aria-label="Explorar recursos disponibles">
+                            <i class="fas fa-book-open me-2"></i>Explorar recursos
+                        </a>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="clinica" role="tabpanel" aria-labelledby="clinica-tab">
-                    <!-- Contenido para Psicología Clínica -->
-                </div>
-                <div class="tab-pane fade" id="educativa" role="tabpanel" aria-labelledby="educativa-tab">
-                    <!-- Contenido para Psicología Educativa -->
-                </div>
-                <div class="tab-pane fade" id="organizacional" role="tabpanel" aria-labelledby="organizacional-tab">
-                    <!-- Contenido para Psicología Organizacional -->
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="card shadow-lg border-0 rounded-lg">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-envelope-open-text fa-3x text-primary mb-3"></i>
+                                <h4 class="h5">Obtén contenido exclusivo</h4>
+                                <p class="text-muted">Sé el primero en recibir actualizaciones y recursos</p>
+                            </div>
+                            <form class="needs-validation" novalidate>
+                                <div class="mb-4">
+                                    <label for="emailSuscripcion" class="form-label">Correo electrónico</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-transparent">
+                                            <i class="fas fa-envelope text-primary"></i>
+                                        </span>
+                                        <input type="email" class="form-control form-control-lg" id="emailSuscripcion" 
+                                               placeholder="tu@email.com" required 
+                                               aria-describedby="emailHelp">
+                                        <div class="invalid-feedback">
+                                            Por favor, ingresa un correo válido
+                                        </div>
+                                    </div>
+                                    <div class="form-text" id="emailHelp">
+                                        <i class="fas fa-lock me-1"></i>Tu información está segura con nosotros
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Suscribirme
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="text-center mt-4">
-                <button class="btn btn-primary" type="button" aria-label="Ver más artículos">
-                    Ver más
-                </button>
+            <!-- Publicaciones Section -->
+            <div class="row mb-4">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <h3 class="h2 mb-4">Últimas publicaciones</h3>
+                        <div class="btn-group" role="group" aria-label="Filtros de categorías">
+                            <button type="button" class="btn btn-outline-primary active">Todos</button>
+                            <button type="button" class="btn btn-outline-primary">Artículos</button>
+                            <button type="button" class="btn btn-outline-primary">Recursos</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <div class="row g-4">
+                <!-- Artículo 1 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <article class="card h-100 border-0 shadow-sm hover-scale">
+                        <div class="position-relative">
+                            <img src="./img/blog/articulo3.jpg" class="card-img-top" alt="Psicología geriátrica y bienestar"
+                                 loading="lazy">
+                            <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                <span class="badge bg-warning" aria-label="Categoría">Gerontología</span>
+                                <span class="badge bg-light text-dark" aria-label="Fecha">
+                                    <i class="far fa-calendar-alt me-1"></i>10 Jun 2023
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title h5 mb-3">Envejecimiento Activo: Claves para una Vida Plena</h4>
+                            <p class="card-text text-muted">Descubre las estrategias más efectivas para mantener una mente activa y saludable durante el envejecimiento.</p>
+                            <a href="#" class="btn btn-link text-primary p-0">
+                                Leer más <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artículo 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <article class="card h-100 border-0 shadow-sm hover-scale">
+                        <div class="position-relative">
+                            <img src="./img/blog/articulo2.jpg" class="card-img-top" alt="Terapias innovadoras en psicología"
+                                 loading="lazy">
+                            <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                <span class="badge bg-info" aria-label="Categoría">Terapias</span>
+                                <span class="badge bg-light text-dark" aria-label="Fecha">
+                                    <i class="far fa-calendar-alt me-1"></i>15 Jun 2023
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title h5 mb-3">Nuevas Tendencias en Psicoterapia</h4>
+                            <p class="card-text text-muted">Explora las últimas innovaciones en terapias psicológicas y su impacto en el tratamiento.</p>
+                            <a href="#" class="btn btn-link text-primary p-0">
+                                Leer más <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artículo 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <article class="card h-100 border-0 shadow-sm hover-scale">
+                        <div class="position-relative">
+                            <img src="./img/blog/articulo1.jpg" class="card-img-top" alt="Investigación en psicología"
+                                 loading="lazy">
+                            <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
+                                <span class="badge bg-danger" aria-label="Categoría">Investigación</span>
+                                <span class="badge bg-light text-dark" aria-label="Fecha">
+                                    <i class="far fa-calendar-alt me-1"></i>20 Jun 2023
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title h5 mb-3">Avances en Neuropsicología</h4>
+                            <p class="card-text text-muted">Los últimos descubrimientos en el campo de la neuropsicología y sus aplicaciones prácticas.</p>
+                            <a href="#" class="btn btn-link text-primary p-0">
+                                Leer más <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+                <a href="#blog" class="btn btn-outline-primary btn-lg">
+                    Ver todas las publicaciones <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
         </div>
     </section>
     
@@ -614,30 +1238,7 @@
         });
     </script>
 <!-- jQuery -->
-    <script>
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel({
-                margin: 10, // Espaciado entre logos
-                loop: true, // Carrusel infinito
-                autoplay: true,
-                center: true,
-                // Reproducción automática
-                autoplayTimeout: 1000,
-                 // Tiempo entre cada pase (3 segundos)
-                responsive: {
-                    0: {
-                        items: 4 // Mostrar 1 logo en pantallas pequeñas
-                    },
-                    600: {
-                        items: 4 // Mostrar 3 logos en pantallas medianas
-                    },
-                    1000: {
-                        items: 8 // Mostrar 5 logos en pantallas grandes
-                    }
-                }
-            });
-        });
-        </script>
+
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const counters = document.querySelectorAll('.counter');
@@ -661,10 +1262,36 @@
         });
     });
     </script>
-
-    <!-- bootstrap -->
+        <script>
+            $(document).ready(function(){
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    dots: true,                
+                    responsive: {
+                        0: {
+                            items: 1.3
+                        },
+                        600: {
+                            items: 2.3
+                        },
+                        1000: {
+                            items: 3.8
+                        }
+                    }
+                });
+            });
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- navbarJS -->
      <script src="js/navBar.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+         AOS.init();
+       </script>
+     <script src="js/botones.js"></script>
 </body>
 </html>

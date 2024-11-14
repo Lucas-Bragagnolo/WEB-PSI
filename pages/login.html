@@ -1,83 +1,177 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de inicio de sesión para acceder a tu cuenta">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Iniciar Sesión</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(to right, #0447e0, #3354a3);
-        }
-        .login-container {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-        }
-        input {
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        button {
-            margin-top: 1rem;
-            padding: 0.5rem;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        @media (max-width: 480px) {
-            .login-container {
-                padding: 1rem;
-            }
-        }
-    </style>
+    <title>Iniciar Sesión | Comunidad PSI</title>
 </head>
-<body class="bg-gradient-primary">
-    <div class="login-container">
-        <img src="../img/logo_new.png" alt="">
-        <form action="#" method="post">
-            <label for="username">Nombre de usuario:</label>
-            <input type="text" id="username" name="username" required autocomplete="username">
+<body class="bg-gradient-primary min-vh-100 d-flex align-items-center">
+    <div class="container py-5">
+        <div class="row justify-content-center shadow-lg rounded-4 bg-white overflow-hidden" >
+            <div class="col-lg-6 d-none d-lg-block p-0">
+                <img src="../img/mujer_trabajando.jpg" alt="Mujer trabajando en computadora" class="w-100 h-100 object-fit-cover">
+            </div>
             
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required autocomplete="current-password">
+            <div class="col-lg-6 col-md-8 col-11 p-4 p-lg-5" id="loginPanel">
+                <div class="text-center mb-4">
+                    <img src="../img/logo_comunidad_grande.png" alt="Logo de la plataforma" class="img-fluid mb-4" style="max-width: 200px;">
+                    <h1 class="h2 text-primary fw-bold">¡Bienvenido!</h1>
+                    <p class="text-muted">Inicia sesión para acceder a la comunidad</p>
+                </div>
+
+                <form id="loginForm" action="./comunidad_psi.html" novalidate>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" name="email"  placeholder="nombre@ejemplo.com" required >
+                        <label for="email"><i class="fas fa-envelope me-2"></i>Correo electrónico</label>
+                        <div class="invalid-feedback">
+                            Por favor, ingresa un correo electrónico válido
+                        </div>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password"  name="password" placeholder="Contraseña"required minlength="8" autocomplete="current-password">
+                        <label for="password"><i class="fas fa-lock me-2"></i>Contraseña</label>
+                        <div class="invalid-feedback">
+                            La contraseña debe tener al menos 8 caracteres
+                        </div>
+                        <button type="button" 
+                                class="btn btn-link position-absolute end-0 top-50 translate-middle-y text-muted pe-3"
+                                onclick="togglePassword()">
+                            <i class="fas fa-eye" id="togglePassword"></i>
+                        </button>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="remember" name="remember">
+                                <label class="form-check-label text-muted" for="remember">
+                                    Recordarme
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6 text-end">
+                            <a href="#" class="text-primary text-decoration-none" onclick="togglePanels('recovery')">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </div>
+
+                    <button type="submit" 
+                            class="btn btn-primary w-100 py-3 mb-3">
+                        <i class="fas fa-sign-in-alt me-2"></i>Iniciar Sesión
+                    </button>
+
+                    <p class="text-center text-muted">
+                        ¿No tienes una cuenta? 
+                        <a href="#" class="text-primary text-decoration-none" onclick="togglePanels('register')">Regístrate aquí</a>
+                    </p>
+                </form>
+            </div>
+            <!-- Panel de registro -->
+            <div class="col-lg-6 col-md-8 col-11 p-4 p-lg-5 d-none" id="registerPanel">
+                <div class="text-center mb-4">
+                    <img src="../img/logo_comunidad_grande.png" alt="Logo de la plataforma" class="img-fluid mb-4" style="max-width: 200px;">
+                    <h2 class="h2 text-primary fw-bold">¡Regístrate!</h2>
+                    <p class="text-muted">Crea tu cuenta para unirte a la comunidad</p>
+                </div>
+
+                <form id="registerForm" novalidate>
+                    <div class="form-floating mb-3">
+                        <input type="text"   class="form-control"  id="nombre"  name="nombre"   placeholder="Tu nombre" required>
+                        <label for="nombre"><i class="fas fa-user me-2"></i>Nombre completo</label>
+                        <div class="invalid-feedback">
+                            Por favor, ingresa tu nombre
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email"  class="form-control"  id="emailRegister"   name="email"   placeholder="nombre@ejemplo.com"  required>
+                        <label for="emailRegister"><i class="fas fa-envelope me-2"></i>Correo electrónico</label>
+                        <div class="invalid-feedback">
+                            Por favor, ingresa un correo electrónico válido
+                        </div>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="passwordRegister"  name="passwordRegister" placeholder="Contraseña" required minlength="8" autocomplete="current-password">
+                        <label for="password"><i class="fas fa-lock me-2"></i>Contraseña</label>
+                        <div class="invalid-feedback">
+                            La contraseña debe tener al menos 8 caracteres
+                        </div>
+                        <button type="button" 
+                                class="btn btn-link position-absolute end-0 top-50 translate-middle-y text-muted pe-3"
+                                onclick="togglePassword()">
+                            <i class="fas fa-eye" id="togglePasswordR"></i>
+                        </button>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="confirmPassword"  name="confirmPassword" placeholder="Contraseña"required minlength="8" autocomplete="current-password">
+                        <label for="password"><i class="fas fa-lock me-2"></i>Contraseña</label>
+                        <div class="invalid-feedback">
+                            La contraseña debe tener al menos 8 caracteres
+                        </div>
+                        <button type="button" 
+                                class="btn btn-link position-absolute end-0 top-50 translate-middle-y text-muted pe-3"
+                                onclick="togglePassword()">
+                            <i class="fas fa-eye" id="togglePasswordR2"></i>
+                        </button>
+                    </div>
+
+                    <button type="submit" 
+                            class="btn btn-primary w-100 py-3 mb-3">
+                        <i class="fas fa-user-plus me-2"></i>Registrarse
+                    </button>
+
+                    <p class="text-center text-muted">
+                        ¿Ya tienes una cuenta? 
+                        <a href="#" class="text-primary text-decoration-none" onclick="togglePanels()">Inicia sesión aquí</a>
+                    </p>
+                </form>
+            </div>
+
+            <!-- Panel de recuperación de contraseña -->
+            <div class="col-lg-6 col-md-8 col-11 p-4 p-lg-5 d-none" id="recoveryPanel">
+                <h2 class="text-center mb-4">Recuperar Contraseña</h2>
+                <form class="needs-validation" novalidate>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="emailRecovery" name="emailRecovery" placeholder="nombre@ejemplo.com" required>
+                        <label for="emailRecovery"><i class="fas fa-envelope me-2"></i>Correo electrónico</label>
+                        <div class="invalid-feedback">
+                            Por favor, ingresa un correo electrónico válido
+                        </div>
+                    </div>
+        
+                    <button type="submit" class="btn btn-primary w-100 py-3 mb-3">
+                        <i class="fas fa-key me-2"></i>Enviar enlace de recuperación
+                    </button>
+        
+                    <p class="text-center text-muted">
+                        ¿Recordaste tu contraseña? 
+                        <a href="#" class="text-primary text-decoration-none" onclick="togglePanels()">Inicia sesión aquí</a>
+                    </p>
+                </form>
+            </div>
+
+            <!-- Panel de Recuperación de Contraseña -->
+
             
-            <button type="submit">Iniciar Sesión</button>
-        </form>
+
+        </div>
+
+        <!-- Formulario de Registro (inicialmente oculto) -->
+        <div class="row justify-content-center shadow-lg rounded-4 bg-white overflow-hidden d-none">
+            <div class="col-lg-6 d-none d-lg-block p-0">
+                <img src="../img/mujer_trabajando.jpg" alt="Mujer trabajando en computadora" class="w-100 h-100 object-fit-cover">
+            </div>
+            
+
+        </div>    
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/login.js"> </script>
 </body>
 </html>

@@ -28,59 +28,24 @@
     <title>Comunidad PSI</title>
 </head>
 <body>
-    <header>
-        
-        <div class="toast-container position-fixed bottom-0 end-0 p-3">
-            <div id="promoToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                    <strong class="me-auto">¡Promoción Especial!</strong>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                    ¡20% de descuento en todos nuestros cursos online! Oferta por tiempo limitado.
-                </div>
-            </div>
-        </div>
-        <div id="topBar" class="alert alert-info alert-dismissible fade show mb-0" role="alert">
-            <div class="container">
-                <strong>¡Oferta Especial!</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nulla aut sed accusamus ullam maxime!
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        </div>        
-        <div id="languageBar" class="bg-dark py-2">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6 mb-2 mb-md-0 text-center text-md-start">
-                        <a href="#" class="text-white text-decoration-none">
-                            <i class="bi bi-question-circle"></i> Preguntas frecuentes | <i class="bi bi-telephone"></i> +54 9 112233445566
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-6 text-center text-md-end">
-                        <a href="#" class="me-2"><img src="../img/banderas/estados-unidos.png" alt="English" width="24" height="16"></a>
-                        <a href="#" class="me-2"><img src="../img/banderas/mexico.png" alt="Español" width="24" height="16"></a>
-                        <a class="btn btn-outline-light mt-2 mt-md-0" href="javascript:void(0)">Ingresar</a>
-                    </div>
-                </div>
-            </div>
-        </div>           
+    <header>         
         <nav class="navbar navbar-expand-lg navbar-ligth bg-light py-2">
-            <div class="container">
-    
-                <a class="navbar-brand" href="javascript:void(0)"><img src="../img/logo_chico.png" alt="Logo" class="img-fluid px-3 py-2"></a>
+            <div class="container">    
+                <a class="navbar-brand" href="javascript:void(0)"><img src="../img/logo_comunidad_chico.png" alt="Logo" class="img-fluid"></a>
                 <button class="btn btn-navbar d-lg-none d-flex align-items-center justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#searchCollapse" aria-expanded="false" aria-controls="searchCollapse">
                     <i class="bi bi-search"></i>
-                </button>
-                <button class="btn btn-navbar d-flex align-items-center justify-content-center d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftOffcanvas" aria-controls="leftOffcanvas">
-                    <i class="bi bi-cart"></i>
                 </button>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Nosotros</a>
-                        </li>     
+                            <a class="nav-link" aria-current="page" href="./comunidad_psi.html">Comunidad</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./perfil_comunidad.html">Mi cuenta</a>
+                        </li>                            
                         <li class="nav-item d-lg-none">
                             <a class="nav-link d-flex align-items-center" href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#areasOffcanvas" aria-controls="areasOffcanvas">
                                 Areas <i class="bi bi-chevron-right ms-1"></i>
@@ -134,22 +99,9 @@
                                 </div>
                             </div>
                         </li>                                      
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="newDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Capacitaciones
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="newDropdown">
-                                <li><a class="dropdown-item" href="#">Cursos</a></li>
-                                <li><a class="dropdown-item" href="#">Especializaciones</a></li>
-                                <li><a class="dropdown-item" href="#">Video Cursos</a></li>
-                                <li><a class="dropdown-item" href="#">Seminarios</a></li>
-                            </ul>
-                        </li>  
-                        <li class="nav-item">
-                            <a class="btn btn-primary me-2" href="javascript:void(0)">Comunidad PSI</a>
-                        </li>
+
                     </ul>
-                </div>
+                </div>            
                 <form class="d-flex me-2 d-none d-lg-block">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="¿Qué buscas?" aria-label="Buscar" aria-describedby="button-search">
@@ -158,29 +110,14 @@
                         </button>
                     </div>
                 </form>
-                <button class="btn btn-navbar d-none d-lg-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftOffcanvas" aria-controls="leftOffcanvas">
-                    <i class="bi bi-cart"></i>
-                </button>
     
             </div>
             
         </nav>
-        
-        <!-- Carrito -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="leftOffcanvas" aria-labelledby="leftOffcanvasLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="leftOffcanvasLabel">Menú lateral</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <p>Este es el contenido del offcanvas que sale desde la izquierda.</p>
-                <!-- Aquí puedes agregar más contenido según tus necesidades -->
-            </div>
-        </div>
     
         <!-- Collapse de busqueda -->        
         <div class="collapse" id="searchCollapse">
-            <div class="container mt-3">
+            <div class="container mt-3 mb-4">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="button-search">
                     <button class="btn btn-outline-secondary" type="button" id="button-search">
@@ -210,7 +147,7 @@
                 </ul>
             </div>
         </div>
-        </header> 
+    </header> 
 
 
 <main class="container mt-5">
@@ -218,86 +155,195 @@
         <!-- Columna principal del artículo -->
         <div class="col-lg-8">
             <article>
-                <h1 class="mb-4">Título del Artículo</h1>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio facere facilis vitae enim magnam inventore temporibus, perspiciatis nisi quibusdam iste voluptatum, repellat non, beatae provident. Repudiandae adipisci quo mollitia.</p>
-                
-                <img src="../img/blog/articulo1.jpg" alt="Descripción de la imagen" class="img-fluid rounded mb-4">
-                
-                <section>
-                    <h2>Sección 1</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero neque sapiente porro! Rem beatae sunt, eius nobis ipsum accusantium vero, doloremque suscipit molestiae placeat pariatur facere sit provident porro illo totam quae illum voluptatum ex similique! Quod quo voluptatum tempore unde sint qui eligendi incidunt reiciendis. Corrupti adipisci voluptate asperiores iusto distinctio, in culpa numquam architecto, repudiandae error, aut ad iste qui neque? Voluptatibus quia ut molestias cum dicta rerum quisquam commodi distinctio provident, quibusdam debitis iusto praesentium. Excepturi consequatur quaerat eveniet repellendus facilis quam qui esse aspernatur praesentium animi est enim provident tenetur sit at ab accusantium eaque iusto itaque, asperiores neque optio magni quisquam. Accusamus non earum deleniti eligendi animi ratione autem, totam nobis a quas corporis veniam qui natus veritatis velit numquam repellendus quaerat repudiandae dolores iste! Accusamus sint assumenda perspiciatis sapiente, saepe quam delectus vel asperiores quibusdam odit magnam nesciunt sequi in illo, dignissimos quia voluptatibus nemo optio quaerat facere! Sit dolorem eos facere nesciunt suscipit pariatur iusto illo ipsa nemo fugiat, sint tenetur explicabo harum repellat consequuntur deleniti repudiandae esse distinctio sapiente saepe libero ea ipsam minus. Nulla ab numquam dolorem, consectetur repellendus error qui dicta blanditiis corporis tempore voluptas autem libero facilis totam ipsa!</p>
-                </section>
-                
-                <section>
-                    <h2>Sección 2</h2>
-                    <p>Contenido de la sección 2...</p>
-                    
-                    <div class="ratio ratio-16x9 mb-4">
-                        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" allowfullscreen></iframe>
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="./comunidad_psi.html">Comunidad</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Título del Artículo</li>
+                    </ol>
+                </nav>
+
+                <header class="article-header mb-4">
+                    <span class="badge bg-primary mb-2">Categoría</span>
+                    <h1 class="display-6 mb-3">Pensando el Acompañamiento Terapéutico – De la teoría a la práctica.</h1>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Autor" class="rounded-circle me-2" width="40" height="40">
+                        <div>
+                            <span class="text-muted">Por <a href="#" class="text-decoration-none">Nombre Autor</a></span>
+                            <time datetime="2024-05-01" class="d-block text-muted">15 de septiembre de 2024</time>
+                        </div>
                     </div>
-                </section>
+                </header>
                 
-                <section>
-                    <h2>Material Descargable</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="ruta-del-archivo.pdf" download class="text-decoration-none">
-                                <i class="bi bi-file-earmark-pdf me-2"></i>Documento PDF
+                <figure class="figure mb-4">
+                    <img src="../img/blog/articulo1_1.png" alt="Descripción detallada de la imagen" class="figure-img img-fluid rounded shadow">
+                    <figcaption class="figure-caption text-center">Descripción detallada de la imagen</figcaption>
+                </figure>
+                
+                <div class="article-content">
+                    <section class="mb-5">
+                        <h2 class="h3 mb-4">¿Qué pasa cuando la teoría difiere de la realidad?</h2>
+                        <p class="mb-4">La teoría resalta la importancia del trabajo interdisciplinario en el acompañamiento terapéutico. La figura del acompañante es miembro auxiliar del equipo terapéutico tratante, compuesto por psiquiatra, psicólogo, médico, neurólogo, entre otras tantas profesiones. La realidad es que en la mayoría de los casos nos encontramos con la inexistencia de dicho equipo, y con la falta de supervisión sobre el acompañante terapéutico interviniente. Es requisito fundamental que un médico realice la solicitud de A.T., pero éste pedido en muchos casos es solicitado por la familia y no como una estrategia terapéutica.</p>
+                        <p class="mb-4">Lo que convierte al A.T., ante la vista de la familia, en una especie de empleado multi-función, que debe estar dispuesto a cumplir con sus demandas. Otras veces el pedido es realizado basado en la desinformación sobre su rol y función por parte del medico solicitante, que espera se asista al paciente y su familia según sus necesidades, con el único fin de aliviar sus responsabilidades.</p>
+                        <p class="mb-4">Desde este punto es que el A.T. se encuentra ante las constantes demandas cruzadas por las partes. Como resultante de esta situación, y si nuestro posicionamiento no es el correcto, nos encontramos siendo: niñeras, damas de compañía, cuidadores, cocineros, maestras particulares, quien hace los mandados, por mencionar sólo algunos roles.</p>
+                    </section>
+                
+                    <section class="mb-5">
+                        <h2 class="h3 mb-4">Sección 2</h2>
+                        <p class="mb-4">Contenido de la sección 2...</p>                    
+                        <div class="ratio ratio-16x9 mb-4 shadow rounded">
+                            <iframe src="https://www.youtube.com/embed/VIDEO_ID" 
+                                    title="Título descriptivo del video" 
+                                    allowfullscreen
+                                    loading="lazy">
+                            </iframe>
+                        </div>
+                    </section>
+                
+                    <section class="mb-5">
+                        <h2 class="h3 mb-4">Material Descargable</h2>
+                        <div class="list-group">
+                            <a href="ruta-del-archivo.pdf" 
+                               download 
+                               class="list-group-item list-group-item-action d-flex align-items-center">
+                                <i class="bi bi-file-earmark-pdf fs-4 me-3 text-danger"></i>
+                                <div>
+                                    <h3 class="h6 mb-0">Documento PDF</h3>
+                                    <small class="text-muted">1.2 MB - Actualizado el 1 de Mayo</small>
+                                </div>
                             </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="ruta-del-archivo.docx" download class="text-decoration-none">
-                                <i class="bi bi-file-earmark-word me-2"></i>Documento Word
+                            <a href="ruta-del-archivo.docx" 
+                               download 
+                               class="list-group-item list-group-item-action d-flex align-items-center">
+                                <i class="bi bi-file-earmark-word fs-4 me-3 text-primary"></i>
+                                <div>
+                                    <h3 class="h6 mb-0">Documento Word</h3>
+                                    <small class="text-muted">852 KB - Actualizado el 1 de Mayo</small>
+                                </div>
                             </a>
-                        </li>
-                    </ul>
-                </section>
+                        </div>
+                    </section>
+
+                    <div class="d-flex justify-content-between align-items-center border-top border-bottom py-3 mb-4">
+                        <button class="btn btn-outline-primary d-flex align-items-center">
+                            <i class="bi bi-hand-thumbs-up me-2"></i>
+                            <span>Me gusta</span>
+                        </button>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-outline-secondary" aria-label="Compartir en Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary" aria-label="Compartir en Twitter">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary" aria-label="Compartir en LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
         
-        <!-- Columna lateral para posteos recientes (solo visible en desktop) -->
-        <div class="col-lg-4 d-none d-lg-block">
+        <!-- Columna lateral para posteos recientes -->
+        <div class="col-lg-4">
             <aside class="sticky-top" style="top: 2rem;">
-                <h3>Posteos Recientes</h3>
-                <div class="card mb-3 border-0">
-                    <div class="row g-0">
-                        <div class="col-md-5">
-                            <div class="position-relative">
-                                <span class="badge bg-primary position-absolute top-0 start-0 m-2">Psicología</span>
-                                <img src="../img/blog/articulo1.jpg" alt="Descripción de la imagen" class="img-fluid rounded mb-4">
-                            </div>                        
-                        </div>
-                        <div class="col-md-7">
-                            <div class="card-body py-2">
-                                <p class="card-text  m-0"><small class="text-muted">1 de Mayo, 2024</small></p>
-                                <h5 class="card-title">Los trastornos Infantiles</h5>
-                                
-                                <p class="card-text  m-0">Breve descripción del post reciente 1...</p>
-
-                            </div>
+                <!-- Artículos Relacionados -->
+                <div class="card shadow-sm mb-4" role="complementary">
+                    <div class="card-body">
+                        <h3 class="h4 mb-4" id="articulos-relacionados">Artículos Relacionados</h3>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action py-3" aria-labelledby="titulo-articulo-1">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-4">
+                                        <div class="position-relative">
+                                            <span class="badge bg-primary position-absolute top-0 start-0 m-1" role="tag">Psicología</span>
+                                            <img src="../img/blog/articulo1.jpg" 
+                                                 alt="Niños jugando en terapia psicológica" 
+                                                 class="img-fluid rounded"
+                                                 width="100"
+                                                 height="100"
+                                                 loading="lazy">
+                                        </div>                        
+                                    </div>
+                                    <div class="col-8 ps-3">
+                                        <h4 class="h6 mb-1" id="titulo-articulo-1">Los trastornos Infantiles</h4>
+                                        <time datetime="2024-05-01" class="small text-muted d-block">1 de Mayo, 2024</time>
+                                        <span class="visually-hidden">Leer más sobre Los trastornos Infantiles</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-3" aria-labelledby="titulo-articulo-2">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-4">
+                                        <div class="position-relative">
+                                            <span class="badge bg-danger position-absolute top-0 start-0 m-1" role="tag">Autismo</span>
+                                            <img src="../img/blog/articulo2.jpg" 
+                                                 alt="Niño con autismo en sesión terapéutica" 
+                                                 class="img-fluid rounded"
+                                                 width="100"
+                                                 height="100"
+                                                 loading="lazy">
+                                        </div>                        
+                                    </div>
+                                    <div class="col-8 ps-3">
+                                        <h4 class="h6 mb-1" id="titulo-articulo-2">Entendiendo el Autismo</h4>
+                                        <time datetime="2024-05-01" class="small text-muted d-block">1 de Mayo, 2024</time>
+                                        <span class="visually-hidden">Leer más sobre Entendiendo el Autismo</span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <hr>
                 </div>
-                <div class="card mb-3 border-0">
-                    <div class="row g-0">
-                        <div class="col-md-5">
-                            <div class="position-relative">
-                                <span class="badge bg-danger position-absolute top-0 start-0 m-2">Autismo</span>
-                                <img src="../img/blog/articulo2.jpg" alt="Descripción de la imagen" class="img-fluid rounded mb-4">
-                            </div>                        
-                        </div>
-                        <div class="col-md-7">
-                            <div class="card-body py-2">
-                                <p class="card-text  m-0"><small class="text-muted">1 de Mayo, 2024</small></p>
-                                <h5 class="card-title">Los trastornos Infantiles</h5>
-                                
-                                <p class="card-text  m-0">Breve descripción del post reciente 1...</p>
 
-                            </div>
+                <!-- Newsletter -->
+                <div class="card shadow-sm" role="complementary">
+                    <div class="card-body">
+                        <h3 class="h4 mb-4" id="cursos-relacionados">Cursos Relacionados</h3>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action py-3" aria-labelledby="titulo-curso-1">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-4">
+                                        <div class="position-relative">
+                                            <span class="badge bg-success position-absolute top-0 start-0 m-1" role="tag">Curso</span>
+                                            <img src="../img/curso1.png" 
+                                                 alt="Introducción a la Psicología Infantil" 
+                                                 class="img-fluid rounded"
+                                                 width="100"
+                                                 height="100"
+                                                 loading="lazy">
+                                        </div>                        
+                                    </div>
+                                    <div class="col-8 ps-3">
+                                        <h4 class="h6 mb-1" id="titulo-curso-1">Introducción a la Psicología Infantil</h4>
+                                        <p class="small text-muted mb-0">Duración: 8 semanas</p>
+                                        <span class="badge bg-primary">Próximo inicio: Junio 2024</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-3" aria-labelledby="titulo-curso-2">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-4">
+                                        <div class="position-relative">
+                                            <span class="badge bg-success position-absolute top-0 start-0 m-1" role="tag">Curso</span>
+                                            <img src="../img/curso2.png" 
+                                                 alt="Terapia Cognitivo-Conductual" 
+                                                 class="img-fluid rounded"
+                                                 width="100"
+                                                 height="100"
+                                                 loading="lazy">
+                                        </div>                        
+                                    </div>
+                                    <div class="col-8 ps-3">
+                                        <h4 class="h6 mb-1" id="titulo-curso-2">Terapia Cognitivo-Conductual</h4>
+                                        <p class="small text-muted mb-0">Duración: 12 semanas</p>
+                                        <span class="badge bg-primary">Próximo inicio: Julio 2024</span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <hr>
                 </div>
             </aside>
         </div>

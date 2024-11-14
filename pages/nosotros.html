@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Asociación PSI, psi, cursos online, psicología, cursos psicología, especializaciones psicología">
+    <meta name="description" content="Your description here">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <!-- Incluir Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Incluir jQuery (es necesario para Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Incluir Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Comunidad PSI</title>
+</head>
+<body>
+    <header>
+        
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/1234567890" class="btn-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Botón Volver Arriba -->
+    <a href="#" class="btn-scroll-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+        <div id="topBar" class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+            <div class="container">
+                <strong>¡Oferta Especial!</strong> Esto puede ser una promocion válida. Por sólo <strong>10 USD</strong> podes llevarte un curos adicional!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>        
+        <div id="languageBar" class="bg-dark py-2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-2 mb-md-0 text-center text-md-start d-none d-lg-block">
+                        <a href="#" class="text-white text-decoration-none">
+                            <i class="bi bi-question-circle"></i> FAQs
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end">
+                        <a href="./pages/login.html" class=" btn btn-warning text-white text-decoration-none me-2">
+                           
+                            <i class="bi bi-people-fill"></i>
+                            Comunidad
+                        </a>
+                        <a href="./pages/login_plataforma.html" class=" btn btn-primary text-white text-decoration-none me-2">
+                           
+                            <i class="bi bi-person-circle"></i>
+                            Ingresar
+                        </a>
+                        <a href="#" class="text-white text-decoration-none me-2">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none me-2">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>           
+        <nav class="navbar navbar-expand-lg navbar-ligth bg-light py-2">
+            <div class="container">
+    
+                <a class="navbar-brand" href="javascript:void(0)"><img src="../img/logo_nuevo_chico2.png" alt="Logo" class="img-fluid"></a>
+                <button class="btn btn-navbar d-lg-none d-flex align-items-center justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#searchCollapse" aria-expanded="false" aria-controls="searchCollapse">
+                    <i class="bi bi-search"></i>
+                </button>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+                        </li>     
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link d-flex align-items-center" href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#areasOffcanvas" aria-controls="areasOffcanvas">
+                                Areas <i class="bi bi-chevron-right ms-1"></i>
+                            </a>
+                        </li>
+                        <!-- Navbar de Áreas para pantallas grandes -->                     
+                        <li class="nav-item dropdown position-static d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Áreas
+                            </a>
+                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Psicología</h5>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
+                                            <a class="dropdown-item" href="#">Hipnosis terapéutica</a>
+                                            <a class="dropdown-item" href="#">Trastornos Infantiles</a>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Autismo</h5>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Educación</h5>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h5 class="dropdown-header">Otras Áreas</h5>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
+                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
+                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
+                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
+                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
+                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>                                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="newDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Capacitaciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="newDropdown">
+                                <li><a class="dropdown-item" href="#">Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Especializaciones</a></li>
+                                <li><a class="dropdown-item" href="#">Video Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Seminarios</a></li>
+                            </ul>
+                        </li>  
+                    </ul>
+                </div>            
+                <form class="d-flex me-2 d-none d-lg-block">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="¿Qué buscas?" aria-label="Buscar" aria-describedby="button-search">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-search">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+    
+            </div>
+            
+        </nav>
+        
+        <!-- Carrito -->
+    
+        <!-- Collapse de busqueda -->        
+        <div class="collapse" id="searchCollapse">
+            <div class="container mt-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="button-search">
+                    <button class="btn btn-outline-secondary" type="button" id="button-search">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Offcanvas para áreas -->
+        <div class="offcanvas offcanvas-end h-100" tabindex="-1" id="areasOffcanvas" aria-labelledby="areasOffcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="areasOffcanvasLabel">Áreas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h5 class="dropdown-header">Psicología</h5>
+                        <ul>
+                            <li><a href="#" class="text-decoration-none">Introducción a la Psicología</a></li>
+                            <li><a href="#" class="text-decoration-none">Psicología Clínica</a></li>
+                            <li><a href="#" class="text-decoration-none">Psicología Infantil</a></li>
+                        </ul>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </header> 
+
+<!-- Sección Quiénes Somos -->
+<section class="about-us py-5" id="quienes-somos">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="position-relative">
+                    <img src="../img/590x450.jpg" alt="Equipo de profesionales de Asociación PSI" class="img-fluid rounded shadow-lg">
+                    <div class="position-absolute bottom-0 end-0 bg-primary p-4 rounded shadow-lg d-none d-lg-block">
+                        <div class="text-center">
+                            <span class="display-6 fw-bold text-white">15+</span>
+                            <p class="mb-0 text-white text-uppercase small">años de experiencia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ps-lg-4">
+                    <h2 class="display-4 mb-4" id="about-title">Quiénes Somos</h2>
+                    <p class="lead mb-4" role="contentinfo">Nuestro equipo está conformado por distintos profesionales que cada día busca las mejores capacitaciones para ofrecer a nuestros alumnos. Además de las formaciones propias, se realizan convenios exclusivos con otras instituciones buscando lo mejor que cada una tiene para ofrecer, con certificaciones/ títulos oficiales a nivel nacional. ​ Todas ellas son evaluadas en cuanto al contenido académico y cuerpo docente interviniente. De esa manera, aseguramos al alumnado la calidad de los programas. ​
+
+                    </p>
+                    
+                    <nav class="accordion" id="aboutAccordion">
+                        <div class="accordion-item" role="tablist">
+                            <h3 class="accordion-header" id="misionHeader">
+                                <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#misionCollapse" aria-expanded="true" aria-controls="misionCollapse">
+                                    <i class="bi bi-flag me-2" aria-hidden="true"></i>
+                                    <span>Nuestra Misión</span>
+                                </button>
+                            </h3>
+                            <div id="misionCollapse" class="accordion-collapse collapse show" aria-labelledby="misionHeader" role="tabpanel">
+                                <div class="accordion-body">
+                                    Brindar atención psicológica de calidad y accesible para todos, promoviendo el bienestar emocional y la salud mental en nuestra comunidad.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="visionHeader">
+                                <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#visionCollapse" aria-expanded="false" aria-controls="visionCollapse">
+                                    <i class="bi bi-eye me-2" aria-hidden="true"></i>
+                                    <span>Nuestra Visión</span>
+                                </button>
+                            </h3>
+                            <div id="visionCollapse" class="accordion-collapse collapse" aria-labelledby="visionHeader" role="tabpanel">
+                                <div class="accordion-body">
+                                    Ser referentes en el campo de la psicología, innovando en tratamientos y formación continua para mejorar la calidad de vida de las personas.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="valoresHeader">
+                                <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#valoresCollapse" aria-expanded="false" aria-controls="valoresCollapse">
+                                    <i class="bi bi-heart me-2" aria-hidden="true"></i>
+                                    <span>Nuestros Valores</span>
+                                </button>
+                            </h3>
+                            <div id="valoresCollapse" class="accordion-collapse collapse" aria-labelledby="valoresHeader" role="tabpanel">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled values-list">
+                                        <li class="mb-2 d-flex align-items-center">
+                                            <i class="bi bi-check-circle-fill text-primary me-2" aria-hidden="true"></i>
+                                            <span>Profesionalidad</span>
+                                        </li>
+                                        <li class="mb-2 d-flex align-items-center">
+                                            <i class="bi bi-check-circle-fill text-primary me-2" aria-hidden="true"></i>
+                                            <span>Empatía</span>
+                                        </li>
+                                        <li class="mb-2 d-flex align-items-center">
+                                            <i class="bi bi-check-circle-fill text-primary me-2" aria-hidden="true"></i>
+                                            <span>Confidencialidad</span>
+                                        </li>
+                                        <li class="mb-2 d-flex align-items-center">
+                                            <i class="bi bi-check-circle-fill text-primary me-2" aria-hidden="true"></i>
+                                            <span>Compromiso social</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    
+                    <div class="mt-5 d-flex flex-wrap gap-3">
+                        <a href="#contacto" class="btn btn-primary btn-lg d-flex align-items-center" role="button">
+                            <i class="bi bi-envelope me-2"></i>
+                            Contáctanos
+                        </a>
+                        <a href="#equipo" class="btn btn-outline-primary btn-lg d-flex align-items-center" role="button">
+                            <i class="bi bi-people me-2"></i>
+                            Conoce al Equipo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Estadísticas -->
+        <div class="row mt-5 text-center g-4">
+            <div class="col-md-3 col-6">
+                <div class="p-4 bg-light rounded-3">
+                    <i class="bi bi-mortarboard-fill display-4 text-primary mb-3"></i>
+                    <h4 class="h2 mb-2">1000+</h4>
+                    <p class="mb-0">Alumnos</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-4 bg-light rounded-3">
+                    <i class="bi bi-book-fill display-4 text-primary mb-3"></i>
+                    <h4 class="h2 mb-2">25+</h4>
+                    <p class="mb-0">Cursos y Especializaciones</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-4 bg-light rounded-3">
+                    <i class="bi bi-person-workspace display-4 text-primary mb-3"></i>
+                    <h4 class="h2 mb-2">30+</h4>
+                    <p class="mb-0">Profesores</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-4 bg-light rounded-3">
+                    <i class="bi bi-award-fill display-4 text-primary mb-3"></i>
+                    <h4 class="h2 mb-2">500+</h4>
+                    <p class="mb-0">Graduados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección de Reseñas -->
+<section class="py-5 bg-light" id="reseñas">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <h2 class="display-5 fw-bold mb-3">Lo que dicen nuestros alumnos y graduados</h2>
+                <p class="text-muted">Experiencias reales de personas que han formado parte de nuestra comunidad</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Reseña 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <i class="bi bi-quote text-primary fs-1"></i>
+                        </div>
+                        <p class="mb-4">"La formación que recibí en la Asociación PSI fue excepcional. Los profesores son expertos en sus campos y el programa me preparó perfectamente para mi carrera profesional."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                <span class="h5 mb-0">ML</span>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="mb-1">María López</h6>
+                                <small class="text-muted">Graduada 2022</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reseña 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <i class="bi bi-quote text-primary fs-1"></i>
+                        </div>
+                        <p class="mb-4">"Como alumno actual, estoy impresionado por la calidad de la enseñanza y las oportunidades de aprendizaje práctico. El ambiente académico es estimulante y enriquecedor."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                <span class="h5 mb-0">JR</span>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="mb-1">Juan Rodríguez</h6>
+                                <small class="text-muted">Alumno actual</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reseña 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <i class="bi bi-quote text-primary fs-1"></i>
+                        </div>
+                        <p class="mb-4">"La Asociación PSI me brindó las herramientas necesarias para destacar en mi campo. Los programas de mentoría y el networking son invaluables."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                <span class="h5 mb-0">AG</span>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="mb-1">Ana García</h6>
+                                <small class="text-muted">Graduada 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón de CTA -->
+        <div class="text-center mt-5">
+            <a href="#contacto" class="btn btn-primary btn-lg">Únete a nuestra comunidad</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="bg-light text-dark py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-3">Asociación PSI</h4>
+                    <p>Promoviendo el bienestar mental y emocional a través de la psicología.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3"><a href="#" class="text-dark" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
+                        <li class="me-3"><a href="#" class="text-dark" aria-label="Twitter"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#" class="text-dark" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-3">Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-dark text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Sobre Nosotros</a></li>
+                        <li><a href="#contacto" class="text-dark text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h5 mb-3">Contáctanos</h4>
+                    <address>
+                        <p class="mb-2"><i class="bi bi-geo-alt me-2"></i>Calle Principal 123, Ciudad</p>
+                        <p class="mb-2"><i class="bi bi-telephone me-2"></i><a href="tel:+123456789" class="text-dark text-decoration-none">+12 345 6789</a></p>
+                        <p><i class="bi bi-envelope me-2"></i><a href="mailto:info@asociacionpsi.com" class="text-dark text-decoration-none">info@asociacionpsi.com</a></p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2024 Asociación PSI. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Política de Privacidad</a></li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Términos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: true,                responsive: {
+                    0: {
+                        items: 1.3
+                    },
+                    600: {
+                        items: 2.3
+                    },
+                    1000: {
+                        items: 3.8
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var topBar = document.getElementById('topBar');
+            var closeButton = topBar.querySelector('.btn-close');
+            
+            closeButton.addEventListener('click', function() {
+                topBar.remove();
+            });
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var toastEl = document.getElementById('promoToast');
+            var toast = new bootstrap.Toast(toastEl, {
+                autohide: false
+            });
+            toast.show();
+        });
+    </script>
+        <!-- bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="../js/botones.js"></script>
+
+</body>
+</html>
