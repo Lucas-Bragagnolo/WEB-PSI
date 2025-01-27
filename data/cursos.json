@@ -1,0 +1,408 @@
+[
+    {
+        "id": 1,
+        "titulo": "Acompañamiento y cuidados paliativos",
+        "fechainicio": "12/02",
+        "inicio": "2025-02-12",
+        "duracion": 5,
+        "imagen": "./img/650x700.png",
+        "destacado": false,
+        "area": "Gerontología",
+        "idarea": 5,
+        "colorArea": "#9000FF",
+        "tipoCurso": "Curso",
+        "tipoCursoId": 1,
+        "tipoModalidad": "OnDemand",
+        "tipoModalidadId": 1,
+        "nuevo": false,
+        "precio": 45000,
+        "horasDeCursada": 168,
+        "cantidadClases": 16,
+        "profesor": "Pedro Sanchez",
+        "profesorImg": "https://picsum.photos/100/100",
+        "profesorTitulo": "Psiquiatra",
+        "introduccion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta eum voluptates in libero laboriosam omnis et nobis nisi eveniet. Totam, pariatur. Aliquid unde nam porro ipsa at illo laborum est maiores mollitia vero doloremque consequatur eligendi, atque voluptatem, voluptatibus rem animi voluptate suscipit. Tenetur dignissimos quam explicabo unde vitae!",
+        "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "bannerCelular": "https://picsum.photos/590/540?random=",
+        "bannerEscritorio": "https://picsum.photos/1440/300?random=",
+        "reseñas": [
+            {
+                "autor": "Maria Castro",
+                "imagen": "https://picsum.photos/100/100?random=",
+                "descripcion": "Me ha encantado el curso, la profesora es muy buena y el contenido es muy bueno. Recomendado."
+            },
+            {
+                "autor": "Juan Perez",
+                "imagen": "https://picsum.photos/100/100?random=1",
+                "descripcion": "Me ha parecido muy interesante el enfoque de este curso, me ha ayudado mucho en mi trabajo."
+            },
+            {
+                "autor": "Sofia Rodriguez",
+                "imagen": "https://picsum.photos/100/100?random=2",
+                "descripcion": "La profesora es muy clara y concisa en sus explicaciones, me ha sido muy útil para mi formación."
+            }
+        ]
+
+    },
+    {
+        "id": 2,
+        "titulo": "Psicología de las personalidades",
+        "fechainicio": "19/04",
+        "inicio" : "2025-04-19",
+        "duracion": 5,
+        "imagen": "https://picsum.photos/400/600?random=1",
+        "destacado": true,
+        "area": "Psicología",
+        "idarea": 1,
+        "colorArea": "#008D34",
+        "tipoCurso": "Curso",
+        "tipoCursoId": 1,
+        "tipoModalidad": "En vivo via Zoom",
+        "tipoModalidadId": 2,
+        "nuevo": true,
+        "precio": 45000,
+        "horasDeCursada": 168,
+        "cantidadClases": 16,
+        "profesor": "Pedro Sanchez",
+        "profesorImg": "https://picsum.photos/100/100",
+        "profesorTitulo": "Psiquiatra",
+        "introduccion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta eum voluptates in libero laboriosam omnis et nobis nisi eveniet. Totam, pariatur. Aliquid unde nam porro ipsa at illo laborum est maiores mollitia vero doloremque consequatur eligendi, atque voluptatem, voluptatibus rem animi voluptate suscipit. Tenetur dignissimos quam explicabo unde vitae!",
+        "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "bannerCelular": "https://picsum.photos/590/540?random=",
+        "bannerEscritorio": "https://picsum.photos/1440/300?random=",
+        "reseñas": [
+            {
+                "autor": "Maria Castro",
+                "imagen": "https://picsum.photos/100/100?random=",
+                "descripcion": "Me ha encantado el curso, la profesora es muy buena y el contenido es muy bueno. Recomendado."
+            },
+            {
+                "autor": "Juan Perez",
+                "imagen": "https://picsum.photos/100/100?random=1",
+                "descripcion": "Me ha parecido muy interesante el enfoque de este curso, me ha ayudado mucho en mi trabajo."
+            },
+            {
+                "autor": "Sofia Rodriguez",
+                "imagen": "https://picsum.photos/100/100?random=2",
+                "descripcion": "La profesora es muy clara y concisa en sus explicaciones, me ha sido muy útil para mi formación."
+            }
+        ]
+
+    },
+    {
+        "id": 3,
+        "titulo": "Tecnicas de desarrollo personal",
+        "fechainicio": "20/10",
+        "inicio": "2025-10-20",
+        "duracion": 3,
+        "imagen": "https://picsum.photos/400/600?random=2",
+        "destacado": false,
+        "area": "Autismo",
+        "idarea": 2,
+        "colorArea": "#FFC000",
+        "tipoCurso": "Especialzación",
+        "tipoCursoId": 2,
+        "tipoModalidad": "OnDemand",
+        "tipoModalidadId": 1,
+        "nuevo": false,
+        "precio": 45000,
+        "horasDeCursada": 168,
+        "cantidadClases": 16,
+        "profesor": "Pedro Sanchez",
+        "profesorImg": "https://picsum.photos/100/100",
+        "profesorTitulo": "Psiquiatra",
+        "introduccion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta eum voluptates in libero laboriosam omnis et nobis nisi eveniet. Totam, pariatur. Aliquid unde nam porro ipsa at illo laborum est maiores mollitia vero doloremque consequatur eligendi, atque voluptatem, voluptatibus rem animi voluptate suscipit. Tenetur dignissimos quam explicabo unde vitae!",
+        "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "bannerCelular": "https://picsum.photos/590/540?random=",
+        "bannerEscritorio": "https://picsum.photos/1440/300?random=",
+        "reseñas": [
+            {
+                "autor": "Maria Castro",
+                "imagen": "https://picsum.photos/100/100?random=",
+                "descripcion": "Me ha encantado el curso, la profesora es muy buena y el contenido es muy bueno. Recomendado."
+            },
+            {
+                "autor": "Juan Perez",
+                "imagen": "https://picsum.photos/100/100?random=1",
+                "descripcion": "Me ha parecido muy interesante el enfoque de este curso, me ha ayudado mucho en mi trabajo."
+            },
+            {
+                "autor": "Sofia Rodriguez",
+                "imagen": "https://picsum.photos/100/100?random=2",
+                "descripcion": "La profesora es muy clara y concisa en sus explicaciones, me ha sido muy útil para mi formación."
+            }
+        ]
+
+    },
+    {   
+        "id": 4,
+        "titulo": "Evaluación neuropsicológica del daño cerebral",
+        "fechainicio": "04/11",
+        "inicio": "2025-11-04",
+        "duracion": 3,
+        "imagen": "https://picsum.photos/400/600?random=3",
+        "destacado": true,
+        "area": "Educación",
+        "idarea": 3,
+        "colorArea": "#FE6300",
+        "tipoCurso": "Curso",
+        "tipoCursoId": 1,
+        "tipoModalidad": "En vivo via Zoom",
+        "tipoModalidadId": 2,
+        "nuevo": true,
+        "precio": 45000,
+        "horasDeCursada": 168,
+        "cantidadClases": 16,
+        "profesor": "Pedro Sanchez",
+        "profesorImg": "https://picsum.photos/100/100",
+        "profesorTitulo": "Psiquiatra",
+        "introduccion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta eum voluptates in libero laboriosam omnis et nobis nisi eveniet. Totam, pariatur. Aliquid unde nam porro ipsa at illo laborum est maiores mollitia vero doloremque consequatur eligendi, atque voluptatem, voluptatibus rem animi voluptate suscipit. Tenetur dignissimos quam explicabo unde vitae!",
+        "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "bannerCelular": "https://picsum.photos/590/540?random=",
+        "bannerEscritorio": "https://picsum.photos/1440/300?random=",
+        "reseñas": [
+            {
+                "autor": "Maria Castro",
+                "imagen": "https://picsum.photos/100/100?random=",
+                "descripcion": "Me ha encantado el curso, la profesora es muy buena y el contenido es muy bueno. Recomendado."
+            },
+            {
+                "autor": "Juan Perez",
+                "imagen": "https://picsum.photos/100/100?random=1",
+                "descripcion": "Me ha parecido muy interesante el enfoque de este curso, me ha ayudado mucho en mi trabajo."
+            },
+            {
+                "autor": "Sofia Rodriguez",
+                "imagen": "https://picsum.photos/100/100?random=2",
+                "descripcion": "La profesora es muy clara y concisa en sus explicaciones, me ha sido muy útil para mi formación."
+            }
+        ]
+
+    },
+    {
+        "id": 5,
+        "titulo": "Psicología de la educación",
+        "fechainicio": "22/12",
+        "inicio": "2025-12-22",
+        "duracion": 2,
+        "imagen": "https://picsum.photos/400/600?random=4",
+        "destacado": true,
+        "area": "Crecimiento Personal",
+        "idarea": 4,
+        "colorArea": "#DD0000",
+        "tipoCurso": "Curso",
+        "tipoCursoId": 1,
+        "tipoModalidad": "En vivo via Zoom",
+        "tipoModalidadId": 2,
+        "nuevo": false,
+        "precio": 45000,
+        "horasDeCursada": 168,
+        "cantidadClases": 16,
+        "profesor": "Carla Rodriguez",
+        "profesorImg": "https://picsum.photos/100/100",
+        "profesorTitulo": "Psiquiatra",
+        "introduccion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta eum voluptates in libero laboriosam omnis et nobis nisi eveniet. Totam, pariatur. Aliquid unde nam porro ipsa at illo laborum est maiores mollitia vero doloremque consequatur eligendi, atque voluptatem, voluptatibus rem animi voluptate suscipit. Tenetur dignissimos quam explicabo unde vitae!",
+        "video": "https://www.youtube.com/watch?v=pwtBuKxlVww",
+        "bannerCelular": "https://picsum.photos/590/540?random=",
+        "bannerEscritorio": "https://picsum.photos/1440/300?random=",
+        "reseñas": [
+            {
+                "autor": "Maria Castro",
+                "imagen": "https://picsum.photos/100/100?random=",
+                "descripcion": "Me ha encantado el curso, la profesora es muy buena y el contenido es muy bueno. Recomendado."
+            },
+            {
+                "autor": "Juan Perez",
+                "imagen": "https://picsum.photos/100/100?random=1",
+                "descripcion": "Me ha parecido muy interesante el enfoque de este curso, me ha ayudado mucho en mi trabajo."
+            },
+            {
+                "autor": "Sofia Rodriguez",
+                "imagen": "https://picsum.photos/100/100?random=2",
+                "descripcion": "La profesora es muy clara y concisa en sus explicaciones, me ha sido muy útil para mi formación."
+            }
+        ]
+
+    },
+    {
+        "id": 6,
+        "titulo": "Psicología del consumidor",
+        "fechainicio": "16/01",
+        "inicio": "2025-01-16",
+        "duracion": 4,
+        "imagen": "https://picsum.photos/400/600?random=5",
+        "destacado": true,
+        "area": "Psicología",
+        "idarea": 1,
+        "colorArea": "#008D34",
+        "tipoCurso": "Especialización",
+        "tipoCursoId": 2,
+        "tipoModalidad": "En vivo via Zoom",
+        "tipoModalidadId": 2,
+        "nuevo": true,
+        "precio": 45000,
+        "horasDeCursada": 168,
+        "cantidadClases": 16,
+        "profesor": "Pedro Sanchez",
+        "profesorImg": "https://picsum.photos/100/100",
+        "profesorTitulo": "Psiquiatra",
+        "introduccion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta eum voluptates in libero laboriosam omnis et nobis nisi eveniet. Totam, pariatur. Aliquid unde nam porro ipsa at illo laborum est maiores mollitia vero doloremque consequatur eligendi, atque voluptatem, voluptatibus rem animi voluptate suscipit. Tenetur dignissimos quam explicabo unde vitae!",
+        "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "bannerCelular": "https://picsum.photos/590/540?random=",
+        "bannerEscritorio": "https://picsum.photos/1440/300?random=",
+        "reseñas": [
+            {
+                "autor": "Maria Castro",
+                "imagen": "https://picsum.photos/100/100?random=",
+                "descripcion": "Me ha encantado el curso, la profesora es muy buena y el contenido es muy bueno. Recomendado."
+            },
+            {
+                "autor": "Juan Perez",
+                "imagen": "https://picsum.photos/100/100?random=1",
+                "descripcion": "Me ha parecido muy interesante el enfoque de este curso, me ha ayudado mucho en mi trabajo."
+            },
+            {
+                "autor": "Sofia Rodriguez",
+                "imagen": "https://picsum.photos/100/100?random=2",
+                "descripcion": "La profesora es muy clara y concisa en sus explicaciones, me ha sido muy útil para mi formación."
+            }
+        ]
+
+    },
+    {
+        "id": 7,
+        "titulo": "Psicología de la motivación",
+        "fechainicio": "17/02",
+        "inicio": "2025-02-17",
+        "duracion": 3,
+        "imagen": "https://picsum.photos/400/600?random=6",
+        "destacado": false,
+        "area": "Educación",
+        "idarea": 3,
+        "colorArea": "#FE6300",
+        "tipoCurso": "Taller",
+        "tipoCursoId": 3,
+        "tipoModalidad": "En vivo via Zoom",
+        "tipoModalidadId": 2,
+        "nuevo": false,
+        "precio": 45000,
+        "horasDeCursada": 168,
+        "cantidadClases": 16,
+        "profesor": "Carla Rodriguez",
+        "profesorImg": "https://picsum.photos/100/100",
+        "profesorTitulo": "Psiquiatra",
+        "introduccion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta eum voluptates in libero laboriosam omnis et nobis nisi eveniet. Totam, pariatur. Aliquid unde nam porro ipsa at illo laborum est maiores mollitia vero doloremque consequatur eligendi, atque voluptatem, voluptatibus rem animi voluptate suscipit. Tenetur dignissimos quam explicabo unde vitae!",
+        "video": "https://www.youtube.com/watch?v=pwtBuKxlVww",
+        "bannerCelular": "https://picsum.photos/590/540?random=",
+        "bannerEscritorio": "https://picsum.photos/1440/300?random=",
+        "reseñas": [
+            {
+                "autor": "Maria Castro",
+                "imagen": "https://picsum.photos/100/100?random=",
+                "descripcion": "Me ha encantado el curso, la profesora es muy buena y el contenido es muy bueno. Recomendado."
+            },
+            {
+                "autor": "Juan Perez",
+                "imagen": "https://picsum.photos/100/100?random=1",
+                "descripcion": "Me ha parecido muy interesante el enfoque de este curso, me ha ayudado mucho en mi trabajo."
+            },
+            {
+                "autor": "Sofia Rodriguez",
+                "imagen": "https://picsum.photos/100/100?random=2",
+                "descripcion": "La profesora es muy clara y concisa en sus explicaciones, me ha sido muy útil para mi formación."
+            }
+        ]
+
+    },
+    {
+        "id": 8,
+        "titulo": "Psicología de la personalidad",
+        "fechainicio": "19/03",
+        "inicio": "2025-03-19",
+        "duracion": 4,
+        "imagen": "https://picsum.photos/400/600?random=7",
+        "destacado": true,
+        "area": "Psicología",
+        "idarea": 1,
+        "colorArea": "#008D34",
+        "tipoCurso": "Especialización",
+        "tipoCursoId": 2,
+        "tipoModalidad": "En vivo via Zoom",
+        "tipoModalidadId": 2,
+        "nuevo": true,
+        "precio": 45000,
+        "horasDeCursada": 168,
+        "cantidadClases": 16,
+        "profesor": "Pedro Sanchez",
+        "profesorImg": "https://picsum.photos/100/100",
+        "profesorTitulo": "Psiquiatra",
+        "introduccion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta eum voluptates in libero laboriosam omnis et nobis nisi eveniet. Totam, pariatur. Aliquid unde nam porro ipsa at illo laborum est maiores mollitia vero doloremque consequatur eligendi, atque voluptatem, voluptatibus rem animi voluptate suscipit. Tenetur dignissimos quam explicabo unde vitae!",
+        "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "bannerCelular": "https://picsum.photos/590/540?random=",
+        "bannerEscritorio": "https://picsum.photos/1440/300?random=",
+        "reseñas": [
+            {
+                "autor": "Maria Castro",
+                "imagen": "https://picsum.photos/100/100?random=",
+                "descripcion": "Me ha encantado el curso, la profesora es muy buena y el contenido es muy bueno. Recomendado."
+            },
+            {
+                "autor": "Juan Perez",
+                "imagen": "https://picsum.photos/100/100?random=1",
+                "descripcion": "Me ha parecido muy interesante el enfoque de este curso, me ha ayudado mucho en mi trabajo."
+            },
+            {
+                "autor": "Sofia Rodriguez",
+                "imagen": "https://picsum.photos/100/100?random=2",
+                "descripcion": "La profesora es muy clara y concisa en sus explicaciones, me ha sido muy útil para mi formación."
+            }
+        ]
+
+    },
+    {
+        "id": 9,
+        "titulo": "Psicología del aprendizaje",
+        "fechainicio": "",
+        "inicio": "",
+        "duracion": 4,
+        "imagen": "https://picsum.photos/400/600?random=9",
+        "destacado": false,
+        "area": "Educación",
+        "idarea": 3,
+        "colorArea": "#FE6300",
+        "tipoCurso": "Especialización",
+        "tipoCursoId": 2,
+        "tipoModalidad": "En vivo via Zoom",
+        "tipoModalidadId": 2,
+        "nuevo": false,
+        "precio": 45000,
+        "horasDeCursada": 168,
+        "cantidadClases": 16,
+        "profesor": "Pedro Sanchez",
+        "profesorImg": "https://picsum.photos/100/100",
+        "profesorTitulo": "Psiquiatra",
+        "introduccion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta eum voluptates in libero laboriosam omnis et nobis nisi eveniet. Totam, pariatur. Aliquid unde nam porro ipsa at illo laborum est maiores mollitia vero doloremque consequatur eligendi, atque voluptatem, voluptatibus rem animi voluptate suscipit. Tenetur dignissimos quam explicabo unde vitae!",
+        "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "bannerCelular": "https://picsum.photos/590/540?random=3",
+        "bannerEscritorio": "https://picsum.photos/1440/300?random=2",
+        "reseñas": [
+            {
+                "autor": "Maria Castro",
+                "imagen": "https://picsum.photos/100/100?random=",
+                "descripcion": "Me ha encantado el curso, la profesora es muy buena y el contenido es muy bueno. Recomendado."
+            },
+            {
+                "autor": "Juan Perez",
+                "imagen": "https://picsum.photos/100/100?random=1",
+                "descripcion": "Me ha parecido muy interesante el enfoque de este curso, me ha ayudado mucho en mi trabajo."
+            },
+            {
+                "autor": "Sofia Rodriguez",
+                "imagen": "https://picsum.photos/100/100?random=2",
+                "descripcion": "La profesora es muy clara y concisa en sus explicaciones, me ha sido muy útil para mi formación."
+            }
+        ]
+    }
+   
+]
+

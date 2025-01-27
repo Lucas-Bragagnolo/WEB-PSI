@@ -1,0 +1,53 @@
+{
+"areas": [
+{
+    "id": 1,
+    "nombre": "Psicología",
+    "color": "#008D34",
+    "descripcion": "Terapia y tratamientos"
+},
+{
+    "id": 2,
+    "nombre": "Autismo",
+    "color": "#FFC000",
+    "descripcion": "Intervención temprana"
+},
+{
+    "id": 3,
+    "nombre": "Educación",
+    "color": "#FE6300",
+    "descripcion": "Pedagogía"
+},
+{
+    "id": 4,
+    "nombre": "Crecimiento Personal",
+    "color": "#DD0000",
+    "descripcion": "Autoconocimiento"
+},
+{
+    "id": 5,
+    "nombre": "Gerontología",
+    "color": "#9000FF",
+    "descripcion": "Adultos y mayores"
+},    
+{
+    "id": 6,
+    "nombre": "Crianza",
+    "color": "#E72490",
+    "descripcion": "Paternidad positiva"
+},
+{
+    "id": 7,
+    "nombre": "Coaching",
+    "color": "#6AD200",
+    "descripcion": "Desarrollo personal"
+},
+{
+    "id": 8,
+    "nombre": "Terapias Alternativas",
+    "color": "#72C3FF",
+    "descripcion": "Bienestar integral"
+}
+]
+}
+

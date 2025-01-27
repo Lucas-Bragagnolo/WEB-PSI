@@ -26,214 +26,142 @@
     <!-- Incluir Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css?=2">
 
     <title>Psicología de las personalidades</title>
 </head>
 <body>
-    <header>
-            <!-- Botón WhatsApp -->
-            <a href="https://wa.me/1234567890" class="btn-whatsapp" target="_blank" style="bottom: 150px;">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            
-            <!-- Botón Volver Arriba -->
-            <a href="#" class="btn-scroll-top" style="bottom: 90px;">
-                <i class="bi bi-arrow-up"></i>
-            </a> 
-
-        <div id="topBar" class="alert alert-info alert-dismissible fade show mb-0" role="alert">
-            <div class="container">
-                <strong>¡Oferta Especial!</strong> Esto puede ser una promocion válida. Por sólo <strong>10 USD</strong> podes llevarte un curos adicional!
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        </div>        
-        <div id="languageBar" class="bg-dark py-2">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 mb-2 mb-md-0 text-center text-md-start d-none d-lg-block">
-                        <a href="#" class="text-white text-decoration-none">
-                            <i class="bi bi-question-circle"></i> FAQs
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-6 text-center text-md-end">
-                        <a href="./login.html" class=" btn btn-warning text-white text-decoration-none me-2">
-                           
-                            <i class="bi bi-people-fill"></i>
-                            Comunidad
-                        </a>
-                        <a href="./login_plataforma.html" class=" btn btn-primary text-white text-decoration-none me-2">
-                           
-                            <i class="bi bi-person-circle"></i>
-                            Ingresar
-                        </a>
-                        <a href="#" class="text-white text-decoration-none me-2">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="#" class="text-white text-decoration-none me-2">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="#" class="text-white text-decoration-none">
-                            <i class="bi bi-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>           
-        <nav class="navbar navbar-expand-lg navbar-ligth bg-light py-2">
-            <div class="container">
+    <a href="https://wa.me/1234567890" class="btn-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
     
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo_nuevo_chico2.png" alt="Logo" class="img-fluid"></a>
-                <button class="btn btn-navbar d-lg-none d-flex align-items-center justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#searchCollapse" aria-expanded="false" aria-controls="searchCollapse">
-                    <i class="bi bi-search"></i>
-                </button>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+    <!-- Botón Volver Arriba -->
+    <a href="#" class="btn-scroll-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    <header>
+        <!-- Barra superior de acceso a Alumnos -->
+        <div class="top-bar d-flex justify-content-between align-items-center bg-azul text-white p-2 w-100 bg-sup-rojo">
+            <div class="d-flex align-items-center">
+                <a href="mailto:info@asociacionpsi.com" class="text-white pe-2">
+                    <i class="bi bi-envelope"></i> info@asociacionpsi.com
+                </a>
+                <a href="tel:+543513333333" class="text-white">
+                    <i class="bi bi-phone"></i> +54 351 3333 333
+                </a>
+            </div>
+            <div>
+                <a href="#" class="btn btn-primary rounded-pill">
+                    Ingresar
+                </a>
+                <a href="#" class="btn btn-blanco rounded-pill">
+                    Registrate
+                </a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg py-2 border-sup-rojo px-5">
+            <div class="container-fluid">
+                <!-- menu mobile -->
+                <div class="d-flex justify-content-around align-items-center d-lg-none">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../img/logo-nuevo-blanco-mobile.png" alt="Logo">
+                    </a>
+        
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- menu desktop -->
+                <div class="collapse navbar-collapse justify-content-start" id="navbarContent">
+                    <div class="d-none d-lg-block">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../img/logo_chico_nuevo.png" alt="Logo Desktop">
+                        </a>
+                    </div>
+        
+                    <ul class="navbar-nav d-flex align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Nosotros</a>
-                        </li>     
-                        <li class="nav-item d-lg-none">
-                            <a class="nav-link d-flex align-items-center" href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#areasOffcanvas" aria-controls="areasOffcanvas">
-                                Areas <i class="bi bi-chevron-right ms-1"></i>
-                            </a>
-                        </li>
-                        <!-- Navbar de Áreas para pantallas grandes -->                     
-                        <li class="nav-item dropdown position-static d-none d-lg-block">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Áreas
-                            </a>
-                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-3">
-                                            <h5 class="dropdown-header">Psicología</h5>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
-                                            <a class="dropdown-item" href="#">Hipnosis terapéutica</a>
-                                            <a class="dropdown-item" href="#">Trastornos Infantiles</a>
-                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                            <div class="menu-container">
+                                <button class="menu-trigger d-none d-lg-block">CAPACITACIONES <i class="bi bi-chevron-down"></i></button>
+                                <div class="mega-menu">
+                                    <div class="areas-list">
+                                        <div class="area-item active" data-area="psicologia">
+                                            <i class="fas fa-brain"></i>Psicología
                                         </div>
-                                        <div class="col-lg-3">
-                                            <h5 class="dropdown-header">Autismo</h5>
-                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        <div class="area-item" data-area="autismo">
+                                            <i class="fas fa-puzzle-piece"></i>Autismo
                                         </div>
-                                        <div class="col-lg-3">
-                                            <h5 class="dropdown-header">Educación</h5>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
-                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        <div class="area-item" data-area="educacion">
+                                            <i class="fas fa-graduation-cap"></i>Educación
                                         </div>
-                                        <div class="col-lg-3">
-                                            <h5 class="dropdown-header">Otras Áreas</h5>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
-                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
+                                        <div class="area-item" data-area="crecimiento">
+                                            <i class="fas fa-seedling"></i>Crecimiento Personal
                                         </div>
+                                        <div class="area-item" data-area="gerontologia">
+                                            <i class="fas fa-user-plus"></i>Gerontología
+                                        </div>
+                                        <div class="area-item" data-area="crianza">
+                                            <i class="fas fa-baby"></i>Crianza
+                                        </div>
+                                        <div class="area-item" data-area="coaching">
+                                            <i class="fas fa-bullseye"></i>Coaching
+                                        </div>
+                                        <div class="area-item" data-area="terapias">
+                                            <i class="fas fa-spa"></i>Terapias Alternativas
+                                        </div>
+                                    </div>
+                                    <div class="courses-list">
+                                        <h3>Psicología</h3>
+                                        <div class="course-item"><i class="fas fa-book"></i>Introducción a la Psicología</div>
+                                        <div class="course-item"><i class="fas fa-book"></i>Psicología Clínica</div>
+                                        <div class="course-item"><i class="fas fa-book"></i>Psicología Organizacional</div>
                                     </div>
                                 </div>
                             </div>
-                        </li>                                      
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="newDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Capacitaciones
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="./pages/cursos.html">Capacitaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Novedades</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link position-relative" href="#">
+                                Nosotros
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:  .4rem;">
+                                    &nbsp;&nbsp;
+                                    <span class="visually-hidden">Nuevo</span>
+                                </span>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="newDropdown">
-                                <li><a class="dropdown-item" href="#">Cursos</a></li>
-                                <li><a class="dropdown-item" href="#">Especializaciones</a></li>
-                                <li><a class="dropdown-item" href="#">Video Cursos</a></li>
-                                <li><a class="dropdown-item" href="#">Seminarios</a></li>
-                            </ul>
-                        </li>  
+                        </li>
                     </ul>
-                </div>            
-                <form class="d-flex me-2 d-none d-lg-block">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="¿Qué buscas?" aria-label="Buscar" aria-describedby="button-search">
-                        <button class="btn btn-outline-secondary" type="submit" id="button-search">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-                </form>
-    
-            </div>
-            
-        </nav>
-        
-        <!-- Carrito -->
-    
-        <!-- Collapse de busqueda -->        
-        <div class="collapse" id="searchCollapse">
-            <div class="container mt-3">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="button-search">
-                    <button class="btn btn-outline-secondary" type="button" id="button-search">
-                        <i class="bi bi-search"></i>
-                    </button>
                 </div>
             </div>
-        </div>
-    
-        <!-- Offcanvas para áreas -->
-        <div class="offcanvas offcanvas-end h-100" tabindex="-1" id="areasOffcanvas" aria-labelledby="areasOffcanvasLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="areasOffcanvasLabel">Áreas</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <h5 class="dropdown-header">Psicología</h5>
-                        <ul>
-                            <li><a href="#" class="text-decoration-none">Introducción a la Psicología</a></li>
-                            <li><a href="#" class="text-decoration-none">Psicología Clínica</a></li>
-                            <li><a href="#" class="text-decoration-none">Psicología Infantil</a></li>
-                        </ul>
-                    </li>
-    
-                </ul>
-            </div>
-        </div>
+        </nav>
+        
     </header> 
-
+    <main>
+        <img src="../img/1200x300.jpg" class="d-none d-lg-block" alt="">
+        <img src="../img/590x450.jpg" class="d-lg-none" alt="">
+    </main>
     <!-- Contenido principal del curso -->
-    <main class="container mt-10">
+    <section class="container">
         <!-- Encabezado del curso -->
         <div class="row mb-5 mt-5">
             <div class="col-12 col-lg-8">
                 <div class="course-header" role="banner" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="course-status">
-                        <span class="badge bg-danger mb-3 fs-6" aria-label="Modalidad del curso">
-                            <i class="bi bi-record-circle-fill me-1" aria-hidden="true" style="font-size: 0.6em;"></i>
-                           On-Demand
-                        </span>
-                    </div>
-                    <h1 class="display-4 mb-3" tabindex="0">Psicología de las personalidades</h1>
-                    <p class="lead">Durante este curso se examina la visión global y actualizada del desarrollo histórico-conceptual de las principales Teorías de la Personalidad. Esto permite a los alumnos acercarse a la explicación de la conducta individual, además de analizar los fundamento y principios de la Psicología de la Personalidad.                        </p>
+                    <h1 class="display-4 mb-3" id="tituloCurso" tabindex="0">Psicología de las personalidades</h1>
+                    <p class="lead" id="introduccion">Durante este curso se examina la visión global y actualizada del desarrollo histórico-conceptual de las principales Teorías de la Personalidad. Esto permite a los alumnos acercarse a la explicación de la conducta individual, además de analizar los fundamento y principios de la Psicología de la Personalidad.                        </p>
                     <div class="instructor-info d-flex flex-wrap align-items-center mb-4" role="complementary" data-aos="fade-up" data-aos-delay="200">
-                        <img src="../img/avatar.jpg" alt="Fotografía de la Dra. María González" class="rounded-circle me-3 mb-2 mb-sm-0" width="50" height="50">
+                        <img src="" id="profesorImg" alt="Fotografía de la Dra. María González" class="rounded-circle me-3 mb-2 mb-sm-0" width="50" height="50">
                         <div class="instructor-details">
-                            <p class="mb-0 fw-bold">Profesor/a: Dra. María González</p>
-                            <p class="text-muted mb-0">Doctora en Psicología Clínica</p>
+                            <p class="mb-0 fw-bold" id="profesor">Profesor/a: </p>
+                            <p class="text-muted mb-0" id="profesorTitulo"></p>
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="400">
                         <a href="#contenidos" class="btn btn-outline-primary me-2">
-                            <i class="bi bi-list-check me-2"></i>Ver contenidos del curso
+                            <i class="bi bi-list-check me-2"></i>Ver programa
                         </a>
                         <a href="#video" class="btn btn-outline-primary">
                             <i class="bi bi-play-circle me-2"></i>Ver video introducción
@@ -242,43 +170,48 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="course-card card shadow-sm" aria-label="Detalles del curso" style="top: 1rem;" data-aos="fade-left" data-aos-duration="1000">
+                <div class="course-card card shadow-sm bg-azul" aria-label="Detalles del curso" style="top: 1rem;" data-aos="fade-left" data-aos-duration="1000">
                     <div class="card-body p-4">
-                        <h2 class="h4 card-title mb-4">Información del curso</h2>
-                        <ul class="list-unstyled course-details" aria-label="Características del curso">
-                            <li class="mb-3 d-flex align-items-center">
-                                <i class="bi bi-calendar me-3 text-primary" aria-hidden="true"></i>
-                                <span>16 Clases</span>
+                        <div class="m-0 mb-2">
+                            <span class="badge rounded-pill bg-primary" id="tipoCurso"></span>
+                            <span class="badge rounded-pill bg-danger" id="modalidad">Online en vivo</span>
+                            <span class="badge rounded-pill" id="area"></span>
+                          </div>
+                        <ul class="list-unstyled course-details " aria-label="Características del curso">
+                            <li class=" d-flex align-items-center text-white">
+                                <i class="bi bi-journal me-2 text-white" aria-hidden="true"></i>
+                                <span id="clases"></span>
                             </li>
-                            <li class="mb-3 d-flex align-items-center">
-                                <i class="bi bi-clock me-3 text-primary" aria-hidden="true"></i>
-                                <span>168 horas de estudio</span>
+                            <li class="mb-3 d-flex align-items-center text-white">
+                                <i class="bi bi-clock me-2 text-white" aria-hidden="true"></i>
+                                <span id="horas"></span>
                             </li>
-                            <li class="mb-3 d-flex align-items-center">
-                                <i class="bi bi-mortarboard me-3 text-primary" aria-hidden="true"></i>
-                                <span>Especialización</span>
+                            <li class="mb-1 d-flex align-items-center text-white">
+                                <i class="bi bi-calendar-event-fill me-2 text-white" aria-hidden="true"></i>
+                                <span id="duracion"></span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center text-white">
+                                <i class="bi bi-calendar-check me-2 text-white" aria-hidden="true"></i>
+                                <span id="inicio"></span>
                             </li>
                             <li class="price-info mb-4">
-                                <p class="text-muted mb-1">4 cuotas sin interés de:</p>
+                                <p class="mb-1 text-white">4 cuotas sin interés de:</p>
                                 <div class="price-display">
-                                    <span class="h3 mb-0 fw-bold text-primary">$10.500</span>
-                                    <span class="text-muted">/mes</span>
+                                    <span class="h3 mb-0 fw-bold text-white">$10.500</span>
+                                    <span class="text-white">/mes</span>
                                 </div>
                             </li> 
                         </ul>                        
-                        <button class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center" onclick="location.href='#fechasInicio'" aria-label="Inscribirse al curso">
-                            <i class="bi bi-arrow-right-circle me-2" aria-hidden="true"></i>
-                            Inscribirse ahora
-                        </button>
-                        <p class="text-center mt-3 mb-0 small">
-                            <i class="bi bi-shield-check me-1 text-success" aria-hidden="true"></i>
+                        <div id="inscripcion"></div>
+                        <p class="text-center mt-3 mb-0 small text-white">
+                            <i class="bi bi-shield-check me-1 text-white" aria-hidden="true"></i>
                             Pago seguro garantizado
                         </p>
                     </div>
                 </div>
             </div>
             <!-- Versión móvil fija abajo -->
-            <div class="col-12 fixed-bottom bg-dark text-white border-top p-3 shadow-lg">
+            <div class="col-12 fixed-bottom bg-azul text-white p-3 shadow-lg">
                 <div class="container">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
@@ -286,26 +219,27 @@
                             <h4 class="d-inline text-white"><i class="bi bi-currency-dollar me-2"></i>10.500</h4>
                             <small class="text-light">/ mes</small>
                         </div>
-                        <a href="#fechasInicio" class="btn btn-primary btn-lg" aria-label="Inscribirse al curso">Inscribirse ahora</a>
+                        <button class="btn btn-blanco w-auto d-flex align-items-center justify-content-center rounded-pill" onclick="location.href='#fechasInicio'" aria-label="Inscribirse al curso">
+                            <i class="bi bi-arrow-right-circle me-2" aria-hidden="true"></i>
+                            Inscribirse ahora
+                        </button>
                     </div>
                 </div>
             </div>        
         </div>
-    </main>
-    <div class="container" id="video">
-        <div class="ratio ratio-16x9 mb-5">
-            <iframe src="https://www.youtube.com/embed/example" title="Introducción al curso" autoplay allowfullscreen></iframe>
+    </section>
+    <div class="container">
+        <div class="ratio ratio-21x9 mb-5">
+            <iframe src="https://www.youtube.com/embed/E51CnlMSG2o?si=Pq4Iz4Pzy13cfCOh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
-
-    <!-- Contenido del curso -->
-    <section class="container mb-5" aria-labelledby="contenidoCursoTitle" id="contenidos">
+    <section class="container mb-5 p-5" aria-labelledby="contenidoCursoTitle" id="contenidos">
         <div class="row">
-            <div class="col-12 col-lg-7" data-aos="fade-right">
+            <div class="col-12 col-lg-8" >
                 <h2 id="contenidoCursoTitle" class="mb-4 display-6">Contenido del curso</h2>
                 <div class="accordion accordion-flush" id="courseContent">
-                    <!-- Introducción -->
-                    <div class="accordion-item border rounded mb-3" data-aos="fade-up" data-aos-delay="100">
+                    
+                    <div class="accordion-item border rounded mb-3" >
                         <h3 class="accordion-header">
                             <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#intro" aria-expanded="true" aria-controls="intro">
                                 <i class="bi bi-book-half me-2"></i>Introducción
@@ -317,8 +251,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Requisitos -->
-                    <div class="accordion-item border rounded mb-3" data-aos="fade-up" data-aos-delay="200">
+                   
+                    <div class="accordion-item border rounded mb-3" >
                         <h3 class="accordion-header">
                             <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#requisitos" aria-expanded="false" aria-controls="requisitos">
                                 <i class="bi bi-person-check me-2"></i>Dirigido a
@@ -335,8 +269,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Certificación -->
-                    <div class="accordion-item border rounded mb-3" data-aos="fade-up" data-aos-delay="300">
+                    
+                    <div class="accordion-item border rounded mb-3" >
                         <h3 class="accordion-header">
                             <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#certificacion" aria-expanded="false" aria-controls="certificacion">
                                 <i class="bi bi-award me-2"></i>Certificación
@@ -361,8 +295,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Salida Laboral -->
-                    <div class="accordion-item border rounded mb-3" data-aos="fade-up" data-aos-delay="400">
+                    
+                    <div class="accordion-item border rounded mb-3" >
                         <h3 class="accordion-header">
                             <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#salida-laboral" aria-expanded="false" aria-controls="salida-laboral">
                                 <i class="bi bi-briefcase me-2"></i>Salida Laboral
@@ -389,238 +323,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-5 mt-4 mt-lg-0" data-aos="fade-left">
-                <div class="card border-0 shadow-sm rounded-3">
-                    <div class="card-body p-4">
-                        <div class="mb-4">
-                            <h3 class="h5 d-flex align-items-center">
-                                <i class="bi bi-calendar-range text-primary me-2"></i>
-                                Duración del curso
-                            </h3>
-                            <p class="mb-0 ms-4">4 Meses</p>
-                        </div>
-                        <div class="mb-4">
-                            <h3 class="h5 d-flex align-items-center">
-                                <i class="bi bi-clock-history text-primary me-2"></i>
-                                Clases semanales
-                            </h3>
-                            <p class="mb-0 ms-4">16 Clases | 1 por semana</p>
-                        </div>
-                        <a href="https://drive.google.com/file/d/1yB-h7z3AdUPdg3ZBpCMAKJUwTuRV5HRG/view" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           class="btn btn-primary w-100 d-flex align-items-center justify-content-center"
-                           aria-label="Descargar programa completo del curso">
-                            <i class="bi bi-file-earmark-text me-2"></i>
-                            Ver programa completo
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<section id="modalidad" class="py-5 bg-light" aria-labelledby="modalidadTitle">
-        <div class="container">
-            <h2 id="modalidadTitle" class="text-center mb-4 display-5" data-aos="fade-up">¿Cómo funciona nuestro curso?</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="row row-cols-1 row-cols-md-2 g-4">
-                        <div class="col" data-aos="fade-up" data-aos-delay="100">
-                            <article class="card h-100 border-0 shadow-sm hover-shadow transition">
-                                <div class="card-body p-4">
-                                    <span class="d-inline-block p-3 bg-primary bg-opacity-10 rounded-circle mb-3">
-                                        <i class="bi bi-laptop display-6 text-primary" aria-hidden="true"></i>
-                                    </span>
-                                    <h3 class="h4 mb-3">Plataforma Online</h3>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2">
-                                            <i class="bi bi-check2-circle text-success me-2" aria-hidden="true"></i>
-                                            Acceso 24/7 a todo el contenido
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check2-circle text-success me-2" aria-hidden="true"></i>
-                                            Estudia a tu propio ritmo
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col" data-aos="fade-up" data-aos-delay="200">
-                            <article class="card h-100 border-0 shadow-sm hover-shadow transition">
-                                <div class="card-body p-4">
-                                    <span class="d-inline-block p-3 bg-primary bg-opacity-10 rounded-circle mb-3">
-                                        <i class="bi bi-play-circle display-6 text-primary" aria-hidden="true"></i>
-                                    </span>
-                                    <h3 class="h4 mb-3">Material Didáctico</h3>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2">
-                                            <i class="bi bi-check2-circle text-success me-2" aria-hidden="true"></i>
-                                            Clases en PDF descargables
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check2-circle text-success me-2" aria-hidden="true"></i>
-                                            Videos explicativos semanales
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col" data-aos="fade-up" data-aos-delay="300">
-                            <article class="card h-100 border-0 shadow-sm hover-shadow transition">
-                                <div class="card-body p-4">
-                                    <span class="d-inline-block p-3 bg-primary bg-opacity-10 rounded-circle mb-3">
-                                        <i class="bi bi-camera-video display-6 text-primary" aria-hidden="true"></i>
-                                    </span>
-                                    <h3 class="h4 mb-3">Clases en Vivo</h3>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2">
-                                            <i class="bi bi-check2-circle text-success me-2" aria-hidden="true"></i>
-                                            Encuentros mensuales por Zoom
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check2-circle text-success me-2" aria-hidden="true"></i>
-                                            Grabaciones disponibles
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col" data-aos="fade-up" data-aos-delay="400">
-                            <article class="card h-100 border-0 shadow-sm hover-shadow transition">
-                                <div class="card-body p-4">
-                                    <span class="d-inline-block p-3 bg-primary bg-opacity-10 rounded-circle mb-3">
-                                        <i class="bi bi-award display-6 text-primary" aria-hidden="true"></i>
-                                    </span>
-                                    <h3 class="h4 mb-3">Evaluación Final</h3>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2">
-                                            <i class="bi bi-check2-circle text-success me-2" aria-hidden="true"></i>
-                                            Trabajo integrador
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check2-circle text-success me-2" aria-hidden="true"></i>
-                                            Certificación oficial
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-<section id="fechasInicio" class="py-5 bg-light" aria-labelledby="fechasTitle">
-        <div class="container">
-            <h2 class="text-center mb-4 display-5" data-aos="fade-up">Próximas fechas de inicio</h2>       
-            <p class="text-center mb-5 lead text-muted" data-aos="fade-up" data-aos-delay="100">Elige la fecha que mejor se adapte a tu agenda y comienza tu formación profesional</p>
-    
-            <div class="row row-cols-1 row-cols-md-2 justify-content-center g-4 mx-auto" style="max-width: 900px;">
-                <div class="col" data-aos="fade-up" data-aos-delay="100">
-                    <article class="card h-100 border-0 shadow-sm hover-shadow transition">
-                        <div class="card-body text-center p-4">
-                            <span class="d-inline-block p-3 bg-primary bg-opacity-10 rounded-circle mb-3">
-                                <i class="bi bi-calendar-check display-5 text-primary" aria-hidden="true"></i>
-                            </span>
-                            <h3 class="h4 mb-3">Marzo 2024</h3>
-                            <div class="mb-4">
-                                <p class="mb-2"><strong>Fecha de inicio:</strong> 4 de Marzo</p>
-                                <p class="text-danger mb-0"><small><i class="bi bi-exclamation-circle me-1" aria-hidden="true"></i>Cupos limitados</small></p>
-                            </div>
-                            <a href="./inscripcion.html" class="btn btn-primary btn-lg w-100 position-relative" role="button">
-                                <i class="bi bi-pencil-square me-2" aria-hidden="true"></i>
-                                <span>Inscribirse ahora</span>
-                                <span class="visually-hidden">para el curso que inicia en Marzo 2024</span>
-                            </a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col" data-aos="fade-up" data-aos-delay="200">
-                    <article class="card h-100 border-0 shadow-sm hover-shadow transition">
-                        <div class="card-body text-center p-4">
-                            <span class="d-inline-block p-3 bg-primary bg-opacity-10 rounded-circle mb-3">
-                                <i class="bi bi-calendar-check display-5 text-primary" aria-hidden="true"></i>
-                            </span>
-                            <h3 class="h4 mb-3">Septiembre 2024</h3>
-                            <div class="mb-4">
-                                <p class="mb-2"><strong>Fecha de inicio:</strong> 6 de Septiembre</p>
-                                <p class="text-danger mb-0"><small><i class="bi bi-exclamation-circle me-1" aria-hidden="true"></i>Cupos limitados</small></p>
-                            </div>
-                            <a href="./inscripcion.html" class="btn btn-primary btn-lg w-100 position-relative" role="button">
-                                <i class="bi bi-pencil-square me-2" aria-hidden="true"></i>
-                                <span>Inscribirse ahora</span>
-                                <span class="visually-hidden">para el curso que inicia en Septiembre 2024</span>
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </div>
         </div>
-    </section>
-    <section id="reseñas" class="py-5 bg-gradient-primary">
+    </section> 
+    <section id="reseñas" class="py-5 bg-azul">
         <div class="container">
-            <h2 class="text-center mb-3 display-4 fw-bold text-white" data-aos="fade-up">Reseñas de Estudiantes</h2>
-            <p class="text-center text-white px-3" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt, temporibus et quo aut cumque!</p>
-            <div id="testimoniosCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="200">
+            <div id="testimoniosCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card border-0 mx-auto" style="max-width: 600px;">
-                            <div class="card-body bg-white text-dark rounded-lg p-4">
-                                <p class="card-text lead">"La Asociación PSI ha sido fundamental en mi desarrollo profesional. Los cursos son excelentes y los profesores muy dedicados."</p>
-                                <div class="d-flex flex-wrap align-items-center mt-4">
-                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Foto de Ana García" class="rounded-circle me-3 mb-2 mb-sm-0" width="60" height="60">
-                                    <div>
-                                        <h5 class="card-title mb-0 fw-bold">Analía García</h5>
-                                        <small class="text-muted fst-italic">Estudiante de Psicología Clínica</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card border-0 mx-auto" style="max-width: 600px;">
-                            <div class="card-body bg-white text-dark rounded-lg p-4">
-                                <p class="card-text lead">"Gracias a los programas de la Asociación PSI, he podido especializarme en Neuropsicología. Una experiencia increíble."</p>
-                                <div class="d-flex flex-wrap align-items-center mt-4">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de Carlos Martínez" class="rounded-circle me-3 mb-2 mb-sm-0" width="60" height="60">
-                                    <div>
-                                        <h5 class="card-title mb-0 fw-bold">Carlos Martínez</h5>
-                                        <small class="text-muted fst-italic">Graduado en Neuropsicología</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card border-0 mx-auto" style="max-width: 600px;">
-                            <div class="card-body bg-white text-dark rounded-lg p-4">
-                                <p class="card-text lead">"Los recursos y el apoyo que ofrece la Asociación PSI son invaluables. Me han ayudado mucho en mi carrera de Psicología Educativa."</p>
-                                <div class="d-flex flex-wrap align-items-center mt-4">
-                                    <img src="https://randomuser.me/api/portraits/women/95.jpg" alt="Foto de Laura Sánchez" class="rounded-circle me-3 mb-2 mb-sm-0" width="60" height="60">
-                                    <div>
-                                        <h5 class="card-title mb-0 fw-bold">Laura Sánchez</h5>
-                                        <small class="text-muted fst-italic">Estudiante de Psicología</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card border-0 mx-auto" style="max-width: 600px;">
-                            <div class="card-body bg-white text-dark rounded-lg p-4">
-                                <p class="card-text lead">"La formación en Psicología Organizacional que recibí en la Asociación PSI ha sido clave para mi éxito profesional actual."</p>
-                                <div class="d-flex flex-wrap align-items-center mt-4">
-                                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Foto de Miguel Rodríguez" class="rounded-circle me-3 mb-2 mb-sm-0" width="60" height="60">
-                                    <div>
-                                        <h5 class="card-title mb-0 fw-bold">Miguel Rodríguez</h5>
-                                        <small class="text-muted fst-italic">Psicólogo Organizacional</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -630,120 +339,46 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Siguiente</span>
                 </button>
-                <div class="carousel-indicators position-relative top-0">
-                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonio 1"></button>
-                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="1" aria-label="Testimonio 2"></button>
-                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="2" aria-label="Testimonio 3"></button>
-                    <button type="button" data-bs-target="#testimoniosCarousel" data-bs-slide-to="3" aria-label="Testimonio 4"></button>
-                </div>
             </div>
         </div>
     </section>
+
+    
+
 
     <!-- Cursos relacionados -->
-    <section class="container my-5 p-4" id="cursos-destacados">
-        <h2 id="cursosRelacionados" class="text-center mb-4 display-5" data-aos="fade-up">También te puede interesar</h2>       
-        <p class="text-center mb-5 lead text-muted" data-aos="fade-up" data-aos-delay="100">Descubre otros cursos y programas de formación diseñados para potenciar tu desarrollo profesional</p>
-        
-        <!-- Nav tabs -->
-        <div class="owl-carousel owl-theme">
-            <div class="item" data-aos="fade-up" data-aos-delay="100">
-                <article class="card h-100 shadow-sm transition-transform hover-scale" role="article">
-                    <div class="position-relative">
-                        <img src="../img/curso4.png" class="card-img-top" alt="Vista de una sesión práctica de terapia cognitivo conductual" loading="lazy" width="100%" height="200">
-                        <div class="position-absolute top-0 start-0 p-3 d-flex gap-2">
-                            <span class="badge bg-primary rounded-pill">Nuevo</span>
+    <section>
+        <div class="container-fluid bg-ligth texto-azul text-center p-5">
+            <h3 class="mb-4">Más capacitaciones<strong> relacionadas</strong> a este curso</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item" >                           
+                    <div class="card">
+                        <img 
+                            src="../img/nuevo/curso_inica.jpg" 
+                            alt="Estimulación Temprana" 
+                            class="card-image"
+                        >
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <h2 class="card-title">ESTIMULACIÓN TEMPRANA</h2>
                         </div>
                     </div>
-                    <div class="card-body d-flex flex-column">
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge bg-light text-dark d-flex align-items-center">
-                                <i class="bi bi-mortarboard me-2" aria-hidden="true"></i>Curso
-                            </span>
-                            <span class="badge bg-light text-dark d-flex align-items-center">
-                                <i class="fa-solid fa-brain me-2" aria-hidden="true"></i>Psicología
-                            </span>
-                        </div>
-                        <h2 class="h4 card-title mb-3">Acompañante Terapéutico<br></h2>
-                        <div class="course-info bg-light p-3 rounded mb-3">
-                            <ul class="list-unstyled mb-0">
-                                <li class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-clock-fill me-2 text-primary" aria-hidden="true"></i>
-                                    <span>Duración: 4 meses</span>
-                                </li>
-                                <li class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-calendar-event-fill me-2 text-primary" aria-hidden="true"></i>
-                                    <span>Inicio: 15 Marzo 2024</span>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <a href="detalle_curso.html" class="btn btn-primary" aria-label="Ver más detalles sobre el curso de Terapia Cognitivo Conductual">
-                            Más información
-                            <i class="bi bi-arrow-right-circle ms-2" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </article>
+                </div>
             </div>
-        
-            <!-- Repite la estructura para los otros elementos del carousel -->
-            <!-- Añade más divs con la clase "item" para cada tarjeta -->
         </div>
-        
-        
-        <style>
-           .transition-transform {
-               transition: transform 0.3s ease-in-out;
-           }
-           .hover-scale:hover {
-               transform: translateY(-5px);
-               box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
-           }
-        </style>
     </section>
 
 
 
-    <footer class="bg-light text-dark py-5 mt-5 mb-5">
-        <div class="container">
+    <footer class=" text-dark py-5 mt-5">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h4 class="h5 mb-3">Asociación PSI</h4>
-                    <p>Promoviendo el bienestar mental y emocional a través de la psicología.</p>
-                    <ul class="list-unstyled d-flex">
-                        <li class="me-3"><a href="#" class="text-dark" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
-                        <li class="me-3"><a href="#" class="text-dark" aria-label="Twitter"><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="#" class="text-dark" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h4 class="h5 mb-3">Enlaces Rápidos</h4>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Inicio</a></li>
-                        <li class="mb-2"><a href="#servicios" class="text-dark text-decoration-none">Servicios</a></li>
-                        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Sobre Nosotros</a></li>
-                        <li><a href="#contacto" class="text-dark text-decoration-none">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="h5 mb-3">Contáctanos</h4>
-                    <address>
-                        <p class="mb-2"><i class="bi bi-geo-alt me-2"></i>Calle Principal 123, Ciudad</p>
-                        <p class="mb-2"><i class="bi bi-telephone me-2"></i><a href="tel:+123456789" class="text-dark text-decoration-none">+12 345 6789</a></p>
-                        <p><i class="bi bi-envelope me-2"></i><a href="mailto:info@asociacionpsi.com" class="text-dark text-decoration-none">info@asociacionpsi.com</a></p>
-                    </address>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">© 2024 Asociación PSI. Todos los derechos reservados.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                <div class="col-md-12 text-center">
+                    <img src="../img/logo-nuevo-chico.png" alt="Asociación PSI" class="mb-4">
                     <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Política de Privacidad</a></li>
-                        <li class="list-inline-item">|</li>
-                        <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Términos de Uso</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-dark" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-dark" aria-label="Twitter"><i class="bi bi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-dark" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -765,35 +400,18 @@
                         items: 2.3
                     },
                     1000: {
-                        items: 3.8
+                        items: 4.8
                     }
                 }
             });
         });
     </script>
         
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var topBar = document.getElementById('topBar');
-            var closeButton = topBar.querySelector('.btn-close');
-            
-            closeButton.addEventListener('click', function() {
-                topBar.remove();
-            });
-        });
-    </script>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var toastEl = document.getElementById('promoToast');
-            var toast = new bootstrap.Toast(toastEl, {
-                autohide: false
-            });
-            toast.show();
-        });
-    </script>
-        <!-- bootstrap -->
 
+    
+        <!-- bootstrap -->
+    <script src="../js/datosDetalleCurso.js?=8"></script>
+    <script src="../js/navBar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -801,7 +419,6 @@
     <script>
         AOS.init();
       </script>
-    <script src="../js/botones.js"></script>
 
 </body>
 </html>

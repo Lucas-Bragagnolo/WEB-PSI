@@ -1,0 +1,46 @@
+{
+    "id": 1,
+    "titulo": "Nombre del Curso",
+    "fechainicio": "dd/mm",
+    "inicio": "yyyy-mm-dd",
+    "duracion": 0,
+    "imagen": "https://picsum.photos/400/600?random=",
+    "destacado": false,
+    "area": "Área de conocimiento",
+    "idarea": 0,
+    "colorArea": "#FFFFFF",
+    "tipoCurso": "Tipo de curso",
+    "tipoCursoId": 0,
+    "tipoModalidad": "Modalidad del curso",
+    "tipoModalidadId": 0,
+    "nuevo": false,
+    "precio": 0,
+    "horasDeCursada": 0,
+    "cantidadClases": 0,
+    "profesor": "Dr. Estanislao Pedretti",
+    "profesorImg": "https://picsum.photos/100/100",
+    "profesorTitulo": "Psiquiatra",
+    "introduccion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta eum voluptates in libero laboriosam omnis et nobis nisi eveniet. Totam, pariatur. Aliquid unde nam porro ipsa at illo laborum est maiores mollitia vero doloremque consequatur eligendi, atque voluptatem, voluptatibus rem animi voluptate suscipit. Tenetur dignissimos quam explicabo unde vitae!",
+    "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "bannerCelular": "https://picsum.photos/590/540?random=",
+    "bannerEscritorio": "https://picsum.photos/1200/300?random=",
+    "reseñas": [
+        {
+            "autor": "Maria Castro",
+            "imagen": "https://picsum.photos/100/100?random=",
+            "descripcion": "Me ha encantado el curso, la profesora es muy buena y el contenido es muy bueno. Recomendado."
+        },
+        {
+            "autor": "Juan Perez",
+            "imagen": "https://picsum.photos/100/100?random=1",
+            "descripcion": "Me ha parecido muy interesante el enfoque de este curso, me ha ayudado mucho en mi trabajo."
+        },
+        {
+            "autor": "Sofia Rodriguez",
+            "imagen": "https://picsum.photos/100/100?random=2",
+            "descripcion": "La profesora es muy clara y concisa en sus explicaciones, me ha sido muy útil para mi formación."
+        }
+    ]
+
+}
+

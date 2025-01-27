@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Interactivo de Áreas y Cursos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 1rem;
+        }
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+        .menu-trigger {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .mega-menu {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            z-index: 1;
+            width: 800px;
+            padding: 20px;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        .mega-menu.show {
+            display: flex;
+            opacity: 1;
+        }
+        .areas-list {
+            width: 30%;
+            border-right: 1px solid #e0e0e0;
+            padding-right: 20px;
+        }
+        .courses-list {
+            width: 70%;
+            padding-left: 20px;
+        }
+        .area-item, .course-item {
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .area-item:hover, .area-item.active {
+            background-color: #e9ecef;
+        }
+        .area-item i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        .course-item i {
+            margin-right: 10px;
+        }
+        h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-container">
+            <button class="menu-trigger">Áreas de Estudio</button>
+            <div class="mega-menu">
+                <div class="areas-list">
+                    <div class="area-item active" data-area="psicologia">
+                        <i class="fas fa-brain"></i>Psicología
+                    </div>
+                    <div class="area-item" data-area="autismo">
+                        <i class="fas fa-puzzle-piece"></i>Autismo
+                    </div>
+                    <div class="area-item" data-area="educacion">
+                        <i class="fas fa-graduation-cap"></i>Educación
+                    </div>
+                    <div class="area-item" data-area="crecimiento">
+                        <i class="fas fa-seedling"></i>Crecimiento Personal
+                    </div>
+                    <div class="area-item" data-area="gerontologia">
+                        <i class="fas fa-user-plus"></i>Gerontología
+                    </div>
+                    <div class="area-item" data-area="crianza">
+                        <i class="fas fa-baby"></i>Crianza
+                    </div>
+                    <div class="area-item" data-area="coaching">
+                        <i class="fas fa-bullseye"></i>Coaching
+                    </div>
+                    <div class="area-item" data-area="terapias">
+                        <i class="fas fa-spa"></i>Terapias Alternativas
+                    </div>
+                </div>
+                <div class="courses-list">
+                    <h3>Psicología</h3>
+                    <div class="course-item"><i class="fas fa-book"></i>Introducción a la Psicología</div>
+                    <div class="course-item"><i class="fas fa-book"></i>Psicología Clínica</div>
+                    <div class="course-item"><i class="fas fa-book"></i>Psicología Organizacional</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuTrigger = document.querySelector('.menu-trigger');
+            const megaMenu = document.querySelector('.mega-menu');
+            const areaItems = document.querySelectorAll('.area-item');
+            const coursesList = document.querySelector('.courses-list');
+
+            const courses = {
+                psicologia: ['Introducción a la Psicología', 'Psicología Clínica', 'Psicología Organizacional'],
+                autismo: ['Fundamentos del TEA', 'Intervención Temprana', 'Estrategias Educativas para TEA'],
+                educacion: ['Metodologías de Enseñanza', 'Tecnología en la Educación', 'Evaluación del Aprendizaje'],
+                crecimiento: ['Desarrollo de Habilidades Sociales', 'Gestión del Tiempo', 'Mindfulness y Meditación'],
+                gerontologia: ['Cuidado del Adulto Mayor', 'Psicología del Envejecimiento', 'Nutrición en la Tercera Edad'],
+                crianza: ['Disciplina Positiva', 'Desarrollo Infantil', 'Comunicación Familiar'],
+                coaching: ['Coaching de Vida', 'Coaching Ejecutivo', 'Herramientas de Coaching'],
+                terapias: ['Aromaterapia', 'Terapia de Flores de Bach', 'Acupuntura']
+            };
+
+            menuTrigger.addEventListener('click', function() {
+                megaMenu.classList.toggle('show');
+            });
+
+            areaItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    areaItems.forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+                    updateCourses(this.dataset.area);
+                });
+            });
+
+            function updateCourses(area) {
+                const areaName = area.charAt(0).toUpperCase() + area.slice(1);
+                let coursesHtml = `<h3>${areaName}</h3>`;
+                courses[area].forEach(course => {
+                    coursesHtml += `<div class="course-item"><i class="fas fa-book"></i>${course}</div>`;
+                });
+                coursesList.innerHTML = coursesHtml;
+            }
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!megaMenu.contains(event.target) && !menuTrigger.contains(event.target)) {
+                    megaMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
