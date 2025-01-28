@@ -39,27 +39,18 @@
     <a href="#" class="btn-scroll-top">
         <i class="bi bi-arrow-up"></i>
     </a>
-    <header>
-        <!-- Barra superior de acceso a Alumnos -->
-        <div class="top-bar d-flex justify-content-between align-items-center bg-azul text-white p-2 w-100 bg-sup-rojo">
-            <div class="d-flex align-items-center">
-                <a href="mailto:info@asociacionpsi.com" class="text-white pe-2">
-                    <i class="bi bi-envelope"></i> info@asociacionpsi.com
-                </a>
-                <a href="tel:+543513333333" class="text-white">
-                    <i class="bi bi-phone"></i> +54 351 3333 333
-                </a>
-            </div>
-            <div>
-                <a href="#" class="btn btn-primary rounded-pill">
-                    Ingresar
-                </a>
-                <a href="#" class="btn btn-blanco rounded-pill">
-                    Registrate
-                </a>
-            </div>
+    <div id="topBar" class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+        <div class="container">
+            <strong>¡Unite a la comunidad PSI!</strong> esto es un mensaje invitando al usuario a que se registre en la comunidad <strong>Gratis</strong>
+            <a href="#" class="btn btn-primary ms-2">Regístrate</a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <nav class="navbar navbar-expand-lg py-2 border-sup-rojo px-5">
+    </div>  
+    <!-- HEADER (MENU, TOOLTIP (promocion), Carrito, BarraLenguaje) -->
+    <header class="sticky-top">
+        <!-- Barra superior de acceso a Alumnos -->
+
+        <nav class="navbar navbar-expand-lg py-2 border-sup-rojo">
             <div class="container-fluid">
                 <!-- menu mobile -->
                 <div class="d-flex justify-content-around align-items-center d-lg-none">
@@ -72,7 +63,7 @@
                     </button>
                 </div>
                 <!-- menu desktop -->
-                <div class="collapse navbar-collapse justify-content-start" id="navbarContent">
+                <div class="collapse navbar-collapse justify-content-around" id="navbarContent">
                     <div class="d-none d-lg-block">
                         <a class="navbar-brand" href="../index.html">
                             <img src="../img/logo_chico_nuevo.png" alt="Logo Desktop">
@@ -80,50 +71,16 @@
                     </div>
         
                     <ul class="navbar-nav d-flex align-items-center">
-                        <li class="nav-item">
-                            <div class="menu-container">
-                                <button class="menu-trigger d-none d-lg-block">CAPACITACIONES <i class="bi bi-chevron-down"></i></button>
-                                <div class="mega-menu">
-                                    <div class="areas-list">
-                                        <div class="area-item active" data-area="psicologia">
-                                            <i class="fas fa-brain"></i>Psicología
-                                        </div>
-                                        <div class="area-item" data-area="autismo">
-                                            <i class="fas fa-puzzle-piece"></i>Autismo
-                                        </div>
-                                        <div class="area-item" data-area="educacion">
-                                            <i class="fas fa-graduation-cap"></i>Educación
-                                        </div>
-                                        <div class="area-item" data-area="crecimiento">
-                                            <i class="fas fa-seedling"></i>Crecimiento Personal
-                                        </div>
-                                        <div class="area-item" data-area="gerontologia">
-                                            <i class="fas fa-user-plus"></i>Gerontología
-                                        </div>
-                                        <div class="area-item" data-area="crianza">
-                                            <i class="fas fa-baby"></i>Crianza
-                                        </div>
-                                        <div class="area-item" data-area="coaching">
-                                            <i class="fas fa-bullseye"></i>Coaching
-                                        </div>
-                                        <div class="area-item" data-area="terapias">
-                                            <i class="fas fa-spa"></i>Terapias Alternativas
-                                        </div>
-                                    </div>
-                                    <div class="courses-list">
-                                        <h3>Psicología</h3>
-                                        <div class="course-item"><i class="fas fa-book"></i>Introducción a la Psicología</div>
-                                        <div class="course-item"><i class="fas fa-book"></i>Psicología Clínica</div>
-                                        <div class="course-item"><i class="fas fa-book"></i>Psicología Organizacional</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item d-lg-none">
-                            <a class="nav-link" href="./pages/cursos.html">Capacitaciones</a>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="./pages/cursos.html" >
+                                Capacitaciones
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Novedades</a>
+                            <a class="nav-link" href="../index.html#calendario">Inscribite ya</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#calendario">Cursos On demand</a>
                         </li>
                         <li class="nav-item me-5">
                             <a class="nav-link position-relative" href="#">
@@ -134,15 +91,32 @@
                                 </span>
                             </a>
                         </li>
+
+                        <div class="d-none d-lg-flex align-items-center me-5">
+                            <a class="btn btn-outline-secondary rounded-pill me-3" href="./pages/login.html">
+                                <i class="fas fa-user me-2"></i>Campus Online
+                            </a>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle p-0" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://picsum.photos/100" alt="User Profile" class="rounded-circle" width="40" height="40">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" href="./pages/login.html">Mi perfil</a></li>
+                                    <li><a class="dropdown-item" href="./pages/login.html">Acceso Campus</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
         </nav>
         
-    </header> 
+    </header>
     <main>
-        <img src="../img/1200x300.jpg" class="d-none d-lg-block" alt="">
-        <img src="../img/590x450.jpg" class="d-lg-none" alt="">
+        <img class="d-none d-lg-block" alt="">
+        <img class="d-lg-none" alt="">
     </main>
     <!-- Contenido principal del curso -->
     <section class="container">
@@ -211,7 +185,7 @@
                 </div>
             </div>
             <!-- Versión móvil fija abajo -->
-            <div class="col-12 fixed-bottom bg-azul text-white p-3 shadow-lg">
+            <div class="col-12 fixed-bottom bg-azul text-white p-3 shadow-lg d-none">
                 <div class="container">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
@@ -228,27 +202,30 @@
             </div>        
         </div>
     </section>
-    <div class="container">
-        <div class="ratio ratio-21x9 mb-5">
-            <iframe src="https://www.youtube.com/embed/E51CnlMSG2o?si=Pq4Iz4Pzy13cfCOh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </div>
+
     <section class="container mb-5 p-5" aria-labelledby="contenidoCursoTitle" id="contenidos">
         <div class="row">
-            <div class="col-12 col-lg-8" >
+            <div class="col-12 col-lg-6">
+                <div class="container">
+                    <div style="height: 350px" class="ratio ratio-16x9 mb-5">
+                        <iframe src="https://www.youtube.com/embed/E51CnlMSG2o?si=Pq4Iz4Pzy13cfCOh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6" >
                 <h2 id="contenidoCursoTitle" class="mb-4 display-6">Contenido del curso</h2>
                 <div class="accordion accordion-flush" id="courseContent">
                     
                     <div class="accordion-item border rounded mb-3" >
                         <h3 class="accordion-header">
                             <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#intro" aria-expanded="true" aria-controls="intro">
-                                <i class="bi bi-book-half me-2"></i>Introducción
+                                <i class="bi bi-book-half me-2"></i>Modalidad On-Demand
                             </button>
                         </h3>
                         <div id="intro" class="accordion-collapse collapse show" data-bs-parent="#courseContent">
                             <div class="accordion-body">
-                                <p class="mb-3 lead">Este curso te brinda una formación completa y práctica, diseñada para desarrollar tus habilidades y conocimientos desde cero hasta un nivel avanzado. A través de clases interactivas y proyectos prácticos, aprenderás las herramientas y técnicas necesarias para destacar en esta área.</p>
-                            </div>
+                                <p class="mb-3 lead">Este curso On-Demand ofrece una experiencia de aprendizaje flexible y accesible, permitiéndote estudiar a tu ritmo y en tu propio horario. Con contenido de alta calidad y recursos interactivos, podrás adquirir conocimientos y habilidades esenciales de manera eficiente y efectiva.</p>
+                            </div> 
                         </div>
                     </div>
                    

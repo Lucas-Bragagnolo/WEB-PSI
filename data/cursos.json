@@ -23,8 +23,8 @@
         "profesorTitulo": "Psiquiatra",
         "introduccion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta eum voluptates in libero laboriosam omnis et nobis nisi eveniet. Totam, pariatur. Aliquid unde nam porro ipsa at illo laborum est maiores mollitia vero doloremque consequatur eligendi, atque voluptatem, voluptatibus rem animi voluptate suscipit. Tenetur dignissimos quam explicabo unde vitae!",
         "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "bannerCelular": "https://picsum.photos/590/540?random=",
-        "bannerEscritorio": "https://picsum.photos/1440/300?random=",
+        "bannerCelular": "../img/590x450.jpg",
+        "bannerEscritorio": "../img/1440x350.png",
         "reseñas": [
             {
                 "autor": "Maria Castro",

@@ -171,12 +171,16 @@ img {
     font-weight: normal;    
 }
 
+.nav-link.active{
+    border-bottom: 3px solid #A9341D;
+}
+
 .nav-link a {
     color:#707070;
 }
 
 .border-sup-rojo {
-    border-top: 4px solid #ee1811;
+    border-top: 4px solid #A9341D;
 }
 
 .azul-principal {

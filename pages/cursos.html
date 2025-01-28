@@ -23,7 +23,7 @@
     <!-- Incluir Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css?=10 ">
+    <link rel="stylesheet" href="../css/style.css?=11 ">
 
     <title>Asociación PSI - Cursos y especializaciones</title>
 
@@ -38,13 +38,22 @@
         <a href="#" class="btn-scroll-top">
             <i class="bi bi-arrow-up"></i>
         </a>
-        <header>
+        <div id="topBar" class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+            <div class="container">
+                <strong>¡Unite a la comunidad PSI!</strong> esto es un mensaje invitando al usuario a que se registre en la comunidad <strong>Gratis</strong>
+                <a href="#" class="btn btn-primary ms-2">Regístrate</a>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>  
+        <!-- HEADER (MENU, TOOLTIP (promocion), Carrito, BarraLenguaje) -->
+        <header class="sticky-top">
             <!-- Barra superior de acceso a Alumnos -->
+    
             <nav class="navbar navbar-expand-lg py-2 border-sup-rojo">
                 <div class="container-fluid">
                     <!-- menu mobile -->
                     <div class="d-flex justify-content-around align-items-center d-lg-none">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="../index.html">
                             <img src="../img/logo-nuevo-blanco-mobile.png" alt="Logo">
                         </a>
             
@@ -53,120 +62,57 @@
                         </button>
                     </div>
                     <!-- menu desktop -->
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                    <div class="collapse navbar-collapse justify-content-around" id="navbarContent">
                         <div class="d-none d-lg-block">
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand" href="../index.html">
                                 <img src="../img/logo_chico_nuevo.png" alt="Logo Desktop">
                             </a>
                         </div>
             
-                        <ul class="navbar-nav d-flex align-items-end">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="areasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Áreas
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="areasDropdown">
-    
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="psicologiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Psicología</a>
-                                        <ul class="dropdown-menu" aria-labelledby="psicologiaDropdown">
-                                            <li><a class="dropdown-item" href="#">Introducción a la Psicología</a></li>
-                                            <li><a class="dropdown-item" href="#">Psicología Clínica</a></li>
-                                            <li><a class="dropdown-item" href="#">Psicología Infantil</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="autismoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Autismo</a>
-                                        <ul class="dropdown-menu" aria-labelledby="autismoDropdown">
-                                            <li><a class="dropdown-item" href="#">Introducción al Autismo</a></li>
-                                            <li><a class="dropdown-item" href="#">Autismo Clínico</a></li>
-                                            <li><a class="dropdown-item" href="#">Autismo Infantil</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="educacionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Educación</a>
-                                        <ul class="dropdown-menu" aria-labelledby="educacionDropdown">
-                                            <li><a class="dropdown-item" href="#">Introducción a la Educación</a></li>
-                                            <li><a class="dropdown-item" href="#">Educación Clínica</a></li>
-                                            <li><a class="dropdown-item" href="#">Educación Infantil</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="crecimientoPersonalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Crecimiento Personal</a>
-                                        <ul class="dropdown-menu" aria-labelledby="crecimientoPersonalDropdown">
-                                            <li><a class="dropdown-item" href="#">Introducción al Crecimiento Personal</a></li>
-                                            <li><a class="dropdown-item" href="#">Crecimiento Personal Clínico</a></li>
-                                            <li><a class="dropdown-item" href="#">Crecimiento Personal Infantil</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="gerontologiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gerontología</a>
-                                        <ul class="dropdown-menu" aria-labelledby="gerontologiaDropdown">
-                                            <li><a class="dropdown-item" href="#">Introducción a la Gerontología</a></li>
-                                            <li><a class="dropdown-item" href="#">Gerontología Clínica</a></li>
-                                            <li><a class="dropdown-item" href="#">Gerontología Infantil</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="crianzaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Crianza</a>
-                                        <ul class="dropdown-menu" aria-labelledby="crianzaDropdown">
-                                            <li><a class="dropdown-item" href="#">Introducción a la Crianza</a></li>
-                                            <li><a class="dropdown-item" href="#">Crianza Clínica</a></li>
-                                            <li><a class="dropdown-item" href="#">Crianza Infantil</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="coachingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coaching</a>
-                                        <ul class="dropdown-menu" aria-labelledby="coachingDropdown">
-                                            <li><a class="dropdown-item" href="#">Introducción al Coaching</a></li>
-                                            <li><a class="dropdown-item" href="#">Coaching Clínico</a></li>
-                                            <li><a class="dropdown-item" href="#">Coaching Infantil</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="terapiasAlternativasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Terapias Alternativas</a>
-                                        <ul class="dropdown-menu" aria-labelledby="terapiasAlternativasDropdown">
-                                            <li><a class="dropdown-item" href="#">Introducción a las Terapias Alternativas</a></li>
-                                            <li><a class="dropdown-item" href="#">Terapias Alternativas Clínicas</a></li>
-                                            <li><a class="dropdown-item" href="#">Terapias Alternativas Infantiles</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="capacitacionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="navbar-nav d-flex align-items-center">
+                            <li class="nav-item" >
+                                <a class="nav-link active" href="./pages/cursos.html" >
                                     Capacitaciones
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="capacitacionesDropdown">
-                                    <li><a class="dropdown-item" href="#">Curso 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Curso 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Curso 3</a></li>
-                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Novedades</a>
+                                <a class="nav-link" href="../index.html#calendario">Inscribite ya</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#calendario">Cursos On demand</a>
                             </li>
                             <li class="nav-item me-5">
                                 <a class="nav-link position-relative" href="#">
                                     Nosotros
-                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:  .5rem;">
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:  .4rem;">
                                         &nbsp;&nbsp;
                                         <span class="visually-hidden">Nuevo</span>
                                     </span>
                                 </a>
                             </li>
-                            <li>
-                                <li class="nav-item">
-                                    <a class="nav-link btn boton-secundario" href="pages/login.html"><i class="fas fa-user me-2"></i>Ingresar</a>
-                                </li>
-                            </li>
+    
+                            <div class="d-none d-lg-flex align-items-center me-5">
+                                <a class="btn btn-outline-secondary rounded-pill me-3" href="./pages/login.html">
+                                    <i class="fas fa-user me-2"></i>Campus Online
+                                </a>
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle p-0" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="https://picsum.photos/100" alt="User Profile" class="rounded-circle" width="40" height="40">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                        <li><a class="dropdown-item" href="./pages/login.html">Mi perfil</a></li>
+                                        <li><a class="dropdown-item" href="./pages/login.html">Acceso Campus</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
             </nav>
             
-        </header> 
-<main>
+        </header> <main>
     <!-- Banner Principal -->
     <section class="course-presentation py-5 bg-azul" aria-labelledby="main-heading">
         <div class="container">
@@ -176,7 +122,7 @@
     </section>
 </main>
 <!-- Sección de Cursos -->
-<section class="py-5 bg-claro">
+<section class="py-5 bg-claro mt-5">
     <div class="container-fluid">
         <h2 class="text-center mb-4 texto-azul" data-aos="fade-up">Nuestros <strong>cursos y especializaciones</strong></h2>       
         <div class="row">
