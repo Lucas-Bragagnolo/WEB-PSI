@@ -23,7 +23,7 @@
     <!-- Incluir Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css?=6">
+    <link rel="stylesheet" href="./css/style.css?=7">
 
     <title>Asociación PSI</title>
 </head>
@@ -46,349 +46,68 @@
         </div>
     </div>  
     <!-- HEADER (MENU, TOOLTIP (promocion), Carrito, BarraLenguaje) -->
-    <header class="sticky-top">
-        <!-- Barra superior de acceso a Alumnos -->
-
-        <nav class="navbar navbar-expand-lg py-2 border-sup-rojo">
-            <div class="container-fluid">
-                <!-- menu mobile -->
-                <div class="d-flex justify-content-around align-items-center d-lg-none">
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/logo-nuevo-blanco-mobile.png" alt="Logo">
-                    </a>
-        
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <header class="sticky-top" id="menu-container"></header> 
+    <!-- Banner Principal  y Empresas que nos avalan-->
+    <main style="position: relative; overflow: hidden; height: 80vh;">
+        <video autoplay muted loop class="video-fondo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: brightness(0.5);">
+            <source src="./img/video/tomando_curso.mp4" type="video/mp4">
+        </video>
+        <section class="contianer-fluid p-1" style="z-index: 1;">
+            <div class="row text-white">
+                <div class="col-lg-6 p-5 ">
+                    <h1 class="display-5 text-uppercase text-uppercase bold"><strong>Adaptá tus tiempos de cursada</strong></h1>
+                    <p >Cursos, especializaciones y seminarios en psicología, autismo, educación, Cremimiento Personal, Gerontología, Crianza y más.!</p>            
+                    
+                    <button class="btn btn-danger rounded-pill mt-4 mb-4" href="#calendario">Quiero empezar mi aprendizaje HOY</button>
+    
                 </div>
-                <!-- menu desktop -->
-                <div class="collapse navbar-collapse justify-content-around" id="navbarContent">
-                    <div class="d-none d-lg-block">
-                        <a class="navbar-brand" href="#">
-                            <img src="./img/logo_chico_nuevo.png" alt="Logo Desktop">
-                        </a>
-                    </div>
-        
-                    <ul class="navbar-nav d-flex align-items-center">
-                        <li class="nav-item d-lg-none">
-                            <div class="menu-container">
-                                <button class="menu-trigger d-none d-lg-block">CAPACITACIONES <i class="bi bi-chevron-down"></i></button>
-                                <div class="mega-menu">
-                                    <div class="areas-list">
-                                        <div class="area-item active" data-area="psicologia">
-                                            <i class="fas fa-brain"></i>Psicología
-                                        </div>
-                                        <div class="area-item" data-area="autismo">
-                                            <i class="fas fa-puzzle-piece"></i>Autismo
-                                        </div>
-                                        <div class="area-item" data-area="educacion">
-                                            <i class="fas fa-graduation-cap"></i>Educación
-                                        </div>
-                                        <div class="area-item" data-area="crecimiento">
-                                            <i class="fas fa-seedling"></i>Crecimiento Personal
-                                        </div>
-                                        <div class="area-item" data-area="gerontologia">
-                                            <i class="fas fa-user-plus"></i>Gerontología
-                                        </div>
-                                        <div class="area-item" data-area="crianza">
-                                            <i class="fas fa-baby"></i>Crianza
-                                        </div>
-                                        <div class="area-item" data-area="coaching">
-                                            <i class="fas fa-bullseye"></i>Coaching
-                                        </div>
-                                        <div class="area-item" data-area="terapias">
-                                            <i class="fas fa-spa"></i>Terapias Alternativas
-                                        </div>
-                                    </div>
-                                    <div class="courses-list">
-                                        <h3>Psicología</h3>
-                                        <div class="course-item"><i class="fas fa-book"></i>Introducción a la Psicología</div>
-                                        <div class="course-item"><i class="fas fa-book"></i>Psicología Clínica</div>
-                                        <div class="course-item"><i class="fas fa-book"></i>Psicología Organizacional</div>
-                                    </div>
+    
+                <!-- Carousel -->
+                 <div class="col-lg-6 p-5">
+                    <div class="row row-cols-1 row-cols-md-2 g-2">
+                        <div class="col">
+                            <div class="card border-2 border-danger shadow-sm h-100">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h2 class="display-4">67</h2>
+                                    <p class="text-uppercase">Formaciones</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="nav-item " >
-                            <a class="nav-link" href="./pages/cursos.html" >
-                                Capacitaciones
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#calendario">Inscribite ya</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/cursos.html#cursosContainer">Cursos On demand</a>
-                        </li>
-                        <li class="nav-item me-5">
-                            <a class="nav-link position-relative" href="#">
-                                Nosotros
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:  .4rem;">
-                                    &nbsp;&nbsp;
-                                    <span class="visually-hidden">Nuevo</span>
-                                </span>
-                            </a>
-                        </li>
-
-                        <div class="d-none d-lg-flex align-items-center me-5">
-                            <a class="btn btn-outline-secondary rounded-pill me-3" href="./pages/login.html">
-                                <i class="fas fa-user me-2"></i>Campus Online
-                            </a>
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="https://picsum.photos/100" alt="User Profile" class="rounded-circle" width="40" height="40">
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="userDropdown">
-                                    <li><a class="dropdown-item" href="./pages/login.html">Mi perfil</a></li>
-                                    <li><a class="dropdown-item" href="./pages/login.html">Acceso Campus</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-                                </ul>
+                        </div>
+                        <div class="col">
+                            <div class="card border-2 border-danger shadow-sm h-100">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h2 class="display-4">120</h2>
+                                    <p class="text-uppercase">Cursos</p>
+                                </div>
                             </div>
                         </div>
-                    </ul>
-                </div>
+                        <div class="col">
+                            <div class="card border-2 border-danger shadow-sm h-100">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h2 class="display-4">30</h2>
+                                    <p class="text-uppercase">Profesores</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-2 border-danger shadow-sm h-100">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h2 class="display-4">1000</h2>
+                                    <p class="text-uppercase">Alumnos Egresados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
             </div>
-        </nav>
-        
-    </header> 
-    <!-- Banner Principal  y Empresas que nos avalan-->
-    <main class="bg-azul">
-        <section class="row align-items-center">
-            
-            <div class="col-lg-6 p-5 ">
-                <h1 class="display-5 text-uppercase text-white text-uppercase bold"><strong>Adaptá tus tiempos de cursada</strong></h1>
-                <p class="text-white">Cursos, especializaciones y seminarios en psicología, autismo, educación, Cremimiento Personal, Gerontología, Crianza y más.!</p>            
-                
-                <button class="btn btn-blanco rounded-pill mt-4 mb-4">Inscribite HOY</button>
 
-            </div>
-
-            <!-- Carousel -->
-             <div class="col-lg-6">
-                <video  src="./img/video/tomando_curso.mp4" width="100%" autoplay muted loop>
-                
-                </video>
-             </div>
             <!-- fIN cARROUSEL -->        
         </section>
 
-        <section data-aos="fade-up" class="py-5">            
-            <div class="container-fluid" data-aos="fade-up" data-aos-delay="300">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="text-center p-5">
-                            <h2 class="display-6 text-white">¿Por qué elegirnos?</h2>
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum rem quibusdam incidunt voluptate nihil ad!</p>
-                        </div>
-                    </div>
-
-                </div>
-            
-
-                <div class="stats-container p-5 text-white d-none d-lg-block">
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-1">
-                        <div class="col metrica me-4">
-                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
-                                <h3 class=" mb-2"><span class="counter" data-target="67">0</span>+</h3>
-                                <p class="mb-0">Formaciones</p>
-                            </div>
-                        </div>
-                        <div class="col metrica p-2 me-4">
-                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
-                                <h3 class="mb-2"><span class="counter" data-target="42">0</span>+</h3>
-                                <p class="mb-0">Docentes</p>
-                            </div>
-                        </div>
-                        <div class="col metrica p-2 me-4">
-                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="600">
-                                <h3 class=" mb-2"><span class="counter" data-target="35000">0</span>+</h3>
-                                <p class="mb-0">Alumnos desde 2019</p>
-                            </div>
-                        </div>
-                        <div class="col metrica p-2 me-4">
-                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="700">
-                                <h3 class=" mb-2"><span class="counter" data-target="80">0</span>+</h3>
-                                <p class="mb-0">Formaciones por año</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row row-cols-1 row-cols-md-4 g-4 mt-4 d-lg-none text-white">
-                    <div class="col">
-                        <div class="metrica h-100">
-                            <div class="card-body d-flex flex-column justify-content-center ">
-                                <h2 class="display-1">67</h2>
-                                <p class="text-uppercase">Formaciones</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="metrica h-100">
-                            <div class="card-body d-flex flex-column justify-content-center">
-                                <h2 class="display-1">42</h2>
-                                <p class="text-uppercase">Docentes</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="metrica h-100">
-                            <div class="card-body d-flex flex-column justify-content-center">
-                                <h2 class="display-1">35.000</h2>
-                                <p class="text-uppercase">Alumnos desde 2019</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="metrica h-100">
-                            <div class="card-body d-flex flex-column justify-content-center">
-                                <h2 class="display-1">80</h2>
-                                <p class="text-uppercase">Formaciones por año</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="reseñas" class="py-5">
-            <div class="container">
-
-            </div>
-        </section>
     </main>
 
-
-    <!--Cursos Disponibles -->
-<!-- <section>
-    <div class="container-fluid bg-ligth texto-azul text-center p-5">
-        <h3 class="mb-4">Inician en <strong>Enero 2025</strong></h3>
-        <div class="row">
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 mb-2">
-                <a href="detalle_curso.html?idcur=${curso.id}" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/400/600?random=6'); height: 300px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
-                        <h2 class="title">Estimulación Temprana</h2>
-                        <div class="details text-center">                        
-                            <h3 class="h2">24/01<br> <small>Inicio</small></h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section> -->
 <section>
-    <div class="container-fluid bg-claro texto-azul p-5" id="calendario">
+    <div class="container-fluid bg-claro texto-azul p-4" id="calendario">
         <h3 class="mb-2 text-center">Nuestros proximos <strong>Cursos y Especializaciones</strong></h3>
         <p class="text-center mb-5">
             Descubrí cúando serán nuestros próximos inicio de cursos</p>
@@ -399,7 +118,7 @@
         <div class="owl-carousel owl-theme mb-5">
             <div class="item" data-aos="fade-up" data-aos-delay="400">                           
                 <a href="./pages/detalle_curso.html?idcur=1" data-curso="1" class="card-curso-link hover-scale">
-                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url('./img/430x700.png'); background-size: contain; height: 350px; display: flex; justify-content: end; align-items: center; flex-direction: column;">                       
+                    <div class="card-curso" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url('./img/430x700.png'); background-size: contain; height: 350px; display: flex; justify-content: end; align-items: center; flex-direction: column; background-position: center;">                       
 
                     </div>
 
@@ -483,29 +202,28 @@
     </div>      
 </section>
 
-    
-    <!-- Foother -->
-    <footer class=" text-dark py-5 mt-5">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <img src="./img/logo-nuevo-chico.png" alt="Asociación PSI" class="mb-4">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="#" class="text-dark" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="text-dark" aria-label="Twitter"><i class="bi bi-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="text-dark" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
-                    </ul>
-                </div>
+<!-- Foother -->
+<footer class=" text-dark py-5 mt-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="./img/logo-nuevo-chico.png" alt="Asociación PSI" class="mb-4">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#" class="text-dark" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-dark" aria-label="Twitter"><i class="bi bi-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-dark" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
 
 
 <!-- jQuery -->
 
-<script>
+    <script>
     document.addEventListener('DOMContentLoaded', () => {
         const counters = document.querySelectorAll('.counter');
         const speed = 200;
@@ -528,43 +246,44 @@
         });
     });
     </script>
-        <script>
-            $(document).ready(function(){
-                $('.owl-carousel').owlCarousel({
-                    loop: true,
-                    autoplay:true,
-                    autoplayTimeout:2000,
-                    margin: 10,
-                    nav: true,
-                    dots: true, 
-                    gap: 30,   
-                    URLhashListener:true,
-                    autoplayHoverPause:true,
-                    startPosition: 'URLHash',            
-                    responsive: {
-                        0: {
-                            items: 1.4
-                        },
-                        600: {
-                            items: 3.3
-                        },
-                        1000: {
-                            items: 5.6
-                        }
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                autoplay:true,
+                autoplayTimeout:2000,
+                margin: 10,
+                nav: true,
+                dots: true, 
+                gap: 30,   
+                URLhashListener:true,
+                autoplayHoverPause:true,
+                startPosition: 'URLHash',            
+                responsive: {
+                    0: {
+                        items: 1.5
+                    },
+                    600: {
+                        items: 3.3
+                    },
+                    1000: {
+                        items: 5.6
                     }
-                });
+                }
             });
-        </script>
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- navbarJS -->
-    <script src="js/navBar.js"></script>
-    <script src="js/carousel.js"></script>
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script>
-         AOS.init();
-       </script>
-     <script src="js/botones.js"></script>
+    <script src="js/menu.js?=3"></script>     
+    <script src="js/datosAreas.js?1"></script>
+    <script src="js/datosCursos.js?1"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/botones.js"></script>
 </body>
 </html>

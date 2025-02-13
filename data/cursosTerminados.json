@@ -1,0 +1,7 @@
+{
+    "cursosTerminados": [
+    { "id": 1, "nombre": "Psicología del Aprendizaje", "nota": 8, "fecha": "2022-12-15" },
+    { "id": 2, "nombre": "Psicología de las Personalidades", "nota": 9, "fecha": "2022-11-20" },
+    { "id": 3, "nombre": "Evaluación Neuropsicológica", "nota": 7, "fecha": "2022-10-12" }
+]
+}

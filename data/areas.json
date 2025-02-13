@@ -2,51 +2,45 @@
 "areas": [
 {
     "id": 1,
-    "nombre": "Psicología",
+    "nombre": "Psicología y Salud mental",
     "color": "#008D34",
-    "descripcion": "Terapia y tratamientos"
+    "descripcion": "Terapia y tratamientos",
+    "imagen": "../img/areas/psicologia.png"
 },
 {
     "id": 2,
-    "nombre": "Autismo",
+    "nombre": "Discapacidad y Neurodiversidad",
     "color": "#FFC000",
-    "descripcion": "Intervención temprana"
+    "descripcion": "Intervención temprana",
+    "imagen": "../img/areas/discapacidad.png"
 },
 {
     "id": 3,
     "nombre": "Educación",
     "color": "#FE6300",
-    "descripcion": "Pedagogía"
+    "descripcion": "Pedagogía",
+    "imagen": "../img/areas/educacion.png"
 },
 {
     "id": 4,
-    "nombre": "Crecimiento Personal",
+    "nombre": "Coaching y Crecimiento Personal",
     "color": "#DD0000",
-    "descripcion": "Autoconocimiento"
+    "descripcion": "Autoconocimiento",
+    "imagen": "../img/areas/coaching.png"
 },
 {
     "id": 5,
     "nombre": "Gerontología",
     "color": "#9000FF",
-    "descripcion": "Adultos y mayores"
+    "descripcion": "Adultos y mayores",
+    "imagen": "../img/areas/gerontologia.png"
 },    
 {
     "id": 6,
     "nombre": "Crianza",
     "color": "#E72490",
-    "descripcion": "Paternidad positiva"
-},
-{
-    "id": 7,
-    "nombre": "Coaching",
-    "color": "#6AD200",
-    "descripcion": "Desarrollo personal"
-},
-{
-    "id": 8,
-    "nombre": "Terapias Alternativas",
-    "color": "#72C3FF",
-    "descripcion": "Bienestar integral"
+    "descripcion": "Paternidad positiva",
+    "imagen": "../img/areas/crianza.png"
 }
 ]
 }

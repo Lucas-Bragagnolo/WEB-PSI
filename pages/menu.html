@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg py-2 border-sup-rojo">
+    <div class="container-fluid">
+        <!-- Logo (visible en todos los tamaños) -->
+        <a class="navbar-brand" href="./index.html">
+            <img src="./img/logo_negro.png" alt="Logo" width="150" class="d-lg-block d-none">
+            <img src="./img/logo_negro.png" alt="Logo" width="100" class="d-lg-none d-block">
+        </a>
+
+        <!-- Botón de alternancia (toggler) para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Contenido del menú (colapsable en móviles) -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto d-flex flex-column flex-lg-row">
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link" href="./pages/cursos.html">Capacitaciones</a>
+                </li>
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link" href="#calendario">Inscribite ya</a>
+                </li>
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link" href="./pages/cursos.html#cursosContainer">Cursos On demand</a>
+                </li>
+                <li class="nav-item me-2 mb-2 mb-lg-0">
+                    <a class="nav-link position-relative" href="./pages/nosotros.html">
+                        Nosotros
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: .4rem;">
+                            &nbsp;&nbsp;
+                            <span class="visually-hidden">Nuevo</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item me-3 mb-2 mb-lg-0">
+                    <a class="nav-link position-relative" href="./pages/comunidad_psi.html">
+                        Comunidad
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: .4rem;">                                    
+                            <span style="font-size: 10px;">Unite</span>
+                        </span>
+                    </a>
+                </li>
+                
+                <!-- Contenedor del usuario (se cargará dinámicamente) -->
+                <div id="user-container" class="mt-2 mt-lg-0"></div>
+            </ul>
+        </div>
+    </div>
+</nav>

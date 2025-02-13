@@ -1,0 +1,45 @@
+{
+    "recursosGuardados": [
+        {
+            "id": 1,
+            "areas": ["Autismo", "Terapia Cognitivo Conductual"],
+            "imagenPortada": "https://picsum.photos/400/400?random=6",
+            "titulo": "Técnicas de Mindfulness para el Manejo del Estrés",
+            "colorArea": "#FF4444",
+            "fecha": "2 de octubre 2024"
+        },
+        {
+            "id": 2,
+            "areas": ["Psicología", "Terapia Cognitivo Conductual"],
+            "imagenPortada": "https://picsum.photos/400/400?random=7",
+            "titulo": "Introducción a la Terapia Cognitivo Conductual",
+            "colorArea": "#008D34",
+            "fecha": "15 de Julio 2023"
+        },
+        {
+            "id": 3,
+            "areas": ["Psicología", "Psicopatología"],
+            "imagenPortada": "https://picsum.photos/400/400?random=8",
+            "titulo": "Psicopatología: Introducción a los Trastornos Mentales",
+            "colorArea": "#FFC000",
+            "fecha": "25 de abril 2023"
+        }, 
+        {
+            "id": 4,
+            "areas": ["Psicología", "Psicología del Consumidor"],
+            "imagenPortada": "https://picsum.photos/400/400?random=9",
+            "titulo": "Psicología del Consumidor: Comprender el Comportamiento del Consumidor",
+            "colorArea": "#FE6300",
+            "fecha": "15 de Julio 2023"
+        },
+        {
+            "id": 5,
+            "areas": ["Psicología", "Psicología del Aprendizaje"],
+            "imagenPortada": "https://picsum.photos/400/400?random=10",
+            "titulo": "Psicología del Aprendizaje: Teorías y Aplicaciones",
+            "colorArea": "#E72490",
+            "fecha": "4 de octubre 2024"
+        }
+
+    ]
+}

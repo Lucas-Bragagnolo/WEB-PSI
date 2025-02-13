@@ -65,15 +65,15 @@ document.addEventListener('DOMContentLoaded', async function() {
                 if (resenasContainer && curso.reseñas) {
                     resenasContainer.innerHTML = curso.reseñas.map((resena, index) => `
                         <div class="carousel-item ${index === 0 ? 'active' : ''}">
-                            <div class="d-flex align-items-center mx-auto" style="max-width: 600px;">
-                                <div class="me-4 mb-2 mb-sm-0">
-                                    <img src="${resena.imagen}" alt="Foto de ${resena.autor}" class="rounded-circle" width="50" height="50">
-                                </div>
-                                <div class="text-white">
-                                    <p class="card-text lead">"${resena.descripcion}"</p>
-                                    <div class="mt-4">
+                            <div class="d-flex flex-column align-items-center justify-content-center mx-auto" style="max-width: 400px;">
+                               
+                                <img src="${resena.imagen}" alt="Foto de ${resena.autor}" class="rounded-circle" width="100" height="100">
+                                <div class="mt-4">
                                         <h5 class="card-title mb-0 fw-bold">${resena.autor}</h5>
-                                    </div>
+                                </div>
+                                <div class="text-dark">
+                                    <p class="card-text lead">"${resena.descripcion}"</p>
+
                                 </div>
                             </div>
                         </div>

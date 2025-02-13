@@ -1,0 +1,17 @@
+{
+    "id": 1,
+    "token": "tokenlucas-bragagnolo",
+    "fechaIngreso": "Agosto 2022",
+    "nombre": "Lucas",
+    "apellido": "Bragagnolo",
+    "email": "lucasbragagnolo6@gmail.com",
+    "documento": "39413476",
+    "telefono": "+542325420041",
+    "fotoPerfil": "https://example.com/juan.jpg",
+    "provincia": "Buenos Aires",
+    "areasInteres": [1,3,5,6],
+    "recursosGuardados ": [1,2,3],
+
+    "cursosFavoritos": [1,2,3]
+}
+

@@ -23,112 +23,49 @@
     <!-- Incluir Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css?=11 ">
+    <link rel="stylesheet" href="../css/style.css?=16 ">
 
     <title>Asociación PSI - Cursos y especializaciones</title>
 
 </head>
 <body>
-        <!-- Botón WhatsApp -->
-        <a href="https://wa.me/1234567890" class="btn-whatsapp" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        
-        <!-- Botón Volver Arriba -->
-        <a href="#" class="btn-scroll-top">
-            <i class="bi bi-arrow-up"></i>
-        </a>
-        <div id="topBar" class="alert alert-info alert-dismissible fade show mb-0" role="alert">
-            <div class="container">
-                <strong>¡Unite a la comunidad PSI!</strong> esto es un mensaje invitando al usuario a que se registre en la comunidad <strong>Gratis</strong>
-                <a href="#" class="btn btn-primary ms-2">Regístrate</a>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        </div>  
-        <!-- HEADER (MENU, TOOLTIP (promocion), Carrito, BarraLenguaje) -->
-        <header class="sticky-top">
-            <!-- Barra superior de acceso a Alumnos -->
-    
-            <nav class="navbar navbar-expand-lg py-2 border-sup-rojo">
-                <div class="container-fluid">
-                    <!-- menu mobile -->
-                    <div class="d-flex justify-content-around align-items-center d-lg-none">
-                        <a class="navbar-brand" href="../index.html">
-                            <img src="../img/logo-nuevo-blanco-mobile.png" alt="Logo">
-                        </a>
-            
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <!-- menu desktop -->
-                    <div class="collapse navbar-collapse justify-content-around" id="navbarContent">
-                        <div class="d-none d-lg-block">
-                            <a class="navbar-brand" href="../index.html">
-                                <img src="../img/logo_chico_nuevo.png" alt="Logo Desktop">
-                            </a>
-                        </div>
-            
-                        <ul class="navbar-nav d-flex align-items-center">
-                            <li class="nav-item" >
-                                <a class="nav-link active" href="./pages/cursos.html" >
-                                    Capacitaciones
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html#calendario">Inscribite ya</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#calendario">Cursos On demand</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link position-relative" href="#">
-                                    Nosotros
-                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:  .4rem;">
-                                        &nbsp;&nbsp;
-                                        <span class="visually-hidden">Nuevo</span>
-                                    </span>
-                                </a>
-                            </li>
-    
-                            <div class="d-none d-lg-flex align-items-center me-5">
-                                <a class="btn btn-outline-secondary rounded-pill me-3" href="./pages/login.html">
-                                    <i class="fas fa-user me-2"></i>Campus Online
-                                </a>
-                                <div class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle p-0" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="https://picsum.photos/100" alt="User Profile" class="rounded-circle" width="40" height="40">
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
-                                        <li><a class="dropdown-item" href="./pages/login.html">Mi perfil</a></li>
-                                        <li><a class="dropdown-item" href="./pages/login.html">Acceso Campus</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            
-        </header> <main>
-    <!-- Banner Principal -->
-    <section class="course-presentation py-5 bg-azul" aria-labelledby="main-heading">
+<!-- Botón WhatsApp -->
+<a href="https://wa.me/1234567890" class="btn-whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Botón Volver Arriba -->
+<a href="#" class="btn-scroll-top">
+    <i class="bi bi-arrow-up"></i>
+</a>
+<div id="topBar" class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+    <div class="container">
+        <strong>¡Unite a la comunidad PSI!</strong> esto es un mensaje invitando al usuario a que se registre en la comunidad <strong>Gratis</strong>
+        <a href="#" class="btn btn-primary ms-2">Regístrate</a>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+</div>  
+<!-- HEADER (MENU, TOOLTIP (promocion), Carrito, BarraLenguaje) -->
+<header class="sticky-top" id="menu-container"></header> 
+
+<main>
+<!-- Banner Principal -->
+    <section class="course-presentation py-5" aria-labelledby="main-heading">
         <div class="container">
-            <h2 class="text-center mb-5 text-white">Nuestras <strong>áreas de Especialización</strong></h2>
-            <div class="row align-items-center g-4" id="areas"></div>
+            <h2 class="text-center mb-5 texto-azul">Nuestras <strong>áreas de Especialización</strong></h2>
+            <div class="row align-items-center g-4" id="areas-container"></div>
         </div>
     </section>
 </main>
 <!-- Sección de Cursos -->
 <section class="py-5 bg-claro mt-5">
     <div class="container-fluid">
-        <h2 class="text-center mb-4 texto-azul" data-aos="fade-up">Nuestros <strong>cursos y especializaciones</strong></h2>       
-        <div class="row">
+        <h2 class="text-center mb-2 texto-azul" data-aos="fade-up">Nuestros <strong>cursos y especializaciones</strong></h2>       
+            <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, illo?</p>
+        <div class="row mt-5">
             <!-- Barra de filtros interactiva -->
-            <div class="col-12 col-lg-3 mb-5" style="top: 2rem;">
-                <div class="card shadow-sm">
+            <div class="col-12 col-lg-3 mb-5">
+                <div class="position-sticky" style="top: 40px;">
                     <div class="card-header bg-white border-bottom-0 p-0 d-flex justify-content-between align-items-center">
                         <button class="btn btn-link d-block d-lg-none me-2" type="button" data-bs-toggle="collapse" data-bs-target="#course-filters" aria-expanded="false" aria-controls="course-filters">
                             <i class="fa-solid fa-sliders"></i>
@@ -236,9 +173,8 @@
             </div>
 
             <!-- Grid de cursos -->
-            <div class="col-12 gap-2 col-lg-9 ">
-                <!-- Ordenamiento de cursos -->
-
+            <div class="col-12 gap-2 col-lg-9">
+                <!-- Ordenamiento de cursos -->            
                 <div class="d-flex justify-content-between align-items-baseline mb-4">
                     <div id="active-filters"  role="region" aria-live="polite">
                         <!-- Active filters will be dynamically added here -->
@@ -261,7 +197,7 @@
 
                 </div>
                 
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2" id="cursosContainer">
+                <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-2" id="cursosContainer">
                     <!-- Acá se insertan los cursos dinámicamente -->
                 </div>
 
@@ -370,9 +306,10 @@
             });
         });
     </script>
+        <script src="../js/menu_pages.js?=1"></script>
         <script src="../js/datosAreas.js"></script>
         <script src="../js/datosCursos.js"></script>
-        <script src="../js/cursos.js?=1.15"></script>
+        <script src="../js/cursos.js?=1.24"></script>
         <!-- bootstrap -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>        

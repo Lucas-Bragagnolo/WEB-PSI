@@ -1,38 +1,53 @@
-/* RENDERIZAMOS LAS AREAS */
 
-const areasContainer = document.getElementById("areas")
+const areasContainer = document.getElementById("areas-container");
+function hexToRGBA(hex, alpha = 1) {
+  const r = Number.parseInt(hex.slice(1, 3), 16),
+    g = Number.parseInt(hex.slice(3, 5), 16),
+    b = Number.parseInt(hex.slice(5, 7), 16)
 
-areas.forEach((area) => {
-  const areaHTML = `
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-            <div class="card card-areas border-secondary rounded-0 d-flex align-items-baseline" style="border-top-right-radius: 0.5rem; border-bottom-right-radius: 0.5rem; position: relative;">
-                <div class="position-absolute top-0 end-0 mt-2 me-2" style="width: 18px; height: 18px; background-color: ${area.color}; border-radius: 50%;"></div>
-                <div class="card-body d-flex flex-column justify-content-end">
-                    <h3 class="h4 mb-3">${area.nombre}</h3>
-                    <ul class="list-unstyled">
-                        <li>${area.descripcion}</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    `
-  areasContainer.insertAdjacentHTML("beforeend", areaHTML)
-})
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`
+}  
+fetchAreas().then(areas => {
+  areas.forEach((area) => {
+    const transparentColor = hexToRGBA(area.color, 0.5);
+    const card = document.createElement("div");
+    card.className = "col-12 col-md-6 col-lg-4 hover-scale";
+    card.innerHTML = `
+      <div class="form-check custom-card h-100 w-100 ">      
+          <label class="form-check-label w-100 h-100" for="area${area.id}">
+              <div class="card-body d-flex flex-column align-items-center justify-content-end" 
+                   style="background: linear-gradient(${transparentColor},rgba(0,0,0,0.4)), url('${area.imagen}');
+                          background-position: center;
+                          background-size: cover;
+                          background-repeat: no-repeat;
+                          height: 200px; 
+                          border-radius: 15px;">
+                  <h3 class="h4 mb-2 text-white text-center">${area.nombre}</h3>
+                  <p class="text-white text-center small">${area.descripcion}</p>
+              </div>
+          </label>
+      </div>
+    `;
+    areasContainer.appendChild(card);
+  });
+  
+  // Renderizamos las áreas en el select
+  const selectAreas = document.getElementById("filter-area");
+  selectAreas.innerHTML = ""; // Limpiamos opciones previas
+  const optionDefault = document.createElement("option");
+  optionDefault.value = "todas";
+  optionDefault.textContent = "Ver todas";
+  optionDefault.selected = true;
+  selectAreas.appendChild(optionDefault);
+  
+  areas.forEach((area) => {
+    const option = document.createElement("option");
+    option.value = area.id;
+    option.textContent = area.nombre;
+    selectAreas.appendChild(option);
+  });
+});
 
-//Renderizamos las areas en el select
-const selectAreas = document.getElementById("filter-area")
-const optionDefault = document.createElement("option")
-optionDefault.value = "todas"
-optionDefault.textContent = "Ver todas"
-optionDefault.selected = true
-selectAreas.appendChild(optionDefault)
-
-areas.forEach((area) => {
-  const option = document.createElement("option")
-  option.value = area.id // Se usa idarea para la comparación
-  option.textContent = area.nombre
-  selectAreas.appendChild(option)
-})
 
 /* RENDERIZAMOS LOS CURSOS */
 //Funcion para renderizar todos los cursos
@@ -47,8 +62,6 @@ async function cargarCursos() {
     const listaCursos = document.getElementById("cursosContainer")
     listaCursos.innerHTML = "" // Limpiar contenido previo
     cursos.forEach((curso) => {
-      const cursoArea = curso.idarea
-      const colorArea = areas.find((area) => area.id === cursoArea).color
       const nuevoBadge = curso.nuevo
         ? `<span class="destacado ms-2 me-2 mb-2 rounded-pill bg-danger text-white">Nuevo</span>`
         : ""
@@ -126,12 +139,6 @@ document.getElementById("filter-duration").addEventListener("change", (e) => {
   updateFiltersInSessionStorage()
   filtrarCursos()
 })
-document.getElementById("filter-start-date").addEventListener("change", (e) => {
-  filters["filter-start-date"] = e.target.value
-  console.log("Filtro de fecha de inicio cambiado:", filters["filter-start-date"])
-  updateFiltersInSessionStorage()
-  filtrarCursos()
-})
 
 // Función para obtener cursos filtrados según los criterios
 function obtenerCursosFiltrados(cursos) {
@@ -165,8 +172,8 @@ function renderizarCursos(cursos) {
   listaCursos.innerHTML = "" // Limpiar contenido previo
   cursos.forEach((curso) => {
     const nuevoBadge = curso.nuevo
-      ? `<span class="destacado mb-2 me-2 rounded-pill bg-danger text-white">Nuevo</span>`
-      : '<span class="mb-4">&nbsp;</span>'
+      ? `<span class="destacado mb-2 me-1 rounded-pill bg-danger text-white">Nuevo</span><br>`
+      : ""
     const bookmarkIcon = curso.destacado
       ? `<i class="bi bi-bookmark-fill" aria-hidden="true"></i>`
       : `<i class="bi bi-bookmark-plus" aria-hidden="true"></i>`
@@ -177,8 +184,11 @@ function renderizarCursos(cursos) {
             <div class="col mb-2">
                 <a href="detalle_curso.html?idcur=${curso.id}" class="card-curso-link" data-curso="${curso.id}">
                     <div class="card-curso hover-scale" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('.${curso.imagen}'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+                       <div class="badges" >
                         ${nuevoBadge}
                         ${dispobibleInscripcion}
+
+                       </div>
                         <button type="button" class="btn btn-link p-0 bookmark" title="Guardar curso" aria-label="Guardar curso">
                             ${bookmarkIcon}
                         </button>
@@ -194,16 +204,16 @@ function renderizarCursos(cursos) {
 
 // Función principal para filtrar y renderizar los cursos
 function filtrarCursos() {
-  console.log("Iniciando filtrado de cursos")
+  //console.log("Iniciando filtrado de cursos")
   const cursosSessionStorage = sessionStorage.getItem("cursos")
   if (!cursosSessionStorage) {
-    console.log("No hay cursos en el sessionStorage.")
+    //console.log("No hay cursos en el sessionStorage.")
     return
   }
   const cursos = JSON.parse(cursosSessionStorage)
 
   const cursosFiltrados = obtenerCursosFiltrados(cursos)
-  console.log("Cursos filtrados:", cursosFiltrados.length)
+  //console.log("Cursos filtrados:", cursosFiltrados.length)
   renderizarCursos(cursosFiltrados)
   updateActiveFilters()
 }
@@ -303,7 +313,6 @@ document.getElementById("limpiarFiltros").addEventListener("click", (e) => {
   document.getElementById("filter-modalidad").value = ""
   document.getElementById("search-courses").value = ""
   document.getElementById("filter-duration").value = ""
-  document.getElementById("filter-start-date").value = ""
 
   // Clear filters object
   filters = {}
@@ -340,16 +349,13 @@ function getFilterName(key, value) {
   switch (key) {
     case "filter-area":
       return document.querySelector(`#filter-area option[value="${value}"]`)?.textContent || "Área desconocida"
-    case "filter-start-date":
-      const fechasInicio = {
-        "30dias": "Próximos 30 días",
-        "2meses": "Próximos 2 meses",
-        "6meses": "Próximos 6 meses",
-        2025: "En 2025",
-      }
-      return fechasInicio[value] || "Fecha de inicio desconocida"
     case "filter-duration":
-      return value === "1" ? "Duración: 1-3 meses" : "Duración: 4-6 meses"
+      return {
+        "3": "Duración: 3 meses",
+        "4": "Duración: 4 meses",
+        "5": "Duración: 5 meses",
+        "6": "Duración: 6 meses",
+      }[value] || `Duración: ${value} meses`
     case "filter-modalidad":
       return (
         document.querySelector(`#filter-modalidad option[value="${value}"]`)?.textContent || "Modalidad desconocida"

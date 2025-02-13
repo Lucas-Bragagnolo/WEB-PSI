@@ -81,10 +81,38 @@
                         feedbackDiv.textContent = '';
                         return true;
                     }
+        }
+        
+        // Agregar eventos para validación en tiempo real
+      //  document.getElementById('registerPassword').addEventListener('input', validatePasswords);
+       // document.getElementById('confirmPassword').addEventListener('input', validatePasswords);
+        
+        
+
+        //VALIDAR EL USUARIO POR FETCH
+        document.getElementById("loginForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+            
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+        
+            try {
+                const response = await fetch("../data/login.json", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email, password }),
+                });
+        
+                const data = await response.json();
+        
+                if (response) {
+                    sessionStorage.setItem("token", data.token);
+                    window.location.href = "plataforma.html";
+                } else {
+                    alert("Error: " + data.message);
                 }
-        
-                // Agregar eventos para validación en tiempo real
-                document.getElementById('registerPassword').addEventListener('input', validatePasswords);
-                document.getElementById('confirmPassword').addEventListener('input', validatePasswords);
-        
+            } catch (error) {
+                console.error("Error en login:", error);
+            }
+        });
         

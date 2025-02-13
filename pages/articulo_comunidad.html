@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.default.min.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
     <!-- Incluir jQuery (es necesario para Owl Carousel) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -28,132 +31,98 @@
     <title>Comunidad PSI</title>
 </head>
 <body>
-    <header>         
-        <nav class="navbar navbar-expand-lg navbar-ligth bg-light py-2">
-            <div class="container">    
-                <a class="navbar-brand" href="javascript:void(0)"><img src="../img/logo_comunidad_chico.png" alt="Logo" class="img-fluid"></a>
-                <button class="btn btn-navbar d-lg-none d-flex align-items-center justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#searchCollapse" aria-expanded="false" aria-controls="searchCollapse">
-                    <i class="bi bi-search"></i>
-                </button>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./comunidad_psi.html">Comunidad</a>
-                        </li>  
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./perfil_comunidad.html">Mi cuenta</a>
-                        </li>                            
-                        <li class="nav-item d-lg-none">
-                            <a class="nav-link d-flex align-items-center" href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#areasOffcanvas" aria-controls="areasOffcanvas">
-                                Areas <i class="bi bi-chevron-right ms-1"></i>
-                            </a>
-                        </li>
-                        <!-- Navbar de Áreas para pantallas grandes -->                     
-                        <li class="nav-item dropdown position-static d-none d-lg-block">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Áreas
-                            </a>
-                            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-3">
-                                            <h5 class="dropdown-header">Psicología</h5>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
-                                            <a class="dropdown-item" href="#">Hipnosis terapéutica</a>
-                                            <a class="dropdown-item" href="#">Trastornos Infantiles</a>
-                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <h5 class="dropdown-header">Autismo</h5>
-                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <h5 class="dropdown-header">Educación</h5>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
-                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <h5 class="dropdown-header">Otras Áreas</h5>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Gestalt</a>
-                                            <a class="dropdown-item" href="#">Especialista en terapia Positiva</a>
-                                            <a class="dropdown-item" href="#">Psicología infantil y adolescente</a>
-                                            <a class="dropdown-item" href="#">Terapia con objetos intermediarios</a>
-                                            <a class="dropdown-item" href="#">Acompañante terapéutico</a>
-                                            <a class="dropdown-item ver-mas" href="#">Ver más <i class="bi bi-chevron-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>                                      
-
-                    </ul>
-                </div>            
-                <form class="d-flex me-2 d-none d-lg-block">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="¿Qué buscas?" aria-label="Buscar" aria-describedby="button-search">
-                        <button class="btn btn-outline-secondary" type="submit" id="button-search">
-                            <i class="bi bi-search"></i>
+        <!-- Botón WhatsApp -->
+        <a href="https://wa.me/1234567890" class="btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        
+        <!-- Botón Volver Arriba -->
+        <a href="#" class="btn-scroll-top">
+            <i class="bi bi-arrow-up"></i>
+        </a> 
+        <!-- HEADER (MENU, TOOLTIP (promocion), Carrito, BarraLenguaje) -->
+        <header>
+            <!-- Barra superior de acceso a Alumnos -->
+    
+            <nav class="navbar navbar-expand-lg py-2 border-sup-rojo">
+                <div class="container-fluid">
+                    <!-- menu mobile -->
+                    <div class="d-flex justify-content-around align-items-center d-lg-none">
+                        <a class="navbar-brand" href="#">
+                            <img src="../img/logo-nuevo-blanco-mobile.png" alt="Logo">
+                        </a>
+            
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
-                </form>
-    
-            </div>
+                    <!-- menu desktop -->
+                    <div class="collapse navbar-collapse justify-content-around" id="navbarContent">
+                        <div class="d-none d-lg-block">
+                            <a class="navbar-brand" href="#">
+                                <img src="../img/logo_chico_nuevo.png" alt="Logo Desktop">
+                            </a>
+                        </div>
             
-        </nav>
+                        <ul class="navbar-nav d-flex align-items-center">
+                            <li class="nav-item " >
+                                <a class="nav-link" href="./cursos.html" >
+                                    Capacitaciones
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#calendario">Inscribite ya</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cursos.html#cursosContainer">Cursos On demand</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link position-relative" href="#">
+                                    Nosotros
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:  .4rem;">
+                                        &nbsp;&nbsp;
+                                        <span class="visually-hidden">Nuevo</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link active position-relative" href="./comunidad_psi.html">
+                                    Comunidad
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:  .4rem;">                                    
+                                        <span style="font-size: 10px;">Unite</span>
+                                    </span>
+                                </a>
+                            </li>
     
-        <!-- Collapse de busqueda -->        
-        <div class="collapse" id="searchCollapse">
-            <div class="container mt-3 mb-4">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="button-search">
-                    <button class="btn btn-outline-secondary" type="button" id="button-search">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Offcanvas para áreas -->
-        <div class="offcanvas offcanvas-end h-100" tabindex="-1" id="areasOffcanvas" aria-labelledby="areasOffcanvasLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="areasOffcanvasLabel">Áreas</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <h5 class="dropdown-header">Psicología</h5>
-                        <ul>
-                            <li><a href="#" class="text-decoration-none">Introducción a la Psicología</a></li>
-                            <li><a href="#" class="text-decoration-none">Psicología Clínica</a></li>
-                            <li><a href="#" class="text-decoration-none">Psicología Infantil</a></li>
+                            <div class=" d-lg-flex align-items-center me-5">
+
+                                <div class="nav-item dropdown me-2">
+                                    <a class="nav-link dropdown-toggle p-0" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="https://picsum.photos/100" alt="User Profile" class="rounded-circle" width="40" height="40">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                        <li><a class="dropdown-item" href="./plataforma.html">Mi perfil</a></li>
+                                        <li><a class="dropdown-item" href="#">Acceso Campus</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="login_plataforma.html">Cerrar sesión</a></li>
+                                    </ul>
+                                </div>
+                                <a class="btn btn-outline-secondary rounded-pill me-3" href="./login.html">
+                                    <i class="fas fa-user me-2"></i>Campus Online
+                                </a>
+                            </div>
                         </ul>
-                    </li>
-    
-                </ul>
-            </div>
-        </div>
-    </header> 
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
 
 
 <main class="container mt-5">
     <div class="row">
         <!-- Columna principal del artículo -->
-        <div class="col-lg-8">
+        <div class="col-lg-8 offset-lg-2">
             <article>
                 <nav aria-label="breadcrumb" class="mb-4">
                     <ol class="breadcrumb">
@@ -245,61 +214,7 @@
             </article>
         </div>
         
-        <!-- Columna lateral para posteos recientes -->
-        <div class="col-lg-4">
-            <aside class="sticky-top" style="top: 2rem;">
-                <!-- Artículos Relacionados -->
-                <div class="card shadow-sm mb-4" role="complementary">
-                    <div class="card-body">
-                        <h3 class="h4 mb-4" id="articulos-relacionados">Artículos Relacionados</h3>
-                        <div class="list-group list-group-flush">
-                            <a href="#" class="list-group-item list-group-item-action py-3" aria-labelledby="titulo-articulo-1">
-                                <div class="row g-0 align-items-center">
-                                    <div class="col-4">
-                                        <div class="position-relative">
-                                            <span class="badge bg-primary position-absolute top-0 start-0 m-1" role="tag">Psicología</span>
-                                            <img src="../img/blog/articulo1.jpg" 
-                                                 alt="Niños jugando en terapia psicológica" 
-                                                 class="img-fluid rounded"
-                                                 width="100"
-                                                 height="100"
-                                                 loading="lazy">
-                                        </div>                        
-                                    </div>
-                                    <div class="col-8 ps-3">
-                                        <h4 class="h6 mb-1" id="titulo-articulo-1">Los trastornos Infantiles</h4>
-                                        <time datetime="2024-05-01" class="small text-muted d-block">1 de Mayo, 2024</time>
-                                        <span class="visually-hidden">Leer más sobre Los trastornos Infantiles</span>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action py-3" aria-labelledby="titulo-articulo-2">
-                                <div class="row g-0 align-items-center">
-                                    <div class="col-4">
-                                        <div class="position-relative">
-                                            <span class="badge bg-danger position-absolute top-0 start-0 m-1" role="tag">Autismo</span>
-                                            <img src="../img/blog/articulo2.jpg" 
-                                                 alt="Niño con autismo en sesión terapéutica" 
-                                                 class="img-fluid rounded"
-                                                 width="100"
-                                                 height="100"
-                                                 loading="lazy">
-                                        </div>                        
-                                    </div>
-                                    <div class="col-8 ps-3">
-                                        <h4 class="h6 mb-1" id="titulo-articulo-2">Entendiendo el Autismo</h4>
-                                        <time datetime="2024-05-01" class="small text-muted d-block">1 de Mayo, 2024</time>
-                                        <span class="visually-hidden">Leer más sobre Entendiendo el Autismo</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Newsletter -->
-            </aside>
-        </div>
     </div>
 </main>
 
@@ -349,8 +264,10 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script src="../js/script.js"></script>
+
     <script>
         // Código JavaScript para el filtrado de artículos
         document.addEventListener('DOMContentLoaded', function() {

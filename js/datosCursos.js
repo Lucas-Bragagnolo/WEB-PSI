@@ -8,5 +8,4 @@ const fetchCursos = async () => {
     }
     return cursos;
 }
-
-
+fetchCursos

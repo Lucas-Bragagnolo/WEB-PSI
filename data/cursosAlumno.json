@@ -1,0 +1,18 @@
+{
+    "cursos": [
+        {
+            "nombreCurso": "Terapia Cognitivo Conductual",
+            "horarios": "10:00 - 12:00",
+            "dias": ["Lunes", "Miércoles"],
+            "vencimiento": "2024-12-31",
+            "progreso": "75%"
+        },
+        {
+            "nombreCurso": "Psicología de las personalidades",
+            "horarios": "14:00 - 16:00",
+            "dias": ["Martes", "Jueves"],
+            "vencimiento": "2024-11-30",
+            "progreso": "50%"
+        }
+    ]
+}
