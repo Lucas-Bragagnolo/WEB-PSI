@@ -1029,6 +1029,7 @@ iframe {
     justify-content: center;
     align-items: center;
     text-align: start;
+    align-content: center;
     position: absolute;
     left: 10%;
     top: 40%;

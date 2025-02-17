@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
             if (curso) {
                 // Actualizar los elementos HTML con los datos del curso
-                document.getElementById('tituloCurso').textContent = curso.titulo;
+                
                 document.getElementById('introduccion').textContent = curso.introduccion;
                 document.getElementById('profesor').textContent = `Profesor/a: ${curso.profesor}`;
                 document.getElementById('tipoCurso').textContent = curso.tipoCurso;
