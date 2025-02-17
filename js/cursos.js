@@ -75,14 +75,13 @@ async function cargarCursos() {
         const cardHTML = `
         <div class="col mb-2">
             <a href="detalle_curso.html?idcur=${curso.id}" class="card-curso-link" data-curso="${curso.id}">
-                <div class="card-curso hover-scale" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('.${curso.imagen}'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+                <div class="card-curso hover-scale" style="background-img: url('.${curso.imagen}'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
                     ${nuevoBadge}
                     ${dispobibleInscripcion}
                     <button type="button" class="btn btn-link p-0 bookmark" title="Guardar curso" aria-label="Guardar curso">
                         ${bookmarkIcon}
                     </button>
-
-                    <h2 class="title">${curso.titulo}</h2>
+                    
                 </div>
             </a>
         </div>`
@@ -183,7 +182,7 @@ function renderizarCursos(cursos) {
     const cardHTML = `
             <div class="col mb-2">
                 <a href="detalle_curso.html?idcur=${curso.id}" class="card-curso-link" data-curso="${curso.id}">
-                    <div class="card-curso hover-scale" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('.${curso.imagen}'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+                    <div class="card-curso hover-scale" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0)), url('.${curso.imagen}'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
                        <div class="badges" >
                         ${nuevoBadge}
                         ${dispobibleInscripcion}
@@ -191,9 +190,7 @@ function renderizarCursos(cursos) {
                        </div>
                         <button type="button" class="btn btn-link p-0 bookmark" title="Guardar curso" aria-label="Guardar curso">
                             ${bookmarkIcon}
-                        </button>
-
-                        <h2 class="title">${curso.titulo}</h2>
+                        </button>                        
                     </div>
                 </a>
             </div>`

@@ -47,82 +47,7 @@
         </div>
     </div>  
     <!-- HEADER (MENU, TOOLTIP (promocion), Carrito, BarraLenguaje) -->
-    <header class="sticky-top">
-        <!-- Barra superior de acceso a Alumnos -->
-
-        <nav class="navbar navbar-expand-lg py-2 border-sup-rojo">
-            <div class="container-fluid">
-                <!-- menu mobile -->
-                <div class="d-flex justify-content-around align-items-center d-lg-none">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../img/logo_negro.png" alt="Logo">
-                    </a>
-        
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <!-- menu desktop -->
-                <div class="collapse navbar-collapse justify-content-around" id="navbarContent">
-                    <div class="d-none d-lg-block">
-                        <a class="navbar-brand" href="../index.html">
-                            <img src="../img/logo_negro.png" width="150px" alt="Logo Desktop">
-                        </a>
-                    </div>
-        
-                    <ul class="navbar-nav d-flex align-items-center">
-                        <li class="nav-item " >
-                            <a class="nav-link active" href="./cursos.html" >
-                                Capacitaciones
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html#calendario">Inscribite ya</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./cursos.html#cursosContainer">Cursos On demand</a>
-                        </li>
-                        <li class="nav-item me-2">
-                            <a class="nav-link position-relative" href="./nosotros.html">
-                                Nosotros
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:  .4rem;">
-                                    &nbsp;&nbsp;
-                                    <span class="visually-hidden">Nuevo</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link position-relative" href="./pages/comunidad_psi.html">
-                                Comunidad
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:  .4rem;">                                    
-                                    <span style="font-size: 10px;">Unite</span>
-                                </span>
-                            </a>
-                        </li>
-
-                        <div class=" d-lg-flex align-items-center me-5">
-
-                            <div class="nav-item dropdown me-2">
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="https://picsum.photos/100" alt="User Profile" class="rounded-circle" width="40" height="40">
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="userDropdown">
-                                    <li><a class="dropdown-item" href="./plataforma.html">Mi perfil</a></li>
-                                    <li><a class="dropdown-item" href="#">Acceso Campus</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-                                </ul>
-                            </div>
-                            <a class="btn btn-outline-secondary rounded-pill me-2" href="#">
-                                <i class="fas fa-user"></i>Campus Online
-                            </a>                            
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-    </header> 
+    <header class="sticky-top" id="menu-container"></header> 
     <main>
         <img class="d-none d-lg-block" alt="">
         <img class="d-lg-none" alt="">
@@ -326,14 +251,13 @@
     <section id="reseñas" class="mt-5  py-5">
         <div class="container">
             <div id="testimoniosCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                </div>
+                <div class="carousel-inner"> </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
@@ -407,6 +331,7 @@
 
     
         <!-- bootstrap -->
+    <script src="../js/menu_pages.js"></script>
     <script src="../js/datosDetalleCurso.js?=11"></script>
     <script src="../js/navBar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
