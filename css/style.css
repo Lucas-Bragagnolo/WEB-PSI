@@ -1021,7 +1021,7 @@ iframe {
 .carousel-caption {
     margin-bottom: 20px;
     padding: 20px;  
-    width: 40%;
+    width: 50%;
     height: 300px;
     display: flex;   
     color: #222222;
@@ -1032,13 +1032,25 @@ iframe {
     align-content: center;
     position: absolute;
     left: 10%;
-    top: 40%;
-    transform: translateY(-50%);
-    box-shadow:
-    2.2px 1.4px 3.6px rgba(0, 0, 0, 0.024),
-    6px 3.8px 10px rgba(0, 0, 0, 0.035),
-    14.5px 9px 24.1px rgba(0, 0, 0, 0.046),
-    48px 30px 80px rgba(0, 0, 0, 0.07)
-  ;
+    top: 20%;
 }
 
+.carousel-item-2 {
+    background-image: url("../img/slider/slider_comunidad_escritorio.png");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.carousel-item-1 {
+    background-image: url("../img/slider/slider_principal.png");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: darken;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
