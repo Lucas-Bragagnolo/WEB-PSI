@@ -13,19 +13,25 @@ fetchAreas().then(areas => {
     const card = document.createElement("div");
     card.className = "col-12 col-md-6 col-lg-4 hover-scale";
     card.innerHTML = `
-      <div class="form-check custom-card h-100 w-100 ">      
-          <label class="form-check-label w-100 h-100" for="area${area.id}">
-              <div class="card-body d-flex flex-column align-items-center justify-content-end" 
-                   style="background: linear-gradient(${transparentColor},rgba(0,0,0,0.4)), url('${area.imagen}');
-                          background-position: center;
-                          background-size: cover;
-                          background-repeat: no-repeat;
-                          height: 200px; 
-                          border-radius: 15px;">
-                  <h3 class="h4 mb-2 text-white text-center">${area.nombre}</h3>
-                  <p class="text-white text-center small">${area.descripcion}</p>
-              </div>
-          </label>
+      <div class="form-check custom-card h-100 w-100" style="transition: transform 0.2s ease-in-out;">
+        <label class="form-check-label w-100 h-100" for="area${area.id}">
+            <div class="card-body d-flex flex-column align-items-center justify-content-end" 
+                 style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('${area.imagen}');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 200px; 
+                        border-radius: 15px;
+                        border-bottom: 8px solid ${area.color};">
+                <h3 class="h4 mb-2 text-white text-center">${area.nombre}</h3>
+                <p class="text-white text-center small">${area.descripcion}</p>
+            </div>
+            <style>
+              .custom-card:hover {
+                transform: scale(1.1);
+              }
+            </style>
+        </label>
       </div>
     `;
     areasContainer.appendChild(card);
@@ -75,7 +81,7 @@ async function cargarCursos() {
         const cardHTML = `
         <div class="col mb-2">
             <a href="detalle_curso.html?idcur=${curso.id}" class="card-curso-link" data-curso="${curso.id}">
-                <div class="card-curso hover-scale" style="background-img: url('.${curso.imagen}'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+                <div class="card-curso hover-scale" style="background-img: url('.${curso.imagen}'); background-size: cover; background-repeat: no-repeat; background-position: bottom; border-bottom: 8px solid ${curso.colorArea};">
                     ${nuevoBadge}
                     ${dispobibleInscripcion}
                     <button type="button" class="btn btn-link p-0 bookmark" title="Guardar curso" aria-label="Guardar curso">
@@ -182,7 +188,7 @@ function renderizarCursos(cursos) {
     const cardHTML = `
             <div class="col mb-2">
                 <a href="detalle_curso.html?idcur=${curso.id}" class="card-curso-link" data-curso="${curso.id}">
-                    <div class="card-curso hover-scale" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0)), url('.${curso.imagen}'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+                    <div class="card-curso hover-scale" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0)), url('.${curso.imagen}'); background-size: cover; background-repeat: no-repeat; background-position: bottom; border-bottom: 8px solid ${curso.colorArea};"">
                        <div class="badges" >
                         ${nuevoBadge}
                         ${dispobibleInscripcion}

@@ -3,42 +3,42 @@
 {
     "id": 1,
     "nombre": "Psicología y Salud mental",
-    "color": "#008D34",
+    "color": "#dd0000",
     "descripcion": "Terapia y tratamientos",
     "imagen": "../img/areas/psicologia.png"
 },
 {
     "id": 2,
     "nombre": "Discapacidad y Neurodiversidad",
-    "color": "#FFC000",
+    "color": "#ca932e",
     "descripcion": "Intervención temprana",
     "imagen": "../img/areas/discapacidad.png"
 },
 {
     "id": 3,
     "nombre": "Educación",
-    "color": "#FE6300",
+    "color": "#9020d2",
     "descripcion": "Pedagogía",
     "imagen": "../img/areas/educacion.png"
 },
 {
     "id": 4,
     "nombre": "Coaching y Crecimiento Personal",
-    "color": "#DD0000",
+    "color": "#e618ac",
     "descripcion": "Autoconocimiento",
     "imagen": "../img/areas/coaching.png"
 },
 {
     "id": 5,
     "nombre": "Gerontología",
-    "color": "#9000FF",
+    "color": "#f46241",
     "descripcion": "Adultos y mayores",
     "imagen": "../img/areas/gerontologia.png"
 },    
 {
     "id": 6,
     "nombre": "Crianza",
-    "color": "#E72490",
+    "color": "#05d6cd",
     "descripcion": "Paternidad positiva",
     "imagen": "../img/areas/crianza.png"
 }
